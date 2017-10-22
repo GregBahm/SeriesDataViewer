@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +8,11 @@ public static class DataLoader
 {
     public static string DataSourcePath = Application.dataPath + "\\Simpsons.txt";
     
-    public static IEnumerable<EpisodeData> LoadData()
+    public static IEnumerable<EpisodeData> LoadData(TextAsset asset)
     {
         List<EpisodeData> data = new List<EpisodeData>();
-
-        System.IO.StreamReader fileReader = new System.IO.StreamReader(DataSourcePath);
-        string line;
-        while ((line = fileReader.ReadLine()) != null)
-        {
-            data.Add(LineToData(line));
-        }
+        string[] splitFile = asset.text.Split('\n');
+        data.AddRange(splitFile.Select(LineToData));
         return data;
     }
 

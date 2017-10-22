@@ -1,0 +1,172 @@
+1.1	The Stakeout	22.5[13]	7.8
+1.2	The Robbery	19.7[14]	7.7
+1.3	Male Unbonding	19.1[15]	7.5
+1.4	The Stock Tip	19.4[16]	7.7
+2.1	The Ex-Girlfriend	15.6[19]	7.8
+2.2	The Pony Remark	15.2[20]	8.1
+2.3	The Jacket	14.8[21]	8.5
+2.4	The Phone Message	13.6[22]	8.6
+2.5	The Apartment	24.7[23]	8
+2.6	The Statue	23.3[24]	8.2
+2.7	The Revenge	19.6[25]	8.5
+2.8	The Heart Attack	20.6[26]	8
+2.9	The Deal	22.9[27]	8.4
+2.10	The Baby Shower	17.2[28]	7.7
+2.11	The Chinese Restaurant	16.8[29]	8.8
+2.12	The Busboy	12.5[30]	7.9
+3.1	The Note	21.7[31]	8.4
+3.2	The Truth	16.7[32]	8
+3.3	The Pen	15.1[33]	8.4
+3.4	The Dog	17.2[34]	7.5
+3.5	The Library	16.4[35]	8.8
+3.6	The Parking Garage	17.0[36]	8.9
+3.7	The Cafe	16.4[37]	8.6
+3.8	The Tape	15.8[38]	8.8
+3.9	The Nose Job	16.3[39]	8.2
+3.10	The Stranded	18.6[41]	7.6
+3.11	The Alternate Side	18.0[42]	8.5
+3.12	The Red Dot	17.9[43]	8.5
+3.13	The Subway	18.7[44]	8.9
+3.14	The Pez Dispenser	19.2[45]	8.6
+3.15	The Suicide	16.9[46]	7.8
+3.16	The Fix Up	18.5[47]	8.5
+3.17	The Boyfriend: Part 1	17.0[48]	9
+3.18	The Boyfriend: Part 2	17.0[48]	8.8
+3.19	The Limo	19.5[49]	9
+3.20	The Good Samaritan	16.1[50]	8.1
+3.21	The Letter	22.3[51]	8.1
+3.22	The Parking Space	17.8[52]	8.5
+3.23	The Keys	16.4[53]	8.6
+4.1	The Trip: Part 1	16.3[54]	8.4
+4.2	The Trip: Part 2	15.1[55]	8.5
+4.3	The Pitch	17.6[56]	8.8
+4.4	The Ticket	17.6[56]	8.5
+4.5	The Wallet	17.6[57]	8.2
+4.6	The Watch	15.2[58]	8.2
+4.7	The Bubble Boy	17.1[59]	8.9
+4.8	The Cheever Letters	15.1[60]	8.6
+4.9	The Opera	16.7[61]	8.3
+4.10	The Virgin	16.2[62]	8.4
+4.11	The Contest	18.5[63]	9.6
+4.12	The Airport	14.5[64]	9
+4.13	The Pick	16.2[65]	8.6
+4.14	The Movie	17.6[66]	8.3
+4.15	The Visa	N/A	8.3
+4.16	The Shoes	26.9[67]	8.4
+4.17	The Outing	28.0[68]	9.4
+4.18	The Old Man	22.7[69]	8.3
+4.19	The Implant	27.4[70]	8.7
+4.20	The Junior Mint	26.4[71]	8.9
+4.21	The Smelly Car	25.0[72]	8.6
+4.22	The Handicap Spot	27.6[73]	8.5
+4.23	The Pilot	32.8[74]	8.8
+5.1	The Mango	28.2[75]	8.7
+5.2	The Puffy Shirt	29.5[76]	9
+5.3	The Glasses	28.7[77]	8.5
+5.4	The Sniffing Accountant	28.4[78]	8.3
+5.5	The Bris	28.7[79]	8.2
+5.6	The Lip Reader	31.0[80]	8.6
+5.7	The Non-Fat Yogurt	31.1[81]	8.6
+5.8	The Barber	29.7[82]	8.4
+5.9	The Masseuse	27.7[83]	8
+5.10	The Cigar Store Indian	29.6[84]	8.5
+5.11	The Conversion	28.3[85]	8.3
+5.12	The Stall	35.0[86]	8.7
+5.13	The Dinner Party	33.0[87]	8.4
+5.14	The Marine Biologist	35.0[88]	9.3
+5.15	The Pie	N/A	8.7
+5.16	The Stand-In	25.4[89]	7.9
+5.17	The Wife	30.7[90]	8.2
+5.18	The Raincoats	29.6[91]	8.6
+5.19	The Fire	27.6[92]	8.8
+5.20	The Hamptons	24.5[93]	9.1
+5.21	The Opposite	30.1[94]	9.6
+6.1	The Chaperone	32.8[95]	8.2
+6.2	The Big Salad	32.4[96]	8.4
+6.3	The Pledge Drive	29.8[97]	8.4
+6.4	The Chinese Woman	29.2[98]	8.4
+6.5	The Couch	28.0[99]	8.3
+6.6	The Gymnast	30.6[100]	8.4
+6.7	The Soup	29.6[101]	8.3
+6.8	The Mom and Pop Store	32.4[102]	8.3
+6.9	The Secretary	29.7[103]	8.3
+6.10	The Race	26.8[104]	9
+6.11	The Switch	36.6[105]	9
+6.12	The Label Maker	36.2[106]	8.7
+6.13	The Scofflaw	33.4[107]	8.3
+6.14	Highlights of a Hundred	34.0[108]	7.5
+6.15	The Beard	32.9[109]	8.5
+6.16	The Kiss Hello	33.4[110]	8.4
+6.17	The Doorman	33.4[111]	8.5
+6.18	The Jimmy	31.1[112]	9
+6.19	The Doodle	30.7[113]	8.5
+6.20	The Fusilli Jerry	28.2[114]	8.9
+6.21	The Diplomat's Club	28.9[115]	8.2
+6.22	The Face Painter	26.5[116]	8.6
+6.23	The Understudy	29.8[117]	8.2
+7.1	The Engagement	37.6[118]	8.7
+7.2	The Postponement	34.5[119]	8.4
+7.3	The Maestro	34.6[120]	8.3
+7.4	The Wink	32.3[121]	8.8
+7.5	The Hot Tub	32.6[122]	8.8
+7.6	The Soup Nazi	33.1[123]	9.6
+7.7	The Secret Code	33.9[124]	8.6
+7.8	The Pool Guy	33.4[125]	8.5
+7.9	The Sponge	32.3[126]	8.5
+7.10	The Gum	31.4[127]	8.8
+7.11	The Rye	35.1[128]	9
+7.12	The Caddy	32.0[129]	8.7
+7.13	The Seven	37.1[130]	8.3
+7.14	The Cadillac	35.9[131]	8.6
+7.15	The Shower Head	32.3[132]	8.6
+7.16	The Doll	32.9[133]	8.3
+7.17	The Friars Club	32.7[134]	8
+7.18	The Wig Master	30.5[135]	8.3
+7.19	The Calzone	28.5[136]	9
+7.20	The Bottle Deposit	32.4[137]	8.9
+7.21	The Wait Out	29.9[138]	8.5
+7.22	The Invitations	33.2[139]	8.9
+8.1	The Foundation	33.7[140]	8.5
+8.2	The Soul Mate	33.2[141]	8.2
+8.3	The Bizarro Jerry	31.6[142]	9.2
+8.4	The Little Kicks	32.2[143]	9
+8.5	The Package	30.1[144]	8.8
+8.6	The Fatigues	30.3[145]	8.3
+8.7	The Checks	32.0[146]	8.4
+8.8	The Chicken Roaster	34.1[147]	9.1
+8.9	The Abstinence	34.4[148]	9.1
+8.10	The Andrea Doria	29.7[149]	8.5
+8.11	The Little Jerry	34.5[150]	8.5
+8.12	The Money	37.3[151]	8
+8.13	The Comeback	33.5[152]	8.8
+8.14	The Van Buren Boys	33.8[153]	8.3
+8.15	The Susie	32.0[154]	8.7
+8.16	The Pothole	33.8[155]	8.8
+8.17	The English Patient	31.3[156]	8.7
+8.18	The Nap	32.2[157]	9
+8.19	The Yada Yada	31.6[158]	9
+8.20	The Millennium	29.3[159]	8.4
+8.21	The Muffin Tops	31.1[160]	8.7
+8.22	The Summer of George	29.8[161]	8.7
+9.1	The Butter Shave	37.8[162]	8.7
+9.2	The Voice	30.9[163]	8.6
+9.3	The Serenity Now	30.2[164]	9
+9.4	The Blood	31.5[165]	8.4
+9.5	The Junk Mail	30.2[166]	8.3
+9.6	The Merv Griffin Show	31.6[167]	9.2
+9.7	The Slicer	32.8[168]	8.6
+9.8	The Betrayal	34.0[169]	9.1
+9.9	The Apology	30.5[170]	8.5
+9.10	The Strike	30.8[171]	8.9
+9.11	The Dealership	32.9[172]	8.7
+9.12	The Reverse Peephole	33.5[173]	8.5
+9.13	The Cartoon	33.2[174]	8.2
+9.14	The Strongbox	31.6[175]	8.1
+9.15	The Wizard	30.5[176]	8.2
+9.16	The Burning	30.9[177]	8.6
+9.17	The Bookstore	29.6[178]	8.5
+9.18	The Frogger	30.7[179]	9
+9.19	The Maid	33.3[180]	8.2
+9.20	The Puerto Rican Day	38.8[181]	8.3
+9.21	The Chronicle	58.5[182]	8.2
+9.22	The Finale	76.3[182]	7.7

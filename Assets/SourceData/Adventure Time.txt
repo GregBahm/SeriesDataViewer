@@ -1,0 +1,270 @@
+1.1	Slumber Party Panic	2.50[31]	7.7
+1.2	Trouble in Lumpy Space	2.50[31]	7.6
+1.3	Prisoners of Love	1.85[32]	7.5
+1.4	Tree Trunks	1.85[32]	7.6
+1.5	The Enchiridion!	2.10[33]	7.9
+1.6	The Jiggler	2.10[33]	7.4
+1.7	Ricardio the Heart Guy	1.91[34]	7.5
+1.8	Business Time	1.91[34]	7.7
+1.9	My Two Favorite People	1.65[35]	7.7
+1.10	Memories of Boom Boom Mountain	1.65[35]	8
+1.11	Wizard	1.82[36]	8.1
+1.12	Evicted!	1.88[37]	8.3
+1.13	City of Thieves	1.83[38]	7.9
+1.14	The Witch's Garden	1.81[39]	7.6
+1.15	What Is Life?	1.64[40]	7.8
+1.16	Ocean of Fear	2.00[41]	7.8
+1.17	When Wedding Bells Thaw	1.92[42]	7.2
+1.18	Dungeon	2.48[43]	8.3
+1.19	The Duke	1.84[44]	7.6
+1.20	Freak City	2.03[45]	7.5
+1.21	Donny	N/A	7.4
+1.22	Henchman	2.17[46]	8
+1.23	Rainy Day Daydream	2.17[47]	8.1
+1.24	What Have You Done?	1.89[48]	7.7
+1.25	His Hero	1.83[49]	7.7
+1.26	Gut Grinder	1.77[50]	7.5
+2.1	It Came from the Nightosphere	2.00[52]	8.8
+2.2	The Eyes	2.26[53]	7.9
+2.3	Loyalty to the King	2.54[54]	7.5
+2.4	Blood Under the Skin	1.95[55]	7.8
+2.5	Storytelling	2.15[56]	7.8
+2.6	Slow Love	2.09[57]	7
+2.7	Power Animal	2.23[58]	7.9
+2.8	Crystals Have Power	2.00[59]	7.5
+2.9	The Other Tarts	N/A	8.2
+2.10	To Cut a Woman's Hair	1.89[60]	7.9
+2.11	The Chamber of Frozen Blades	N/A	7.9
+2.12	Her Parents	2.18[61]	7.8
+2.13	The Pods	1.94[62]	7.7
+2.14	The Silent King	N/A	7.7
+2.15	The Real You	1.83[63]	8.2
+2.16	Guardians of Sunshine	1.73[64]	8.1
+2.17	Death in Bloom	1.98[65]	8.4
+2.18	Susan Strong	2.38[66]	7.8
+2.19	Mystery Train	1.96[67]	8.4
+2.20	Go with Me	1.27[68]	8.1
+2.21	Belly of the Beast	1.64[69]	8
+2.22	The Limit	1.69[70]	8.3
+2.23	Video Makers	1.73[72]	7.9
+2.24	Mortal Folly	1.92[73]	8.7
+2.25	Mortal Recoil	1.92[73]	8.8
+2.26	Heat Signature	1.98[74]	7.6
+3.1	Conquest of Cuteness	2.69[76]	7.6
+3.2	Morituri Te Salutamus	1.78[77]	7.7
+3.3	Memory of a Memory	2.26[78]	8.6
+3.4	Hitman	2.27[79]	8
+3.5	Too Young	2.09[80]	8.5
+3.6	The Monster	2.24[81]	7.4
+3.7	Still	2.29[82]	7.7
+3.8	Wizard Battle	2.30[83]	7.5
+3.9	Fionna and Cake	3.32[84]	8.6
+3.10	What Was Missing	2.19[85]	8.6
+3.11	Apple Thief	2.00[86]	6.9
+3.12	The Creeps	2.03[87]	8.3
+3.13	From Bad to Worse	2.22[88]	8.2
+3.14	Beautopia	1.92[89]	7.8
+3.15	No One Can Hear You	2.48[90]	8.2
+3.16	Jake vs. Me-Mow	2.26[91]	7.9
+3.17	Thank You	2.33[92]	8.8
+3.18	The New Frontier	2.39[93]	7.3
+3.19	Holly Jolly Secrets Part I	2.51[94]	7.6
+3.20	Holly Jolly Secrets Part II	2.51[94]	8.6
+3.21	Marceline's Closet	2.50[95]	8.3
+3.22	Paper Pete	N/A	7.2
+3.23	Another Way	N/A	7.6
+3.24	Ghost Princess	N/A	7.6
+3.25	Dad's Dungeon	2.60[96]	8.3
+3.26	Incendium	N/A	8.2
+4.1	Hot to the Touch	2.66[98]	8.1
+4.2	Five Short Graybles	N/A	7.9
+4.3	Web Weirdos	N/A	6.8
+4.4	Dream of Love	N/A	6
+4.5	Return to the Nightosphere	N/A	8.1
+4.6	Daddy's Little Monster	N/A	8.2
+4.7	In Your Footsteps	N/A	7.4
+4.8	Hug Wolf	N/A	7.3
+4.9	Princess Monster Wife	N/A	7.3
+4.10	Goliad	N/A	7.9
+4.11	Beyond This Earthly Realm	N/A	7.7
+4.12	Gotcha!	2.39[99]	7
+4.13	Princess Cookie	N/A	8.5
+4.14	Card Wars	N/A	8.3
+4.15	Sons of Mars	N/A	8.1
+4.16	Burning Low	3.50[100]	8.3
+4.17	BMO Noire	N/A	8.1
+4.18	King Worm	N/A	8.3
+4.19	Lady & Peebles	2.75[101]	7.9
+4.20	You Made Me	N/A	8
+4.21	Who Would Win	N/A	7.5
+4.22	Ignition Point	2.26[102]	7.8
+4.23	The Hard Easy	2.64[103]	7.7
+4.24	Reign of Gunters	1.85[104]	8
+4.25	I Remember You	2.54[105]	9.4
+4.26	The Lich	2.59[106]	8.9
+5.1	Finn the Human	3.44[109]	8.8
+5.2	Jake the Dog	3.44[109]	9.2
+5.3	Five More Short Graybles	2.60[110]	7.6
+5.4	Up a Tree	2.38[111]	7.8
+5.5	All the Little People	2.53[112]	8.5
+5.6	Jake the Dad	3.19[113]	8.2
+5.7	Davey	2.31[115]	7.6
+5.8	Mystery Dungeon	2.71[116]	8.2
+5.9	All Your Fault	2.71[117]	8
+5.10	Little Dude	2.60[118]	7.5
+5.11	Bad Little Boy	3.08[119]	8.3
+5.12	Vault of Bones	2.70[120]	8
+5.13	The Great Bird Man	2.58[121]	7.6
+5.14	Simon & Marcy	2.60[123]	9.5
+5.15	A Glitch Is a Glitch	2.00[124]	8.1
+5.16	Puhoy	2.75[125]	8.7
+5.17	BMO Lost	2.39[126]	8
+5.18	Princess Potluck	2.27[127]	7.6
+5.19	James Baxter the Horse	2.21[128]	7.8
+5.20	Shh!	2.35[129]	7.9
+5.21	The Suitor	2.41[130]	7.5
+5.22	The Party's Over, Isla de Señorita	2.11[131]	7.6
+5.23	One Last Job	2.38[132]	7.9
+5.24	Another Five More Short Graybles	2.27[133]	7.5
+5.25	Candy Streets	2.09[134]	7.6
+5.26	Wizards Only, Fools	2.50[135]	7.8
+5.27	Jakesuit	2.46[136]	7.9
+5.28	Be More	2.67[137]	8.4
+5.29	Sky Witch	2.08[138]	8.1
+5.30	Frost & Fire	3.01[139]	8
+5.31	Too Old	2.38[140]	7.5
+5.32	Earth & Water	1.86[141]	7.7
+5.33	Time Sandwich	1.98[142]	8.3
+5.34	The Vault	2.26[143]	8.4
+5.35	Love Games	2.02[144]	6.9
+5.36	Dungeon Train	2.04[145]	7.9
+5.37	Box Prince	1.99[146]	7
+5.38	Red Starved	1.77[147]	7.5
+5.39	We Fixed a Truck	2.02[148]	7.8
+5.40	Play Date	1.92[149]	7.5
+5.41	The Pit	2.27[150]	7.6
+5.42	James	2.61[151]	7.7
+5.43	Root Beer Guy	1.84[152]	8.2
+5.44	Apple Wedding	1.86[153]	7.5
+5.45	Blade of Grass	2.61[154]	8.7
+5.46	Rattleballs	2.21[155]	8.3
+5.47	The Red Throne	2.11[156]	7.8
+5.48	Betty	1.71[157]	8.8
+5.49	Bad Timing	1.45[158]	7.7
+5.50	Lemonhope Part One	1.97[159]	8
+5.51	Lemonhope Part Two	1.97[159]	8.6
+5.52	Billy's Bucket List	2.34[160]	8.7
+6.1	Wake Up	3.32[166]	9.1
+6.2	Escape from the Citadel	3.32[166]	9.3
+6.3	James II	2.03[167]	7.6
+6.4	The Tower	2.10[168]	8.4
+6.5	Sad Face	1.77[169]	7.1
+6.6	Breezy	2.27[170]	7.9
+6.7	Food Chain	1.97[171]	8.3
+6.8	Furniture & Meat	1.86[172]	7.7
+6.9	The Prince Who Wanted Everything	2.48[173]	7.3
+6.1	Something Big	1.95[174]	8.4
+6.11	Little Brother	2.10[175]	8.3
+6.12	Ocarina	1.86[176]	7.8
+6.13	Thanks for the Crabapples, Giuseppe!	2.18[177]	7.8
+6.14	Princess Day	1.91[171]	7.6
+6.15	Nemesis	1.90[178]	8
+6.16	Joshua & Margaret Investigations	2.05[179]	8.3
+6.17	Ghost Fly	1.30[180]	7.6
+6.18	Everything's Jake	1.59[181]	8.1
+6.19	Is That You?	1.76[181]	9.2
+6.20	Jake the Brick	2.00[182]	8.7
+6.21	Dentist	1.40[183]	8
+6.22	The Cooler	1.84[184]	8.1
+6.23	The Pajama War	2.04[185]	8.3
+6.24	Evergreen	1.75[186]	8.8
+6.25	Astral Plane	1.86[187]	8.9
+6.26	Gold Stars	1.85[188]	8.2
+6.27	The Visitor	1.71[189]	8
+6.28	The Mountain	1.67[190]	8
+6.29	Dark Purple	2.15[191]	7.9
+6.30	The Diary	1.91[192]	8
+6.31	Walnuts & Rain	1.68[193]	8.1
+6.32	Friends Forever	1.57[194]	7.3
+6.33	Jermaine	1.53[195]	8.2
+6.34	Chips & Ice Cream	1.69[196]	7
+6.35	Graybles 1000+	1.58[197]	8.4
+6.36	Hoots	1.54[198]	8.3
+6.37	Water Park Prank	1.42[199]	5
+6.38	You Forgot Your Floaties	1.57[200]	8.4
+6.39	Be Sweet	1.67[201]	7.5
+6.40	Orgalorg	1.30[202]	8.7
+6.41	On the Lam	1.48[203]	7.6
+6.42	Hot Diggity Doom	1.55[204]	8.3
+6.43	The Comet	1.55[204]	9.1
+7.1	Bonnie & Neddy	1.07[206]	7.9
+7.2	Varmints	1.31[207]	8.7
+7.3	Cherry Cream Soda	1.22[208]	7.7
+7.4	Mama Said	1.16[209]	7.6
+7.5	Football	1.26[210]	8.3
+7.6	Stakes Part 1: Marceline the Vampire Queen	1.87[211]	9
+7.7	Stakes Part 2: Everything Stays	1.87[211]	9.4
+7.8	Stakes Part 3: Vamps About	1.82[212]	9.1
+7.9	Stakes Part 4: The Empress Eyes	1.82[212]	8.9
+7.10	Stakes Part 5: May I Come In?	1.85[213]	9.2
+7.11	Stakes Part 6: Take Her Back	1.85[213]	9.1
+7.12	Stakes Part 7: Checkmate	1.70[214]	9.2
+7.13	Stakes Part 8: The Dark Cloud	1.70[214]	9.1
+7.14	The More You Moe	1.20[215]	8
+7.15	The Moe You Know	1.20[215]	8.4
+7.16	Summer Showers	1.10[216]	7.5
+7.17	Angel Face	1.11[217]	7.7
+7.18	President Porpoise Is Missing!	1.21[218]	7.1
+7.19	Blank Eyed Girl	1.12[219]	8.4
+7.20	Bad Jubies	1.22[220]	8.2
+7.21	A King's Ransom	1.12[221]	8.4
+7.22	Scamps	1.45[222]	7.5
+7.23	Crossover	1.13[223]	8.8
+7.24	Hall of Egress	1.24[224]	9.1
+7.25	Flute Spell	1.01[225]	8.4
+7.26	The Thin Yellow Line	1.15[226]	8
+7.27	Broke His Crown	1.13[229]	8.9
+7.28	Don't Look	1.13[230]	8.3
+7.29	Beyond the Grotto	1.06[232]	7.5
+7.30	Lady Rainicorn of the Crystal Dimension	0.90[233]	7.6
+7.31	I Am a Sword	0.91[234]	8.2
+7.32	Bun Bun	1.01[235]	7.8
+7.33	Normal Man	1.38[236]	8.1
+7.34	Elemental	1.17[237]	8
+7.35	Five Short Tables	1.36[238]	7.3
+7.36	The Music Hole	1.15[239]	8.7
+7.37	Daddy-Daughter Card Wars	1.16[240]	7.7
+7.38	Preboot	0.77[241]	7.9
+7.39	Reboot	0.77[241]	8.3
+8.1	Two Swords	0.88[242]	8.5
+8.2	Do No Harm	0.88[242]	8.3
+8.3	Wheels	0.91[243]	7.6
+8.4	High Strangeness	0.95[244]	7.9
+8.5	Horse and Ball	0.76[245]	7.6
+8.6	Jelly Beans Have Power	0.91[246]	8.1
+8.7	Islands Part 1: The Invitation	1.20[247]	8.6
+8.8	Islands Part 2: Whipple the Happy Dragon	1.20[247]	8.2
+8.9	Islands Part 3: Mysterious Island	1.09[248]	8.6
+8.10	Islands Part 4: Imaginary Resources	1.09[248]	8.3
+8.11	Islands Part 5: Hide and Seek	1.01[249]	9.2
+8.12	Islands Part 6: Min and Marty	1.01[249]	9.5
+8.13	Islands Part 7: Helpers	1.00[250]	9.3
+8.14	Islands Part 8: The Light Cloud	1.00[250]	9.6
+9.1	Orb	0.71[256]	8.2
+9.2	Elements Part 1: Skyhooks	0.83[257]	8.7
+9.3	Elements Part 2: Bespoken For	0.83[257]	8.7
+9.4	Elements Part 3: Winter Light	0.98[258]	8.6
+9.5	Elements Part 4: Cloudy	0.98[258]	8.3
+9.6	Elements Part 5: Slime Central	0.92[259]	8.2
+9.7	Elements Part 6: Happy Warrior	0.92[259]	8.6
+9.8	Elements Part 7: Hero Heart	0.90[260]	8.5
+9.9	Elements Part 8: Skyhooks II	0.90[260]	8.9
+9.10	Abstract	0.77[261]	7.8
+9.11	Ketchup	0.67[262]	8.3
+9.12	Fionna and Cake and Fionna	0.69[263]	7
+9.13	Whispers	0.76[264]	8.7
+9.14	Three Buckets	0.85[265]	8.7
+9.15	The Wild Hunt	0.77[266]	8.6
+9.16	Always BMO Closing	0.77[266]	8.3
+9.17	Son of Rap Bear	0.77[266]	7.5
+9.18	Bonnibel Bubblegum	0.77[266]	9.4

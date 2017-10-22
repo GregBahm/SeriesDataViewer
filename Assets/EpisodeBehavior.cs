@@ -7,7 +7,8 @@ using UnityEngine;
 class EpisodeBehavior : MonoBehaviour
 {
     public EpisodeData Data { get; set; }
-    public SeriesScript Mothership { get; set; }
+    public MainScript Main { get; set; }
+    public SeriesScript Series { get; set; }
 
     private Material Mat;
 
@@ -18,26 +19,25 @@ class EpisodeBehavior : MonoBehaviour
 
     private void Update()
     {
-        float baseImdb = (Data.ImdbRating - Mothership.ImdbMin) / (Mothership.ImdbMax - Mothership.ImdbMin);
-        float adjustedImdb = baseImdb - .5f;
+        float baseImdb = (Data.ImdbRating - Main.ImdbMin) / (Main.ImdbMax - Main.ImdbMin);
 
-        float nealsonHeightPos = Data.NealsonRating / 2;
-        float nealsonScale = Data.NealsonRating;
+        float nealsonScale = Data.NealsonRating / Main.HighestNelson * Main.HeightScale;
+        float nealsonHeightPos = nealsonScale / 2;
 
-        float imdbTop = Mothership.MaxNealson - Mothership.ImdbScale / 2;
-        float imdbBotom = Mothership.ImdbScale / 2;
+        float imdbTop = Main.HeightScale - Main.ImdbScale / 2;
+        float imdbBotom = Main.ImdbScale / 2;
 
-        float imdbHeightPos = Mathf.Lerp(imdbBotom, imdbTop, baseImdb);
-        float imdbScale = Mothership.ImdbScale;
+        float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseImdb);
+        float imdbScale = Main.ImdbScale;
 
-        float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, Mothership.NealsonOrImdb);
-        float heightScale = Mathf.Lerp(nealsonScale, imdbScale, Mothership.NealsonOrImdb);
+        float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, Main.NealsonOrImdb);
+        float heightScale = Mathf.Lerp(nealsonScale, imdbScale, Main.NealsonOrImdb);
 
-        transform.localScale = new Vector3(Mothership.SpaceBetweenSeasons, heightScale, Mothership.SpaceBetweenEpisodes);
-        transform.localPosition = new Vector3(-Data.Season, heightPos, Data.Episode);
-        Mat.SetFloat("_SeasonParam", Data.Season / Mothership.MaxSeason);
-        Mat.SetFloat("_EpisodeParam", Data.Episode / Mothership.MaxEpisode);
+        transform.localScale = new Vector3(Main.SpaceBetweenSeasons, heightScale, Main.SpaceBetweenEpisodes);
+        transform.localPosition = new Vector3(-Data.Season, heightPos, - Data.Episode);
+        Mat.SetFloat("_SeasonParam", Data.Season / Series.MaxSeason);
+        Mat.SetFloat("_EpisodeParam", Data.Episode / Series.MaxEpisode);
         Mat.SetFloat("_ImdbParam", baseImdb);
-        Mat.SetFloat("_NealsonOrImdb", Mothership.NealsonOrImdb);
+        Mat.SetFloat("_NealsonOrImdb", Main.NealsonOrImdb);
     }
 }
