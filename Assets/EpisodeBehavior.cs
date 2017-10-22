@@ -39,5 +39,6 @@ class EpisodeBehavior : MonoBehaviour
         Mat.SetFloat("_EpisodeParam", Data.Episode / Series.MaxEpisode);
         Mat.SetFloat("_ImdbParam", baseImdb);
         Mat.SetFloat("_NealsonOrImdb", Main.NealsonOrImdb);
+        Mat.SetFloat("_DataAvailable", Data.NealsonRating > 0 ? 1 : 0);
     }
 }

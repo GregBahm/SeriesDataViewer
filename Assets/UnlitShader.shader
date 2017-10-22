@@ -34,6 +34,7 @@
             float _EpisodeParam;
             float _ImdbParam;
             float _NealsonOrImdb;
+            float _DataAvailable;
 			
 			v2f vert (appdata v)
 			{
@@ -49,8 +50,8 @@
 			{
                 float shade = abs(i.objSpace.y) * 2;
                 
-            float normalShade = i.normal.z + i.normal.x;
-            shade = abs(pow(shade, 5));
+                float normalShade = i.normal.z + i.normal.x;
+                shade = abs(pow(shade, 5));
 
                 float3 color = lerp(float3(1, 0, 0), float3(0, 1, 0), _ImdbParam);
                 float minColor = max(color.x, color.y);
@@ -58,7 +59,11 @@
                 color += color * shade;
                 color /= 2;
 
-                float3 ret = lerp(color, .4, normalShade / 2);
+                float objX = 1 - abs(i.objSpace.x * 2);
+                float objZ = 1 - abs(i.objSpace.z * 2);
+                float dataAvailableAlpha = 1 - min(objX, objZ);
+                float3 dataAvailableColor = lerp(1, color, pow(dataAvailableAlpha, 4));
+                color = lerp (color, dataAvailableColor, (1 - _DataAvailable) * (1 - _NealsonOrImdb));
                 return float4(color, 1);
 			}
 			ENDCG
