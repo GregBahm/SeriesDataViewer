@@ -1,0 +1,133 @@
+1.1	The Gang Gets Racist	N/A	8.3	August 4, 2005
+1.2	Charlie Wants an Abortion	N/A	8.3	August 11, 2005
+1.3	Underage Drinking: A National Concern	N/A	8.4	August 18, 2005
+1.4	Charlie Has Cancer	N/A	8.2	August 25, 2005
+1.5	Gun Fever	N/A	8.2	September 1, 2005
+1.6	The Gang Finds a Dead Guy	N/A	8.2	September 8, 2005
+1.7	Charlie Got Molested	N/A	8.4	September 15, 2005
+2.1	Charlie Gets Crippled	N/A	8.4	June 29, 2006
+2.2	The Gang Goes Jihad	N/A	8.4	June 29, 2006
+2.3	Dennis and Dee Go on Welfare	N/A	8.7	July 6, 2006
+2.4	Mac Bangs Dennis' Mom	N/A	8.9	July 6, 2006
+2.5	Hundred Dollar Baby	N/A	8.6	July 13, 2006
+2.6	The Gang Gives Back	N/A	8.3	July 20, 2006
+2.7	The Gang Exploits a Miracle	N/A	8	July 27, 2006
+2.8	The Gang Runs for Office	N/A	7.9	August 3, 2006
+2.9	Charlie Goes America All Over Everybody's Ass	N/A	8.3	August 10, 2006
+2.10	Dennis and Dee Get a New Dad	N/A	8.3	August 17, 2006
+3.1	The Gang Finds a Dumpster Baby	N/A	8.4	September 13, 2007
+3.2	The Gang Gets Invincible	N/A	8.5	September 13, 2007
+3.3	Dennis and Dee's Mom Is Dead	N/A	8.3	September 20, 2007
+3.4	The Gang Gets Held Hostage	N/A	8.5	September 20, 2007
+3.5	The Aluminum Monster vs. Fatty Magoo	N/A	8	September 27, 2007
+3.6	The Gang Solves the North Korea Situation	N/A	8.3	September 27, 2007
+3.7	The Gang Sells Out	N/A	8.2	October 4, 2007
+3.8	Frank Sets Sweet Dee on Fire	N/A	8.3	October 4, 2007
+3.9	Sweet Dee's Dating a Retarded Person	N/A	8.9	October 11, 2007
+3.10	Mac Is a Serial Killer	N/A	8.6	October 18, 2007
+3.11	Dennis Looks Like a Registered Sex Offender	N/A	8.3	October 25, 2007
+3.12	The Gang Gets Whacked: Part 1	N/A	8.1	November 1, 2007
+3.13	The Gang Gets Whacked: Part 2	N/A	8.3	November 1, 2007
+3.14	Bums: Making a Mess All Over the City	N/A	8.3	November 8, 2007
+3.15	The Gang Dances Their Asses Off	N/A	8.6	November 15, 2007
+4.1	Mac and Dennis: Manhunters	1.73[4]	8.2	September 18, 2008
+4.2	The Gang Solves the Gas Crisis	1.60[4]	8.7	September 18, 2008
+4.3	America's Next Top Paddy's Billboard Model Contest	1.44[4]	8.3	September 25, 2008
+4.4	Mac's Banging the Waitress	1.35[4]	8.3	September 25, 2008
+4.5	Mac & Charlie Die: Part 1	1.02[4]	8.5	October 2, 2008
+4.6	Mac & Charlie Die: Part 2	1.02[4]	8.3	October 2, 2008
+4.7	Who Pooped the Bed?	1.28[4]	8.1	October 9, 2008
+4.8	Paddy's Pub: The Worst Bar in Philadelphia	1.27[4]	8.2	October 16, 2008
+4.9	Dennis Reynolds: An Erotic Life	N/A	8.1	October 23, 2008
+4.10	Sweet Dee Has a Heart Attack	1.15[4]	8.4	October 30, 2008
+4.11	The Gang Cracks the Liberty Bell	1.36[4]	7.7	November 6, 2008
+4.12	The Gang Gets Extreme: Home Makeover Edition	1.31[4]	8.3	November 13, 2008
+4.13	The Nightman Cometh	1.30[5]	9.4	November 20, 2008
+5.1	The Gang Exploits the Mortgage Crisis	2.24[6]	8.1	September 17, 2009
+5.2	The Gang Hits the Road	1.79[6]	8.6	September 24, 2009
+5.3	The Great Recession	2.01[6]	7.9	October 1, 2009
+5.4	The Gang Gives Frank an Intervention	1.51[6]	8.4	October 8, 2009
+5.5	The Waitress Is Getting Married	1.61[6]	8.4	October 15, 2009
+5.6	The World Series Defense	1.61[6]	8.1	October 22, 2009
+5.7	The Gang Wrestles for the Troops	1.35[6]	8.2	October 29, 2009
+5.8	Paddy's Pub: Home of the Original Kitten Mittens	1.99[6]	8.6	November 5, 2009
+5.9	Mac and Dennis Break Up	1.87[7]	8.2	November 12, 2009
+5.10	The D.E.N.N.I.S. System	1.49[8]	8.8	November 19, 2009
+5.11	Mac and Charlie Write a Movie	1.89[9]	7.9	December 3, 2009
+5.12	The Gang Reignites the Rivalry	1.68[10]	8.2	December 10, 2009
+6.1	Mac Fights Gay Marriage	2.21[11]	7.7	September 16, 2010
+6.2	Dennis Gets Divorced	1.68[12]	7.4	September 23, 2010
+6.3	The Gang Buys a Boat	1.46[13]	8.4	September 30, 2010
+6.4	Mac's Big Break	1.23[14]	8	October 7, 2010
+6.5	Mac and Charlie: White Trash	1.48[15]	7.9	October 14, 2010
+6.6	Mac's Mom Burns Her House Down	1.07[16]	7.5	October 21, 2010
+6.7	Who Got Dee Pregnant?	1.19[17]	8.5	October 28, 2010
+6.8	The Gang Gets a New Member	1.67[18]	7.6	November 4, 2010
+6.9	Dee Reynolds: Shaping America's Youth	1.44[19]	8.4	November 11, 2010
+6.10	Charlie Kelly: King of the Rats	1.69[20]	8.1	November 18, 2010
+6.11	The Gang Gets Stranded in the Woods	1.65[21]	8.2	December 2, 2010
+6.12	Dee Gives Birth	1.46[22]	8.2	December 9, 2010
+6.13	A Very Sunny Christmas	1.16[23]	8.9	December 16, 2010[a]
+7.1	Frank's Pretty Woman	2.28[25]	8.3	September 15, 2011
+7.2	The Gang Goes to the Jersey Shore	1.93[26]	8.6	September 22, 2011
+7.3	Frank Reynolds' Little Beauties	2.03[27]	8.1	September 29, 2011
+7.4	Sweet Dee Gets Audited	1.82[28]	7.6	October 6, 2011
+7.5	Frank's Brother	1.42[29]	6.6	October 13, 2011
+7.6	The Storm of the Century	1.52[30]	8	October 20, 2011
+7.7	Chardee MacDennis: The Game of Games	1.38[31]	8.7	October 27, 2011
+7.8	The ANTI-Social Network	1.69[32]	8.1	November 3, 2011
+7.9	The Gang Gets Trapped	1.32[33]	8.3	November 10, 2011
+7.10	How Mac Got Fat	1.26[34]	7.6	November 17, 2011
+7.11	Thunder Gun Express	1.52[35]	8.4	December 1, 2011
+7.12	The High School Reunion	1.40[36]	7.9	December 8, 2011
+7.13	The High School Reunion Part 2: The Gang's Revenge	1.32[37]	8.1	December 15, 2011
+8.1	Pop-Pop: The Final Solution	1.05[38]	7.7	October 11, 2012
+8.2	The Gang Recycles Their Trash	1.10[39]	8	October 18, 2012
+8.3	The Maureen Ponderosa Wedding Massacre	1.12[40]	8.3	October 25, 2012
+8.4	Charlie and Dee Find Love	1.39[41]	8.5	November 1, 2012
+8.5	The Gang Gets Analyzed	1.11[42]	8.3	November 8, 2012
+8.6	Charlie's Mom Has Cancer	0.94[43]	7.3	November 15, 2012
+8.7	Frank's Back in Business	1.08[44]	7.8	November 29, 2012
+8.8	Charlie Rules the World	1.01[45]	8	December 6, 2012
+8.9	The Gang Dines Out	0.92[46]	8.3	December 13, 2012
+8.10	Reynolds vs. Reynolds: The Cereal Defense	0.94[47]	8.3	December 20, 2012
+9.1	The Gang Broke Dee	0.757[48]	8.3	September 4, 2013
+9.2	Gun Fever Too: Still Hot	0.606[49]	7.9	September 11, 2013
+9.3	The Gang Tries Desperately to Win an Award	0.521[50]	8.7	September 18, 2013
+9.4	Mac and Dennis Buy a Timeshare	0.458[51]	7.7	September 25, 2013
+9.5	Mac Day	0.459[52]	8.2	October 2, 2013
+9.6	The Gang Saves the Day	0.509[53]	8.4	October 9, 2013
+9.7	The Gang Gets Quarantined	0.574[54]	8.2	October 16, 2013
+9.8	Flowers for Charlie	0.460[55]	8.3	October 23, 2013
+9.9	The Gang Makes Lethal Weapon 6	0.427[56]	7.7	October 30, 2013
+9.10	The Gang Squashes Their Beefs	0.535[57]	7.8	November 6, 2013
+10.1	The Gang Beats Boggs	0.786[58]	8.3	January 14, 2015
+10.2	The Gang Group Dates	0.524[59]	8.3	January 21, 2015
+10.3	Psycho Pete Returns	0.511[60]	7.4	January 28, 2015
+10.4	Charlie Work	0.554[61]	9.6	February 4, 2015
+10.5	The Gang Spies Like U.S.	0.527[62]	7.9	February 11, 2015
+10.6	The Gang Misses the Boat	0.544[63]	8.3	February 18, 2015
+10.7	Mac Kills His Dad	0.442[64]	7.8	February 25, 2015
+10.8	The Gang Goes on Family Fight	0.445[65]	8.4	March 4, 2015
+10.9	Frank Retires	0.505[66]	7.9	March 11, 2015
+10.10	Ass Kickers United: Mac and Charlie Join a Cult	0.543[67]	7.3	March 18, 2015
+11.1	Chardee MacDennis 2: Electric Boogaloo	0.716[68]	8.2	January 6, 2016
+11.2	Frank Falls Out the Window	0.511[69]	7.8	January 13, 2016
+11.3	The Gang Hits the Slopes	0.609[70]	8.2	January 20, 2016
+11.4	Dee Made a Smut Film	0.478[71]	7.2	January 27, 2016
+11.5	Mac & Dennis Move to the Suburbs	0.563[72]	8.8	February 3, 2016
+11.6	Being Frank	0.536[73]	8	February 10, 2016
+11.7	McPoyle vs. Ponderosa: The Trial of the Century	0.531[74]	8.1	February 17, 2016
+11.8	Charlie Catches a Leprechaun	0.515[75]	8.2	February 24, 2016
+11.9	The Gang Goes to Hell	0.485[76]	8	March 2, 2016
+11.10	The Gang Goes to Hell: Part Two	0.460[77]	8	March 9, 2016
+12.1	The Gang Turns Black	0.730[78]	8.2	January 4, 2017
+12.2	The Gang Goes to a Water Park	0.574[79]	9.4	January 11, 2017
+12.3	Old Lady House: A Situation Comedy	0.602[80]	8.4	January 18, 2017
+12.4	Wolf Cola: A Public Relations Nightmare	0.629[81]	8.1	January 25, 2017
+12.5	Making Dennis Reynolds a Murderer	0.602[82]	8.6	February 1, 2017
+12.6	Hero or Hate Crime?	0.551[83]	9.4	February 8, 2017
+12.7	PTSDee	0.572[84]	8.6	February 15, 2017
+12.8	The Gang Tends Bar	0.587[85]	8.3	February 22, 2017
+12.9	A Cricket's Tale	0.523[86]	7.4	March 1, 2017
+12.10	Dennis' Double Life	0.640[87]	8.7	March 8, 2017

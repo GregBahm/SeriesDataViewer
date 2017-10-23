@@ -383,6 +383,9 @@ MonoBehaviour:
   - {fileID: 4900000, guid: c856e0c47251f9a438f83955f3daad93, type: 3}
   - {fileID: 4900000, guid: 25887d98462ad0540bf4118870032e5c, type: 3}
   - {fileID: 4900000, guid: 5fd86521d5e2ee945952e5f9802cb99c, type: 3}
+  - {fileID: 4900000, guid: bd9b7460311ea2c43ae4928291da6d79, type: 3}
+  - {fileID: 4900000, guid: df25f00429976bc4b8c550971eb2e300, type: 3}
+  - {fileID: 4900000, guid: 664b86ca97ce35f429e829002df0309e, type: 3}
   BoxMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2014809269
 Transform:

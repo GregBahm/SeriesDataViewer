@@ -128,7 +128,7 @@ public class SeriesScript : MonoBehaviour
     private EpisodeBehavior CreateNewEpisodeBox(EpisodeData data)
     {
         GameObject box = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        Destroy(box.GetComponent<MeshRenderer>());
+        box.GetComponent<MeshRenderer>().enabled = false;
         box.name = data.Season + "." + data.Episode + ":" + data.Title;
         EpisodeBehavior behavior = box.AddComponent<EpisodeBehavior>();
         behavior.Data = data;
