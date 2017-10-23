@@ -20,7 +20,7 @@
 2.7	Moody Foodie	3.72[23]	7.9
 2.8	Bad Tina	3.69[24]	8.2
 2.9	Beefsquatch	3.57[25]	7.8
-3.10	Ear-Sy Rider	5.46[26]	8.2
+3.1	Ear-Sy Rider	5.46[26]	8.2
 3.2	Full Bars	4.89[27]	8.3
 3.3	Bob Fires the Kids	3.92[28]	8
 3.4	Mutiny on the Windbreaker	4.89[29]	7.6

@@ -318,6 +318,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -386,6 +400,11 @@ MonoBehaviour:
   - {fileID: 4900000, guid: bd9b7460311ea2c43ae4928291da6d79, type: 3}
   - {fileID: 4900000, guid: df25f00429976bc4b8c550971eb2e300, type: 3}
   - {fileID: 4900000, guid: 664b86ca97ce35f429e829002df0309e, type: 3}
+  - {fileID: 4900000, guid: f960ae92da904ed4abccb36d9e314bc8, type: 3}
+  - {fileID: 4900000, guid: 01a43f7b05399224192b26d6f6be84bb, type: 3}
+  - {fileID: 4900000, guid: 3f5b63e7b842fab4396e2baa3ce0740f, type: 3}
+  - {fileID: 4900000, guid: 9a78100b397d9f64c935757f8bfadf09, type: 3}
+  - {fileID: 4900000, guid: d406aeffee754524497babcd4fc9ee03, type: 3}
   BoxMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2014809269
 Transform:

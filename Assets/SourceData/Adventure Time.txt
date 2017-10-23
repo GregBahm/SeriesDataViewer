@@ -163,7 +163,7 @@
 6.7	Food Chain	1.97[171]	8.3
 6.8	Furniture & Meat	1.86[172]	7.7
 6.9	The Prince Who Wanted Everything	2.48[173]	7.3
-6.1	Something Big	1.95[174]	8.4
+6.10	Something Big	1.95[174]	8.4
 6.11	Little Brother	2.10[175]	8.3
 6.12	Ocarina	1.86[176]	7.8
 6.13	Thanks for the Crabapples, Giuseppe!	2.18[177]	7.8
