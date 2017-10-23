@@ -28,8 +28,20 @@ public class MainScript : MonoBehaviour
     public TextAsset[] SeriesAssets;
     private List<SeriesScript> eachSeries;
 
-	void Start ()
+    public Mesh BoxMesh;
+    private ComputeBuffer meshBuffer;
+    private const int MeshBufferStride = sizeof(float) * 3 + sizeof(float) * 3;
+
+    struct MeshData
     {
+        public Vector3 Position;
+        public Vector3 Normal;
+    }
+
+    void Start ()
+    {
+        meshBuffer = GetMeshBuffer();
+
         eachSeries = new List<SeriesScript>();
         int episodeCount = 0;
         foreach (TextAsset dataSource in SeriesAssets)
@@ -46,5 +58,41 @@ public class MainScript : MonoBehaviour
             eachSeries.Add(script);
         }
         HighestNelson = eachSeries.Max(item => item.MaxNealson);
+    }
+
+    private void Update()
+    {
+        foreach (SeriesScript series in eachSeries)
+        {
+            series.SeriesMaterial.SetBuffer("_MeshBuffer", meshBuffer);
+            Shader.SetGlobalFloat("_NealsonOrImdb", NealsonOrImdb);
+            Shader.SetGlobalFloat("_SpaceBetweenSeasons", SpaceBetweenSeasons);
+            Shader.SetGlobalFloat("_SpaceBetweenEpisodes", SpaceBetweenEpisodes);
+            Shader.SetGlobalFloat("_ImdbMin", ImdbMin);
+            Shader.SetGlobalFloat("_ImdbMax", ImdbMax);
+            Shader.SetGlobalFloat("_HighestNelson", HighestNelson);
+            Shader.SetGlobalFloat("_HeightScale", HeightScale);
+            Shader.SetGlobalFloat("_ImdbScale", ImdbScale);
+        }
+    }
+
+    private ComputeBuffer GetMeshBuffer()
+    {
+        int meshBufferCount = BoxMesh.triangles.Length;
+        ComputeBuffer ret = new ComputeBuffer(meshBufferCount, MeshBufferStride);
+
+        MeshData[] meshVerts = new MeshData[meshBufferCount];
+        for (int i = 0; i < meshBufferCount; i++)
+        {
+            meshVerts[i].Position = BoxMesh.vertices[BoxMesh.triangles[i]];
+            meshVerts[i].Normal = BoxMesh.normals[BoxMesh.triangles[i]];
+        }
+        ret.SetData(meshVerts);
+        return ret;
+    }
+
+    private void OnDestroy()
+    {
+        meshBuffer.Release();
     }
 }

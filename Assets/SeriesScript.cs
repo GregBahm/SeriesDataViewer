@@ -13,9 +13,38 @@ public class SeriesScript : MonoBehaviour
     public float MaxEpisode { get; set; }
     public IEnumerable<EpisodeData> Episodes { get; set; }
 
-    private IEnumerable<EpisodeBehavior> episodeBehaviors;
+    private ComputeBuffer boxDataBuffer;
+    private const int BoxDataBufferStride = sizeof(float) // Season
+        + sizeof(float) // Episode
+        + sizeof(float) // IMDB Rating
+        + sizeof(float) // Nealson Rating
+        + sizeof(float); // Data Available
 
-	void Start ()
+    public Material SeriesMaterial { get; set; }
+
+    private int episodeCount;
+    
+    struct BoxData
+    {
+        public float Season;
+        public float Episode;
+        public float ImdbRating;
+        public float NealsonRating;
+        public float DataAvailable;
+    }
+
+    void Start ()
+    {
+        SeriesMaterial = new Material(Main.BaseMaterial);
+        episodeCount = Episodes.Count();
+        CreateEpisodeBoxes();
+        boxDataBuffer = GetBoxDataBuffer();
+        CreateTitleText();
+        CreateSeasonLabelText();
+        CreateEpisodeLabelText();
+	}
+
+    private void CreateEpisodeBoxes()
     {
         List<EpisodeBehavior> behaviors = new List<EpisodeBehavior>();
         foreach (EpisodeData data in Episodes)
@@ -23,11 +52,26 @@ public class SeriesScript : MonoBehaviour
             EpisodeBehavior newBehavior = CreateNewEpisodeBox(data);
             behaviors.Add(newBehavior);
         }
-        episodeBehaviors = behaviors;
-        CreateTitleText();
-        CreateSeasonLabelText();
-        CreateEpisodeLabelText();
-	}
+    }
+
+    private ComputeBuffer GetBoxDataBuffer()
+    {
+        ComputeBuffer ret = new ComputeBuffer(episodeCount, BoxDataBufferStride);
+        BoxData[] data = Episodes.Select(ToBoxData).ToArray();
+        ret.SetData(data);
+        return ret;
+    }
+
+    private BoxData ToBoxData(EpisodeData data)
+    {
+        BoxData ret = new BoxData();
+        ret.Season = data.Season;
+        ret.Episode = data.Episode;
+        ret.DataAvailable = data.NealsonRating > 0 ? 1 : 0;
+        ret.ImdbRating = data.ImdbRating;
+        ret.NealsonRating = data.NealsonRating;
+        return ret;
+    }
 
     private void SetTextLabelSettings(TextMeshPro textObject)
     {
@@ -84,8 +128,8 @@ public class SeriesScript : MonoBehaviour
     private EpisodeBehavior CreateNewEpisodeBox(EpisodeData data)
     {
         GameObject box = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        Destroy(box.GetComponent<MeshRenderer>());
         box.name = data.Season + "." + data.Episode + ":" + data.Title;
-        box.GetComponent<MeshRenderer>().material = new Material(Main.BaseMaterial);
         EpisodeBehavior behavior = box.AddComponent<EpisodeBehavior>();
         behavior.Data = data;
         behavior.Main = Main;
@@ -106,5 +150,22 @@ public class SeriesScript : MonoBehaviour
         titleText.color = new Color(.5f, .5f, .5f);
         titleText.alignment = TextAlignmentOptions.Center;
         titleText.enableWordWrapping = false;
+    }
+
+    private void Update()
+    {
+        SeriesMaterial.SetBuffer("_DataBuffer", boxDataBuffer);
+        SeriesMaterial.SetMatrix("_MasterMatrix", transform.localToWorldMatrix);
+    }
+
+    private void OnRenderObject()
+    {
+        SeriesMaterial.SetPass(0);
+        Graphics.DrawProcedural(MeshTopology.Triangles, Main.BoxMesh.triangles.Length, episodeCount);
+    }
+
+    private void OnDestroy()
+    {
+        boxDataBuffer.Release();
     }
 }
