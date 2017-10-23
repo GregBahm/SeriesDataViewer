@@ -363,8 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NealsonOrImdb: 0
-  SpaceBetweenSeasons: 0.75
-  SpaceBetweenEpisodes: 0.75
+  SpaceBetweenSeasons: 1
+  SpaceBetweenEpisodes: 1
   ImdbMin: 5
   ImdbMax: 10
   ImdbScale: 15
@@ -377,6 +377,12 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 07565b43bab87d5468ff5ad675a0e672, type: 3}
   - {fileID: 4900000, guid: 9efb4dde5016ded488276177295bab62, type: 3}
   - {fileID: 4900000, guid: 790eee96ca702bf4b90075b161bfa085, type: 3}
+  - {fileID: 4900000, guid: 17b9f45dbe48aff41abdfc8c4cf9d6b2, type: 3}
+  - {fileID: 4900000, guid: a6387a4eeb309c841b527af15d1b6883, type: 3}
+  - {fileID: 4900000, guid: a2aaf6bd6db3b814e9f7b3e42bf03d59, type: 3}
+  - {fileID: 4900000, guid: c856e0c47251f9a438f83955f3daad93, type: 3}
+  - {fileID: 4900000, guid: 25887d98462ad0540bf4118870032e5c, type: 3}
+  - {fileID: 4900000, guid: 5fd86521d5e2ee945952e5f9802cb99c, type: 3}
 --- !u!4 &2014809269
 Transform:
   m_ObjectHideFlags: 0

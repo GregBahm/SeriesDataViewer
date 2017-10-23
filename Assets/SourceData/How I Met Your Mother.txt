@@ -1,0 +1,208 @@
+1.1	Pilot	10.94[4]	8.6
+1.2	Purple Giraffe	10.40[8]	8.2
+1.3	The Sweet Taste of Liberty	10.44[9]	8.2
+1.4	Return of the Shirt	9.84[10]	8.1
+1.5	Okay Awesome	10.14[11]	8.4
+1.6	The Slutty Pumpkin	10.89[12]	8.2
+1.7	Matchmaker	10.55[13]	7.9
+1.8	The Duel	10.35[14]	8.3
+1.9	Belly Full of Turkey	10.29[15]	8.2
+1.10	The Pineapple Incident	12.27[16]	9.2
+1.11	The Limo	10.36[17]	8.4
+1.12	The Wedding	11.49[18]	8.2
+1.13	Drumroll, Please	10.82[19]	8.8
+1.14	Zip, Zip, Zip	10.94[20]	8.3
+1.15	Game Night	9.82[21]	9.1
+1.16	Cupcake	10.15[22]	8
+1.17	Life Among the Gorillas	9.80[23]	7.9
+1.18	Nothing Good Happens After 2 AM	7.65[24]	8.5
+1.19	Mary the Paralegal	7.60[25]	8.9
+1.20	Best Prom Ever	7.24[26]	8
+1.21	Milk	8.07[27]	8.2
+1.22	Come On	8.64[28]	8.9
+2.1	Where Were We?	10.48[29]	8.2
+2.2	The Scorpion and the Toad	9.14[30]	8.3
+2.3	Brunch	9.32[31]	8.6
+2.4	Ted Mosby, Architect	9.09[32]	8.9
+2.5	World's Greatest Couple	9.05[33]	8.9
+2.6	Aldrin Justice	9.59[34]	8.2
+2.7	Swarley	8.22[35]	9
+2.8	Atlantic City	9.33[36]	8.1
+2.9	Slap Bet	8.85[37]	9.5
+2.10	Single Stamina	9.85[38]	8.3
+2.11	How Lily Stole Christmas	8.81	8.3
+2.12	First Time in New York	8.37[39]	8.3
+2.13	Columns	9.42[40]	8.1
+2.14	Monday Night Football	10.61[41]	8.5
+2.15	Lucky Penny	9.68[42]	8.5
+2.16	Stuff	8.95[43]	8.5
+2.17	Arrivederci, Fiero	9.33[44]	8.3
+2.18	Moving Day	7.27[45]	8.2
+2.19	Bachelor Party	9.90[46]	8.5
+2.20	Showdown	7.24[47]	8.9
+2.21	Something Borrowed	7.69[48]	8.8
+2.22	Something Blue	9.90[49]	8.8
+3.1	Wait for It	8.12[50]	8.4
+3.2	We're Not from Here	7.88[51]	7.8
+3.3	Third Wheel	7.96[52]	8.2
+3.4	Little Boys	7.71[53]	7.9
+3.5	How I Met Everyone Else	8.50[54]	9
+3.6	I'm Not That Guy	8.55	8.2
+3.7	Dowisetrepla	8.77[55]	8.1
+3.8	Spoiler Alert	8.58[56]	9.1
+3.9	Slapsgiving	8.06[57]	9
+3.10	The Yips	7.91[58]	8
+3.11	The Platinum Rule	8.49	8.6
+3.12	No Tomorrow	9.73	8.3
+3.13	Ten Sessions	10.67[59]	8.9
+3.14	The Bracket	9.50[60]	8.8
+3.15	The Chain of Screaming	7.99[61]	8.1
+3.16	Sandcastles in the Sand	8.45[62]	8.3
+3.17	The Goat	8.84[63]	8.3
+3.18	Rebound Bro	8.36[64]	8.2
+3.19	Everything Must Go	8.93[65]	7.9
+3.20	Miracles	7.99[66]	8.7
+4.1	Do I Know You?	9.79[67]	8.7
+4.2	The Best Burger in New York	8.72[68]	8.5
+4.3	I Heart NJ	8.97[69]	7.8
+4.4	Intervention	9.25[70]	8.9
+4.5	Shelter Island	9.45[71]	8.3
+4.6	Happily Ever After	9.40[72]	8.1
+4.7	Not a Father's Day	9.79[73]	8
+4.8	Woooo!	9.99[74]	8.2
+4.9	The Naked Man	10.04[75]	9.2
+4.10	The Fight	10.49[76]	8.4
+4.11	Little Minnesota	11.44[77]	8.2
+4.12	Benefits	11.76[78]	8.6
+4.13	Three Days of Snow	10.69[79]	8.5
+4.14	The Possimpible	10.30[80]	8.5
+4.15	The Stinsons	11.08[81]	8.4
+4.16	Sorry, Bro	8.51[82]	7.9
+4.17	The Front Porch	9.29[83]	8.5
+4.18	Old King Clancy	7.36[84]	7.8
+4.19	Murtaugh	9.20[85]	8.5
+4.20	Mosbius Designs	9.56[86]	7.8
+4.21	The Three Days Rule	8.87[87]	8.7
+4.22	Right Place Right Time	8.89[88]	8.3
+4.23	As Fast as She Can	8.70[89]	7.8
+4.24	The Leap	8.73[90]	8.8
+5.1	Definitions	9.09[91]	8.6
+5.2	Double Date	8.73[92]	8.2
+5.3	Robin 101	8.23[93]	8.4
+5.4	The Sexless Innkeeper	8.56[94]	8.1
+5.5	Duel Citizenship	8.07[95]	7.9
+5.6	Bagpipes	8.82[96]	7.9
+5.7	The Rough Patch	8.82[97]	7.9
+5.8	The Playbook	8.44[98]	9.4
+5.9	Slapsgiving 2: Revenge of the Slap	8.75[99]	8
+5.10	The Window	8.79[100]	8.2
+5.11	Last Cigarette Ever	9.65[101]	7.9
+5.12	Girls vs. Suits	9.78[102]	9.1
+5.13	Jenkins	10.52[103]	8.7
+5.14	Perfect Week	9.28[104]	8.9
+5.15	Rabbit or Duck	10.00[105]	8.1
+5.16	Hooked	10.37[106]	7.9
+5.17	Of Course	10.06[107]	8.4
+5.18	Say Cheese	8.37[108]	8.3
+5.19	Zoo or False	6.88[109]	7.7
+5.20	Home Wreckers	7.71[110]	7.9
+5.21	Twin Beds	7.70[111]	7.8
+5.22	Robots vs. Wrestlers	8.16[112]	8.3
+5.23	The Wedding Bride	7.69[113]	8.2
+5.24	Doppelgangers	8.18[114]	8.5
+6.1	Big Days	8.79[115]	8.2
+6.2	Cleaning House	9.00[116]	8.3
+6.3	Unfinished	8.60[117]	7.9
+6.4	Subway Wars	8.48[118]	8.6
+6.5	Architect of Destruction	8.05[119]	7.9
+6.6	Baby Talk	8.29[120]	7.9
+6.7	Canning Randy	8.88[121]	7.8
+6.8	Natural History	8.87[122]	8.2
+6.9	Glitter	8.87[123]	8.6
+6.10	Blitzgiving	8.73[124]	9.1
+6.11	The Mermaid Theory	9.26[125]	8
+6.12	False Positive	9.70[126]	8.3
+6.13	Bad News	10.15[127]	8.9
+6.14	Last Words	10.54[128]	8.6
+6.15	Oh Honey	10.00[129]	8.9
+6.16	Desperation Day	9.51[130]	8.1
+6.17	Garbage Island	9.33[131]	7.8
+6.18	A Change of Heart	9.24[132]	8.4
+6.19	Legendaddy	8.03[133]	8.4
+6.20	The Exploding Meatball Sub	6.87[134]	7.8
+6.21	Hopeless	6.49[135]	8
+6.22	The Perfect Cocktail	6.77[136]	8
+6.23	Landmarks	6.41[137]	7.9
+6.24	Challenge Accepted	7.15[138]	8.6
+7.1	The Best Man	11.00[139]	8.6
+7.2	The Naked Truth	12.22[139]	8.2
+7.3	Ducky Tie	10.50[140]	8.9
+7.4	The Stinson Missile Crisis	10.39[141]	8.2
+7.5	Field Trip	8.89[142]	7.6
+7.6	Mystery vs. History	9.81[143]	7.8
+7.7	Noretta	9.87[144]	7.9
+7.8	The Slutty Pumpkin Returns	10.49[145]	7.6
+7.9	Disaster Averted	10.28[146]	8.4
+7.10	Tick Tick Tick	10.42[147]	9
+7.11	The Rebound Girl	10.01[148]	8.1
+7.12	Symphony of Illumination	11.51[149]	8.8
+7.13	Tailgate	10.14[150]	7.8
+7.14	46 Minutes	10.08[151]	7.8
+7.15	The Burning Beekeeper	9.98[152]	7.3
+7.16	The Drunk Train	9.01[153]	8.2
+7.17	No Pressure	9.68[154]	8.5
+7.18	Karma	9.07[155]	8
+7.19	The Broath	8.15[156]	8.7
+7.20	Trilogy Time	8.00[157]	8.6
+7.21	Now We're Even	7.24[158]	8.1
+7.22	Good Crazy	7.99[159]	7.9
+7.23	The Magician's Code: Part 1	8.58[160]	8.6
+7.24	The Magician's Code: Part 2	8.58[160]	8.9
+8.1	Farhampton	8.84[161]	8.6
+8.2	The Pre-Nup	8.17[162]	7.5
+8.3	Nannies	7.82[163]	7.4
+8.4	Who Wants to Be a Godparent	7.93[164]	7.6
+8.5	The Autumn of Breakups	7.22[165]	7.5
+8.6	Splitsville	7.95[166]	7.6
+8.7	The Stamp Tramp	7.45[167]	7.5
+8.8	Twelve Horny Women	8.73[168]	7.6
+8.9	Lobster Crawl	8.26[169]	7.6
+8.10	The Over-Correction	8.82[170]	8.1
+8.11	The Final Page: Part One	8.70[171]	8.6
+8.12	The Final Page: Part Two	8.70[171]	9.4
+8.13	Band or DJ?	10.51[172]	7.9
+8.14	Ring Up!	10.07[173]	8
+8.15	P.S. I Love You	10.30[174]	8.3
+8.16	Bad Crazy	8.98[175]	7.6
+8.17	The Ashtray	8.85[176]	7.9
+8.18	Weekend at Barney's	8.59[177]	8.1
+8.19	The Fortress	7.44[178]	8
+8.20	The Time Travelers	6.99[179]	8.3
+8.21	Romeward Bound	6.58[180]	7.5
+8.22	The Bro Mitzvah	7.06[181]	8.7
+8.23	Something Old	6.99[182]	7.7
+8.24	Something New	8.57[183]	8.8
+9.1	The Locket	9.40[184]	7.9
+9.2	Coming Back	9.40[184]	7.8
+9.3	Last Time in New York	7.87[185]	7.7
+9.4	The Broken Code	7.53[186]	7.4
+9.5	The Poker Game	7.98[187]	7.3
+9.6	Knight Vision	7.64[188]	7.6
+9.7	No Questions Asked	7.63[189]	7.4
+9.8	The Lighthouse	8.67[190]	7.4
+9.9	Platonish	8.08[191]	8.4
+9.10	Mom and Dad	8.11[192]	6.8
+9.11	Bedtime Stories	7.64[193]	5.8
+9.12	The Rehearsal Dinner	8.04[194]	7.8
+9.13	Bass Player Wanted	7.71[195]	8.3
+9.14	Slapsgiving 3: Slappointment in Slapmarra	8.59[196]	5.8
+9.15	Unpause	8.83[197]	8.5
+9.16	How Your Mother Met Me	10.81[198]	9.5
+9.17	Sunrise	9.98[199]	8.3
+9.18	Rally	9.28[200]	8.1
+9.19	Vesuvius	9.11[201]	7.8
+9.20	Daisy	7.70[202]	8.5
+9.21	Gary Blauman	7.78[203]	8.3
+9.22	The End of the Aisle	9.04[204]	9
+9.23	Last Forever: Part One	13.13[205]	6.9
+9.24	Last Forever: Part Two	13.13[205]	5.7
