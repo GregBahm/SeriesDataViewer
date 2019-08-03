@@ -7,7 +7,6 @@ using UnityEngine;
 class EpisodeBehavior : MonoBehaviour
 {
     public EpisodeData Data { get; set; }
-    public MainScript Main { get; set; }
     public SeriesScript Series { get; set; }
 
     private Material Mat;
@@ -19,26 +18,26 @@ class EpisodeBehavior : MonoBehaviour
 
     private void Update()
     {
-        float baseImdb = (Data.ImdbRating - Main.ImdbMin) / (Main.ImdbMax - Main.ImdbMin);
+        float baseImdb = (Data.ImdbRating - MainScript.Instance.ImdbMin) / (MainScript.Instance.ImdbMax - MainScript.Instance.ImdbMin);
 
-        float nealsonScale = Data.NealsonRating / Main.HighestNelson * Main.HeightScale;
+        float nealsonScale = Data.NealsonRating / MainScript.Instance.HighestNelson * MainScript.Instance.HeightScale;
         float nealsonHeightPos = nealsonScale / 2;
 
-        float imdbTop = Main.HeightScale - Main.ImdbScale / 2;
-        float imdbBotom = Main.ImdbScale / 2;
+        float imdbTop = MainScript.Instance.HeightScale - MainScript.Instance.ImdbScale / 2;
+        float imdbBotom = MainScript.Instance.ImdbScale / 2;
 
         float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseImdb);
-        float imdbScale = Main.ImdbScale;
+        float imdbScale = MainScript.Instance.ImdbScale;
 
-        float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, Main.NealsonOrImdb);
-        float heightScale = Mathf.Lerp(nealsonScale, imdbScale, Main.NealsonOrImdb);
+        float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, MainScript.Instance.NealsonOrImdb);
+        float heightScale = Mathf.Lerp(nealsonScale, imdbScale, MainScript.Instance.NealsonOrImdb);
 
-        transform.localScale = new Vector3(Main.SpaceBetweenSeasons, heightScale, Main.SpaceBetweenEpisodes);
+        transform.localScale = new Vector3(MainScript.Instance.SpaceBetweenSeasons, heightScale, MainScript.Instance.SpaceBetweenEpisodes);
         transform.localPosition = new Vector3(-Data.Season, heightPos, - Data.Episode);
         Mat.SetFloat("_SeasonParam", Data.Season / Series.MaxSeason);
         Mat.SetFloat("_EpisodeParam", Data.Episode / Series.MaxEpisode);
         Mat.SetFloat("_ImdbParam", baseImdb);
-        Mat.SetFloat("_NealsonOrImdb", Main.NealsonOrImdb);
+        Mat.SetFloat("_NealsonOrImdb", MainScript.Instance.NealsonOrImdb);
         Mat.SetFloat("_DataAvailable", Data.NealsonRating > 0 ? 1 : 0);
     }
 }

@@ -7,7 +7,6 @@ using TMPro;
 
 public class SeriesScript : MonoBehaviour
 {
-    public MainScript Main { get; set; }
     public float MaxNealson { get; set; }
     public float MaxSeason { get; set; }
     public float MaxEpisode { get; set; }
@@ -35,7 +34,7 @@ public class SeriesScript : MonoBehaviour
 
     void Start ()
     {
-        SeriesMaterial = new Material(Main.BaseMaterial);
+        SeriesMaterial = new Material(MainScript.Instance.BaseMaterial);
         episodeCount = Episodes.Count();
         CreateEpisodeBoxes();
         boxDataBuffer = GetBoxDataBuffer();
@@ -89,7 +88,7 @@ public class SeriesScript : MonoBehaviour
         seasonText.text = "S\nE\nA\nS\nO\nN";
         seasonText.fontSize = 8;
         SetTextLabelSettings(seasonText);
-        seasonText.transform.parent = transform;
+        seasonText.transform.SetParent(transform, false);
         seasonText.transform.localPosition = new Vector3(-MaxSeason / 2, 0, 2f);
 
         for (int i = 0; i < MaxSeason; i++)
@@ -98,7 +97,7 @@ public class SeriesScript : MonoBehaviour
             TextMeshPro seasonNumberText = seasonNumberLabel.AddComponent<TextMeshPro>();
             seasonNumberText.text = (i + 1).ToString();
             seasonNumberText.fontSize = 6;
-            seasonNumberLabel.transform.parent = transform;
+            seasonNumberLabel.transform.SetParent(transform, false);
             seasonNumberLabel.transform.localPosition = new Vector3(-i - 1, 0, .5f);
             SetTextLabelSettings(seasonNumberText);
         }
@@ -111,7 +110,7 @@ public class SeriesScript : MonoBehaviour
         episodeText.text = "EPISODE";
         episodeText.fontSize = 8;
         SetTextLabelSettings(episodeText);
-        episodeText.transform.parent = transform;
+        episodeText.transform.SetParent(transform, false);
         episodeText.transform.localPosition = new Vector3(2, 0, -MaxEpisode / 2f);
         for (int i = 0; i < MaxEpisode; i++)
         {
@@ -119,7 +118,7 @@ public class SeriesScript : MonoBehaviour
             TextMeshPro episodeNumberText = episodeNumberLabel.AddComponent<TextMeshPro>();
             episodeNumberText.text = (i + 1).ToString();
             episodeNumberText.fontSize = 6;
-            episodeNumberLabel.transform.parent = transform;
+            episodeNumberLabel.transform.SetParent(transform, false);
             episodeNumberLabel.transform.localPosition = new Vector3(.5f, 0, - i - 1);
             SetTextLabelSettings(episodeNumberText);
         }
@@ -132,9 +131,8 @@ public class SeriesScript : MonoBehaviour
         box.name = data.Season + "." + data.Episode + ":" + data.Title;
         EpisodeBehavior behavior = box.AddComponent<EpisodeBehavior>();
         behavior.Data = data;
-        behavior.Main = Main;
         behavior.Series = this;
-        box.transform.parent = transform;
+        box.transform.SetParent(transform, false);
         return behavior;
     }
 
@@ -145,7 +143,7 @@ public class SeriesScript : MonoBehaviour
         titleText.text = name;
         titleText.fontSize = 36;
         titleText.transform.rotation = Quaternion.Euler(90, 90, 0);
-        titleText.transform.parent = transform;
+        titleText.transform.SetParent(transform, false);
         titleText.transform.localPosition = new Vector3(-MaxSeason - 4, 0, -MaxEpisode / 2);
         titleText.color = new Color(.5f, .5f, .5f);
         titleText.alignment = TextAlignmentOptions.Center;
@@ -161,7 +159,7 @@ public class SeriesScript : MonoBehaviour
     private void OnRenderObject()
     {
         SeriesMaterial.SetPass(0);
-        Graphics.DrawProcedural(MeshTopology.Triangles, Main.BoxMesh.triangles.Length, episodeCount);
+        Graphics.DrawProceduralNow(MeshTopology.Triangles, MainScript.Instance.BoxMesh.triangles.Length, episodeCount);
     }
 
     private void OnDestroy()

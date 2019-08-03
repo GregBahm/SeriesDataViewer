@@ -6,6 +6,10 @@ using System.Linq;
 
 public class MainScript : MonoBehaviour
 {
+    public static MainScript Instance;
+
+    public Transform RootTransform;
+
     [Range(0, 1)]
     public float NealsonOrImdb;
 
@@ -38,6 +42,11 @@ public class MainScript : MonoBehaviour
         public Vector3 Normal;
     }
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start ()
     {
         meshBuffer = GetMeshBuffer();
@@ -52,8 +61,8 @@ public class MainScript : MonoBehaviour
             script.MaxNealson = script.Episodes.Max(item => item.NealsonRating);
             script.MaxSeason = script.Episodes.Max(item => item.Season);
             script.MaxEpisode = script.Episodes.Max(item => item.Episode);
-            script.Main = this;
-            obj.transform.position = new Vector3(0, 0, -episodeCount);
+            obj.transform.SetParent(RootTransform, false);
+            obj.transform.localPosition = new Vector3(0, 0, -episodeCount);
             episodeCount += (int)script.MaxEpisode + 10; // + 5 for margin
             eachSeries.Add(script);
         }
