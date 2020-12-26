@@ -12,32 +12,12 @@ public class SeriesScript : MonoBehaviour
     public float MaxEpisode { get; set; }
     public IEnumerable<EpisodeData> Episodes { get; set; }
 
-    private ComputeBuffer boxDataBuffer;
-    private const int BoxDataBufferStride = sizeof(float) // Season
-        + sizeof(float) // Episode
-        + sizeof(float) // IMDB Rating
-        + sizeof(float) // Nealson Rating
-        + sizeof(float); // Data Available
-
-    public Material SeriesMaterial { get; set; }
-
     private int episodeCount;
     
-    struct BoxData
-    {
-        public float Season;
-        public float Episode;
-        public float ImdbRating;
-        public float NealsonRating;
-        public float DataAvailable;
-    }
-
     void Start ()
     {
-        SeriesMaterial = new Material(MainScript.Instance.BaseMaterial);
         episodeCount = Episodes.Count();
         CreateEpisodeBoxes();
-        boxDataBuffer = GetBoxDataBuffer();
         CreateTitleText();
         CreateSeasonLabelText();
         CreateEpisodeLabelText();
@@ -52,26 +32,7 @@ public class SeriesScript : MonoBehaviour
             behaviors.Add(newBehavior);
         }
     }
-
-    private ComputeBuffer GetBoxDataBuffer()
-    {
-        ComputeBuffer ret = new ComputeBuffer(episodeCount, BoxDataBufferStride);
-        BoxData[] data = Episodes.Select(ToBoxData).ToArray();
-        ret.SetData(data);
-        return ret;
-    }
-
-    private BoxData ToBoxData(EpisodeData data)
-    {
-        BoxData ret = new BoxData();
-        ret.Season = data.Season;
-        ret.Episode = data.Episode;
-        ret.DataAvailable = data.NealsonRating > 0 ? 1 : 0;
-        ret.ImdbRating = data.ImdbRating;
-        ret.NealsonRating = data.NealsonRating;
-        return ret;
-    }
-
+    
     private void SetTextLabelSettings(TextMeshPro textObject)
     {
         textObject.color = new Color(.5f, .5f, .5f);
@@ -126,10 +87,9 @@ public class SeriesScript : MonoBehaviour
 
     private EpisodeBehavior CreateNewEpisodeBox(EpisodeData data)
     {
-        GameObject box = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        box.GetComponent<MeshRenderer>().enabled = false;
+        GameObject box = GameObject.Instantiate(MainScript.Instance.EpisodePrefab);
         box.name = data.Season + "." + data.Episode + ":" + data.Title;
-        EpisodeBehavior behavior = box.AddComponent<EpisodeBehavior>();
+        EpisodeBehavior behavior = box.GetComponent<EpisodeBehavior>();
         behavior.Data = data;
         behavior.Series = this;
         box.transform.SetParent(transform, false);
@@ -148,22 +108,5 @@ public class SeriesScript : MonoBehaviour
         titleText.color = new Color(.5f, .5f, .5f);
         titleText.alignment = TextAlignmentOptions.Center;
         titleText.enableWordWrapping = false;
-    }
-
-    private void Update()
-    {
-        SeriesMaterial.SetBuffer("_DataBuffer", boxDataBuffer);
-        SeriesMaterial.SetMatrix("_MasterMatrix", transform.localToWorldMatrix);
-    }
-
-    private void OnRenderObject()
-    {
-        SeriesMaterial.SetPass(0);
-        Graphics.DrawProceduralNow(MeshTopology.Triangles, MainScript.Instance.BoxMesh.triangles.Length, episodeCount);
-    }
-
-    private void OnDestroy()
-    {
-        boxDataBuffer.Release();
     }
 }
