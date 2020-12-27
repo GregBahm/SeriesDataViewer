@@ -18,7 +18,6 @@ public class SeriesScript : MonoBehaviour
     {
         episodeCount = Episodes.Count();
         CreateEpisodeBoxes();
-        CreateTitleText();
         CreateSeasonLabelText();
         CreateEpisodeLabelText();
 	}
@@ -35,8 +34,7 @@ public class SeriesScript : MonoBehaviour
     
     private void SetTextLabelSettings(TextMeshPro textObject)
     {
-        textObject.color = new Color(.5f, .5f, .5f);
-        textObject.transform.rotation = Quaternion.Euler(90, 90, 0);
+        textObject.color = Color.white;
         textObject.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 0);
         textObject.alignment = TextAlignmentOptions.Midline;
         textObject.enableWordWrapping = false;
@@ -49,6 +47,7 @@ public class SeriesScript : MonoBehaviour
         seasonText.text = "S\nE\nA\nS\nO\nN";
         seasonText.fontSize = 8;
         SetTextLabelSettings(seasonText);
+        seasonText.transform.rotation = Quaternion.Euler(90, 90, 0);
         seasonText.transform.SetParent(transform, false);
         seasonText.transform.localPosition = new Vector3(-MaxSeason / 2, 0, 2f);
 
@@ -61,6 +60,7 @@ public class SeriesScript : MonoBehaviour
             seasonNumberLabel.transform.SetParent(transform, false);
             seasonNumberLabel.transform.localPosition = new Vector3(-i - 1, 0, .5f);
             SetTextLabelSettings(seasonNumberText);
+            seasonNumberLabel.transform.rotation = Quaternion.Euler(90, 90, 90);
         }
     }
 
@@ -71,8 +71,9 @@ public class SeriesScript : MonoBehaviour
         episodeText.text = "EPISODE";
         episodeText.fontSize = 8;
         SetTextLabelSettings(episodeText);
+        episodeText.transform.rotation = Quaternion.Euler(90, 90, 0);
         episodeText.transform.SetParent(transform, false);
-        episodeText.transform.localPosition = new Vector3(2, 0, -MaxEpisode / 2f);
+        episodeText.transform.localPosition = new Vector3(-(MaxSeason + 2), 0, -MaxEpisode / 2f);
         for (int i = 0; i < MaxEpisode; i++)
         {
             GameObject episodeNumberLabel = new GameObject("Episode " + (i + 1).ToString());
@@ -80,8 +81,9 @@ public class SeriesScript : MonoBehaviour
             episodeNumberText.text = (i + 1).ToString();
             episodeNumberText.fontSize = 6;
             episodeNumberLabel.transform.SetParent(transform, false);
-            episodeNumberLabel.transform.localPosition = new Vector3(.5f, 0, - i - 1);
+            episodeNumberLabel.transform.localPosition = new Vector3(- (MaxSeason + 1), 0, - i - 1);
             SetTextLabelSettings(episodeNumberText);
+            episodeNumberLabel.transform.rotation = Quaternion.Euler(90, 90, 90);
         }
     }
 
@@ -94,19 +96,5 @@ public class SeriesScript : MonoBehaviour
         behavior.Series = this;
         box.transform.SetParent(transform, false);
         return behavior;
-    }
-
-    private void CreateTitleText()
-    {
-        GameObject titleObject = new GameObject("Title");
-        TextMeshPro titleText = titleObject.AddComponent<TextMeshPro>();
-        titleText.text = name;
-        titleText.fontSize = 36;
-        titleText.transform.rotation = Quaternion.Euler(90, 90, 0);
-        titleText.transform.SetParent(transform, false);
-        titleText.transform.localPosition = new Vector3(-MaxSeason - 4, 0, -MaxEpisode / 2);
-        titleText.color = new Color(.5f, .5f, .5f);
-        titleText.alignment = TextAlignmentOptions.Center;
-        titleText.enableWordWrapping = false;
     }
 }
