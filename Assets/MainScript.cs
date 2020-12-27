@@ -37,10 +37,12 @@ public class MainScript : MonoBehaviour
     public float HighestNelson { get; set; }
 
     public TextAsset[] SeriesAssets;
-    private List<SeriesScript> eachSeries;
+    private List<SeriesBehavior> eachSeries;
 
     public GameObject EpisodePrefab;
     public int ShowToShow;
+
+    public SeriesBehavior ShownSeries { get { return eachSeries[ShowToShow]; } }
     
     private void Awake()
     {
@@ -49,29 +51,26 @@ public class MainScript : MonoBehaviour
 
     void Start ()
     {
-        eachSeries = new List<SeriesScript>();
+        eachSeries = new List<SeriesBehavior>();
         foreach (TextAsset dataSource in SeriesAssets)
         {
             eachSeries.Add(LoadShow(dataSource));
         }
-        HighestNelson = eachSeries.Max(item => item.MaxNealson);
+        HighestNelson = eachSeries.Max(item => item.Episodes.Max(ep => ep.NealsonRating));
     }
 
-    private SeriesScript LoadShow(TextAsset dataSource)
+    private SeriesBehavior LoadShow(TextAsset dataSource)
     {
         GameObject obj = new GameObject(dataSource.name);
-        SeriesScript ret = obj.AddComponent<SeriesScript>();
+        SeriesBehavior ret = obj.AddComponent<SeriesBehavior>();
         ret.Episodes = DataLoader.LoadData(dataSource);
-        ret.MaxNealson = ret.Episodes.Max(item => item.NealsonRating);
-        ret.MaxSeason = ret.Episodes.Max(item => item.Season);
-        ret.MaxEpisode = ret.Episodes.Max(item => item.Episode);
         obj.transform.SetParent(RootTransform, false);
-        obj.transform.localPosition = new Vector3(ret.MaxEpisode / 2, 0, ret.MaxSeason / 2);
         return ret;
     }
 
     private void Update()
     {
+        ShowToShow = ShowToShow % eachSeries.Count;
         UpdateSeriesVisibility();
         UpdateShaderParameters();
     }

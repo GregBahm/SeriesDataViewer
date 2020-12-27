@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-class EpisodeBehavior : MonoBehaviour
+public class EpisodeBehavior : MonoBehaviour
 {
     public EpisodeData Data { get; set; }
-    public SeriesScript Series { get; set; }
+    public SeriesBehavior Series { get; set; }
 
     private Material Mat;
 

@@ -1,61 +1,40 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Interaction
 {
+    [RequireComponent(typeof(MainScript))]
     [RequireComponent(typeof(CameraInteraction))]
     public class MouseInteractionManager : MonoBehaviour
     {
+        private MainScript main;
         private CameraInteraction cameraInteraction;
 
         private DragDetector leftDragDetector;
-        private DragDetector rightDragDetector;
 
         [SerializeField]
         private float dragStartDistance = 2;
 
-        // Start is called before the first frame update
         void Start()
         {
+            main = GetComponent<MainScript>();
             cameraInteraction = GetComponent<CameraInteraction>();
             leftDragDetector = new DragDetector(dragStartDistance);
-            rightDragDetector = new DragDetector(dragStartDistance);
         }
 
-        // Update is called once per frame
         void Update()
         {
+            HandleCentering();
             HandleOrbit();
-            HandlePan();
             cameraInteraction.HandleMouseScrollwheel();
         }
 
-        private void HandlePan()
+        private void HandleCentering()
         {
-            if (Input.GetMouseButton(1))
-            {
-                if (rightDragDetector.IsDragging)
-                {
-                    cameraInteraction.ContinuePan();
-                }
-                else
-                {
-                    if (Input.GetMouseButtonDown(1))
-                    {
-                        rightDragDetector.DragStartPos = Input.mousePosition;
-                        cameraInteraction.StartPan();
-                    }
-                    else
-                    {
-                        rightDragDetector.UpdateIsDragging();
-                    }
-                }
-            }
-            else
-            {
-                rightDragDetector.IsDragging = false;
-            }
+            float yTarget = main.ShownSeries.GetHeightForCameraOrbit();
+            cameraInteraction.OrbitPoint.localPosition = new Vector3(0, yTarget, 0);
         }
 
         private void HandleOrbit()

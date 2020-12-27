@@ -16,19 +16,15 @@ namespace Interaction
         [SerializeField]
         private float panSpeed = 0.1f;
 
-        private static readonly Vector3 screenCenter = new Vector3(.5f, .5f, 0);
         private Vector3 orbitScreenStart;
         private Vector3 orbitStartAngle;
-        private Transform orbitPoint;
-
-        private Vector3 panScreenStart;
-        private Vector3 panCameraStart;
+        public Transform OrbitPoint { get; private set; }
 
         private void Start()
         {
-            orbitPoint = new GameObject("Camera Orbit").transform; 
-            orbitPoint.LookAt(Camera.main.transform, Vector3.up);
-            Camera.main.transform.SetParent(orbitPoint, true);
+            OrbitPoint = new GameObject("Camera Orbit").transform;
+            OrbitPoint.LookAt(Camera.main.transform, Vector3.up);
+            Camera.main.transform.SetParent(OrbitPoint, true);
             StartOrbit();
         }
 
@@ -45,22 +41,8 @@ namespace Interaction
         public void StartOrbit()
         {
             orbitScreenStart = Input.mousePosition;
-            orbitStartAngle = orbitPoint.eulerAngles;
+            orbitStartAngle = OrbitPoint.eulerAngles;
         }
-
-        internal void ContinuePan()
-        {
-            Vector3 offset = Input.mousePosition - panScreenStart;
-            offset *= new Vector2(panSpeed, -panSpeed);
-            Camera.main.transform.localPosition = panCameraStart + offset;
-        }
-
-        internal void StartPan()
-        {
-            panScreenStart = Input.mousePosition;
-            panCameraStart = Camera.main.transform.localPosition;
-        }
-
 
         public void ContinueOrbit()
         {
@@ -73,7 +55,7 @@ namespace Interaction
             }
             float pitch = -screenDelta.y * orbitSpeed + startAngle;
             pitch = Mathf.Clamp(pitch, 280, 440);
-            orbitPoint.rotation = Quaternion.Euler(pitch, yaw, 0);
+            OrbitPoint.rotation = Quaternion.Euler(pitch, yaw, 0);
         }
     }
 }
