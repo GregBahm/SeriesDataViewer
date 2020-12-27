@@ -79,7 +79,7 @@ public class MainScript : MonoBehaviour
     private void UpdateShaderParameters()
     {
         Shader.SetGlobalFloat("_BarGlossiness", BarGloss);
-        Shader.SetGlobalFloat("_BarMetallic", BarGloss);
+        Shader.SetGlobalFloat("_BarMetallic", BarMetallic);
         Shader.SetGlobalFloat("_BarEmissiveStrength", BarEmissive);
         Shader.SetGlobalColor("_BarTint", BarTint);
     }
