@@ -32,8 +32,8 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   preset:
-    overrideState: 0
-    value: 2
+    overrideState: 1
+    value: 4
   maximumIterationCount:
     overrideState: 0
     value: 16
@@ -44,14 +44,14 @@ MonoBehaviour:
     overrideState: 0
     value: 8
   maximumMarchDistance:
-    overrideState: 0
-    value: 100
+    overrideState: 1
+    value: 1
   distanceFade:
-    overrideState: 0
-    value: 0.5
+    overrideState: 1
+    value: 0
   vignette:
-    overrideState: 0
-    value: 0.5
+    overrideState: 1
+    value: 0
 --- !u!114 &4372966692992047777
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -67,16 +67,16 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 1
+    value: 0
   mode:
     overrideState: 1
     value: 0
   intensity:
     overrideState: 1
-    value: 1
+    value: 4
   color:
-    overrideState: 0
-    value: {r: 0, g: 0, b: 0, a: 1}
+    overrideState: 1
+    value: {r: 0.3013083, g: 0.40452275, b: 0.5754717, a: 1}
   ambientOnly:
     overrideState: 0
     value: 1

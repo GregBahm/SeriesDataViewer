@@ -25,19 +25,19 @@
 
         fixed4 _BarTint;
 
-        float _SeasonParam;
-        float _EpisodeParam;
         float _ImdbParam;
-        float _NealsonOrImdb;
 
         UNITY_INSTANCING_BUFFER_START(Props)
         UNITY_INSTANCING_BUFFER_END(Props)
 
         float3 GetColor()
         {
-            float3 color = lerp(float3(1, 0, 0), float3(0, 1, 0), _ImdbParam);
-            float minColor = max(color.x, color.y);
-            color = color / minColor;
+            float3 goodColor = float3(0, 2, 1);
+            float3 badColor = float3(2, 0, .5);
+            float3 color = lerp(badColor, goodColor, _ImdbParam);
+            color = pow(color, .5) * 3 - 2;
+            //float minColor = max(color.x, color.y);
+            //color = color / minColor;
             return color;
         }
 
