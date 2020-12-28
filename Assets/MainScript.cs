@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Linq;
 using System;
+using UnityEngine.UI;
 
 public class MainScript : MonoBehaviour
 {
@@ -43,7 +44,9 @@ public class MainScript : MonoBehaviour
     public int ShowToShow;
 
     public SeriesBehavior ShownSeries { get { return eachSeries[ShowToShow]; } }
-    
+
+    public Slider NealsonOrImdbSlider;
+
     private void Awake()
     {
         Instance = this;
@@ -73,6 +76,12 @@ public class MainScript : MonoBehaviour
         ShowToShow = ShowToShow % eachSeries.Count;
         UpdateSeriesVisibility();
         UpdateShaderParameters();
+        UpdateSlider();
+    }
+
+    private void UpdateSlider()
+    {
+        NealsonOrImdb = NealsonOrImdbSlider.value;
     }
 
     private void UpdateShaderParameters()

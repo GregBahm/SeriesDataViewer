@@ -29,9 +29,10 @@ public class SeriesBehavior : MonoBehaviour
 
     public float GetHeightForCameraOrbit()
     {
-        float maxY = EpisodeBehaviors.Max(item => item.gameObject.transform.position.y);
-        float minY = EpisodeBehaviors.Min(item => item.gameObject.transform.position.y);
-        return (maxY + minY) / 2;
+        float maxY = EpisodeBehaviors.Max(item => item.gameObject.transform.localPosition.y);
+        float minY = EpisodeBehaviors.Min(item => item.gameObject.transform.localPosition.y);
+        float ret = (maxY + minY) / 2;
+        return ret * transform.lossyScale.y;
     }
 
     private IEnumerable<EpisodeBehavior> CreateEpisodeBoxes()
