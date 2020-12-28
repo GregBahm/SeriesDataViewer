@@ -16,9 +16,15 @@ public class EpisodeBehavior : MonoBehaviour
         Mat = GetComponent<MeshRenderer>().material;
     }
 
+    private float GetImdbVal(float sourceImdbVal)
+    {
+        return (sourceImdbVal - MainScript.Instance.ImdbMin) / (MainScript.Instance.ImdbMax - MainScript.Instance.ImdbMin);
+    }
+
     private void Update()
     {
-        float baseImdb = (Data.ImdbRating - MainScript.Instance.ImdbMin) / (MainScript.Instance.ImdbMax - MainScript.Instance.ImdbMin);
+        float baseImdb = GetImdbVal(Data.ImdbRating);
+        float baseForHeight = GetImdbVal(Data.ImdbRating - 5);
 
         float nealsonScale = Data.NealsonRating / MainScript.Instance.HighestNelson * MainScript.Instance.HeightScale;
         float nealsonHeightPos = nealsonScale / 2;
@@ -26,14 +32,14 @@ public class EpisodeBehavior : MonoBehaviour
         float imdbTop = MainScript.Instance.HeightScale - MainScript.Instance.ImdbScale / 2;
         float imdbBotom = MainScript.Instance.ImdbScale / 2;
 
-        float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseImdb);
+        float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseForHeight);
         float imdbScale = MainScript.Instance.ImdbScale;
 
         float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, MainScript.Instance.NealsonOrImdb);
         float heightScale = Mathf.Lerp(nealsonScale, imdbScale, MainScript.Instance.NealsonOrImdb);
 
         transform.localScale = new Vector3(MainScript.Instance.SpaceBetweenSeasons, heightScale, MainScript.Instance.SpaceBetweenEpisodes);
-        transform.localPosition = new Vector3(-Data.Season, heightPos, - Data.Episode);
+        transform.localPosition = new Vector3(-(Data.Season - 1), heightPos, - (Data.Episode - 1));
         Mat.SetFloat("_SeasonParam", Data.Season / Series.MaxSeason);
         Mat.SetFloat("_EpisodeParam", Data.Episode / Series.MaxEpisode);
         Mat.SetFloat("_ImdbParam", baseImdb);

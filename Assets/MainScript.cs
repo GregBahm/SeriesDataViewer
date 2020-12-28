@@ -41,6 +41,7 @@ public class MainScript : MonoBehaviour
     private List<SeriesBehavior> eachSeries;
 
     public GameObject EpisodePrefab;
+    public Material StageBoxMat;
     public int ShowToShow;
 
     public SeriesBehavior ShownSeries { get { return eachSeries[ShowToShow]; } }

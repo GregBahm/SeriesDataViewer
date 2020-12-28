@@ -36,7 +36,7 @@ public class MouseInteractionManager : MonoBehaviour
     {
         main = GetComponent<MainScript>();
         leftDragDetector = new DragDetector(dragStartDistance);
-        OrbitPoint = new GameObject("Camera Orbit").transform;
+        OrbitPoint = new GameObject("Stage Orbit").transform;
 
         RootTransform.SetParent(OrbitPoint, true);
         StartOrbit();
@@ -52,18 +52,9 @@ public class MouseInteractionManager : MonoBehaviour
         {
             HandleOrbit();
         }
-        HandleCentering();
         //cameraInteraction.HandleMouseScrollwheel();
     }
     
-
-    private void HandleCentering()
-    {
-        float yTarget = -main.ShownSeries.GetHeightForCameraOrbit();
-        float newY = Mathf.Lerp(yTarget, RootTransform.localPosition.y, Time.deltaTime * 25);
-        RootTransform.localPosition = new Vector3(0, newY, 0);
-    }
-
     private void HandleOrbit()
     {
         if (Input.GetMouseButton(0))
