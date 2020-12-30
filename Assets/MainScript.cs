@@ -38,13 +38,13 @@ public class MainScript : MonoBehaviour
     public float HighestNelson { get; set; }
 
     public TextAsset[] SeriesAssets;
-    private List<SeriesBehavior> eachSeries;
+    public List<SeriesBehavior> EachSeries { get; private set; }
 
     public GameObject EpisodePrefab;
     public Material StageBoxMat;
     public int ShowToShow;
 
-    public SeriesBehavior ShownSeries { get { return eachSeries[ShowToShow]; } }
+    public SeriesBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
 
     private void Awake()
     {
@@ -53,12 +53,12 @@ public class MainScript : MonoBehaviour
 
     void Start ()
     {
-        eachSeries = new List<SeriesBehavior>();
+        EachSeries = new List<SeriesBehavior>();
         foreach (TextAsset dataSource in SeriesAssets)
         {
-            eachSeries.Add(LoadShow(dataSource));
+            EachSeries.Add(LoadShow(dataSource));
         }
-        HighestNelson = eachSeries.Max(item => item.Episodes.Max(ep => ep.NealsonRating));
+        HighestNelson = EachSeries.Max(item => item.Episodes.Max(ep => ep.NealsonRating));
     }
 
     private SeriesBehavior LoadShow(TextAsset dataSource)
@@ -72,7 +72,7 @@ public class MainScript : MonoBehaviour
 
     private void Update()
     {
-        ShowToShow = ShowToShow % eachSeries.Count;
+        ShowToShow = ShowToShow % EachSeries.Count;
         UpdateSeriesVisibility();
         UpdateShaderParameters();
     }
@@ -87,9 +87,9 @@ public class MainScript : MonoBehaviour
 
     private void UpdateSeriesVisibility()
     {
-        for (int i = 0; i < eachSeries.Count; i++)
+        for (int i = 0; i < EachSeries.Count; i++)
         {
-            var series = eachSeries[i];
+            var series = EachSeries[i];
             series.gameObject.SetActive(i == ShowToShow);
         }
     }
