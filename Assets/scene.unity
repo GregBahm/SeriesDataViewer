@@ -510,7 +510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115474891}
   m_LocalRotation: {x: 0.10754461, y: -0, z: -0, w: 0.9942003}
-  m_LocalPosition: {x: 0, y: 0.118, z: -0.334}
+  m_LocalPosition: {x: 0, y: 0.078, z: -0.3563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 248312261}
@@ -1346,7 +1346,7 @@ Canvas:
   m_GameObject: {fileID: 962981161}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1722,6 +1722,7 @@ GameObject:
   - component: {fileID: 2014809269}
   - component: {fileID: 2014809268}
   - component: {fileID: 2014809271}
+  - component: {fileID: 2014809270}
   m_Layer: 0
   m_Name: MainScripts
   m_TagString: Untagged
@@ -1781,7 +1782,6 @@ MonoBehaviour:
     type: 3}
   StageBoxMat: {fileID: 2100000, guid: 645bfd75e414ce5408a552209f19d94d, type: 2}
   ShowToShow: 0
-  NealsonOrImdbSlider: {fileID: 1127771996}
 --- !u!4 &2014809269
 Transform:
   m_ObjectHideFlags: 0
@@ -1796,6 +1796,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2014809270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014809267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847405b9c8f4d9d448b9c5a07d4faded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2014809271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,8 +1822,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragStartDistance: 2
   scrollSpeed: 0.1
-  minZoom: 10
-  maxZoom: 100
+  minZoom: 0.2
+  maxZoom: 0.7
   orbitSpeed: 0.5
   panSpeed: 0.1
   RootTransform: {fileID: 934540511}
+  NealsonOrImdbSlider: {fileID: 1127771996}

@@ -46,8 +46,6 @@ public class MainScript : MonoBehaviour
 
     public SeriesBehavior ShownSeries { get { return eachSeries[ShowToShow]; } }
 
-    public Slider NealsonOrImdbSlider;
-
     private void Awake()
     {
         Instance = this;
@@ -77,12 +75,6 @@ public class MainScript : MonoBehaviour
         ShowToShow = ShowToShow % eachSeries.Count;
         UpdateSeriesVisibility();
         UpdateShaderParameters();
-        UpdateSlider();
-    }
-
-    private void UpdateSlider()
-    {
-        NealsonOrImdb = NealsonOrImdbSlider.value;
     }
 
     private void UpdateShaderParameters()

@@ -2,12 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-[RequireComponent(typeof(MainScript))]
 public class MouseInteractionManager : MonoBehaviour
 {
-    private MainScript main;
-
     private DragDetector leftDragDetector;
 
     [SerializeField]
@@ -25,20 +23,24 @@ public class MouseInteractionManager : MonoBehaviour
     private float panSpeed = 0.1f;
 
     private Vector3 orbitScreenStart;
-    private Vector3 orbitStartAngle;
     public Transform OrbitPoint { get; private set; }
 
     public Transform RootTransform;
+
+    private Vector2 startRotation;
+    private Vector2 currentRotation;
+
+    public Slider NealsonOrImdbSlider;
 
     public bool OrbitDisabled { get; set; }
     
     void Start()
     {
-        main = GetComponent<MainScript>();
         leftDragDetector = new DragDetector(dragStartDistance);
         OrbitPoint = new GameObject("Stage Orbit").transform;
-
         RootTransform.SetParent(OrbitPoint, true);
+        OrbitPoint.Rotate(Vector3.up, -40, Space.World);
+        OrbitPoint.Rotate(Vector3.left, 10, Space.World);
         StartOrbit();
     }
 
@@ -52,9 +54,15 @@ public class MouseInteractionManager : MonoBehaviour
         {
             HandleOrbit();
         }
-        //cameraInteraction.HandleMouseScrollwheel();
+        HandleMouseScrollwheel();
+        UpdateSlider();
     }
-    
+
+    private void UpdateSlider()
+    {
+        MainScript.Instance.NealsonOrImdb = NealsonOrImdbSlider.value;
+    }
+
     private void HandleOrbit()
     {
         if (Input.GetMouseButton(0))
@@ -84,32 +92,33 @@ public class MouseInteractionManager : MonoBehaviour
 
     public void StartOrbit()
     {
+        startRotation = currentRotation;
         orbitScreenStart = Input.mousePosition;
-        orbitStartAngle = OrbitPoint.eulerAngles;
     }
 
     public void ContinueOrbit()
     {
         Vector3 screenDelta = orbitScreenStart - Input.mousePosition;
-        float yaw = -screenDelta.x * orbitSpeed - orbitStartAngle.y;
-        float startAngle = orbitStartAngle.x;
-        if (startAngle < 180)
-        {
-            startAngle += 360;
-        }
-        float pitch = -screenDelta.y * orbitSpeed + startAngle;
-        //pitch = Mathf.Clamp(pitch, 280, 440);
-        OrbitPoint.rotation = Quaternion.Euler(pitch, -yaw, 0);
+        currentRotation = startRotation - new Vector2(screenDelta.x, screenDelta.y);
+        OrbitPoint.rotation = Quaternion.identity;
+        OrbitPoint.Rotate(Vector3.up, -currentRotation.x, Space.World);
+        OrbitPoint.Rotate(Vector3.left, -currentRotation.y, Space.World);
     }
 
     public void HandleMouseScrollwheel()
     {
-        Vector3 oldPos = Camera.main.transform.localPosition;
-        float scaleFactor = 1f - (Input.mouseScrollDelta.y * scrollSpeed);
-        float newPos = oldPos.z * scaleFactor;
-        newPos = Mathf.Clamp(newPos, minZoom, maxZoom);
-
-        Camera.main.transform.localPosition = new Vector3(oldPos.x, oldPos.y, newPos);
+        Vector3 oldVect = OrbitPoint.position - Camera.main.transform.position;
+        float changeFactor = Input.mouseScrollDelta.y * scrollSpeed;
+        Vector3 newVect = oldVect * (1 - changeFactor);
+        if(newVect.magnitude > maxZoom)
+        {
+            newVect = Camera.main.transform.forward * maxZoom;
+        }
+        if(newVect.magnitude < minZoom)
+        {
+            newVect = Camera.main.transform.forward * minZoom;
+        }
+        OrbitPoint.localPosition = Camera.main.transform.position + newVect;
     }
 
     private class DragDetector

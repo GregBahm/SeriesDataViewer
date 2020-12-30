@@ -15,10 +15,7 @@ public class SeriesBehavior : MonoBehaviour
 
     private Transform labelsTransform;
 
-    private TextMeshPro episodeLabel;
-    private TextMeshPro seasonLabel;
-    private IEnumerable<TextMeshPro> seasonNumbers;
-    private IEnumerable<TextMeshPro> episodeNumbers;
+    private List<TextMeshPro> labels;
 
     private Transform stageBox;
     
@@ -32,11 +29,13 @@ public class SeriesBehavior : MonoBehaviour
         
         EpisodeBehaviors = CreateEpisodeBoxes();
         labelsTransform = new GameObject("Labels").transform;
-        labelsTransform.SetParent(transform);
-        episodeLabel = CreateEpisodeLabel();
-        seasonLabel = CreateSeasonLabel();
-        seasonNumbers = CreateSeasonNumbers();
-        episodeNumbers = CreateEpisodeNumbers();
+        labelsTransform.SetParent(transform, false);
+
+        labels = new List<TextMeshPro>();
+        labels.AddRange(CreateEpisodeLabel());
+        labels.AddRange(CreateSeasonLabel());
+        labels.AddRange(CreateSeasonNumbers());
+        labels.AddRange(CreateEpisodeNumbers());
         stageBox = CreateStageBox();
 
         ScoreMid = GetScoreMid();
@@ -49,6 +48,8 @@ public class SeriesBehavior : MonoBehaviour
         return (maxY + minY) / 2;
     }
 
+
+    Vector3 stageBoxScale;
     private Transform CreateStageBox()
     {
         GameObject stageBox = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -56,10 +57,10 @@ public class SeriesBehavior : MonoBehaviour
         Destroy(stageBox.GetComponent<BoxCollider>());
         stageBox.GetComponent<MeshRenderer>().sharedMaterial = MainScript.Instance.StageBoxMat;
 
-        stageBox.transform.SetParent(transform);
-        stageBox.transform.localScale = new Vector3(MaxEpisode + 1, 2.75f, MaxSeason + 1);
+        stageBox.transform.SetParent(transform, false);
+        stageBox.transform.localScale = new Vector3(MaxSeason + 1, 2.75f, MaxEpisode + 1);
         stageBox.transform.localPosition = new Vector3(0, -1.5f, 0);
-
+        stageBoxScale = stageBox.transform.localScale;
         return stageBox.transform;
     }
 
@@ -71,16 +72,11 @@ public class SeriesBehavior : MonoBehaviour
     public void UpdateVisuals()
     {
         Color textColor = Color.Lerp(Color.white, Color.black, MainScript.Instance.NealsonOrImdb);
-        episodeLabel.color = textColor;
-        seasonLabel.color = textColor;
-        foreach (TextMeshPro item in seasonNumbers)
+        foreach (TextMeshPro item in labels)
         {
             item.color = textColor;
         }
-        foreach (TextMeshPro item in episodeNumbers)
-        {
-            item.color = textColor;
-        }
+        stageBox.localScale = stageBoxScale * (1 - MainScript.Instance.NealsonOrImdb);
     }
 
     private IEnumerable<EpisodeBehavior> CreateEpisodeBoxes()
@@ -106,61 +102,23 @@ public class SeriesBehavior : MonoBehaviour
         textObject.enableWordWrapping = false;
     }
 
-    private TextMeshPro CreateSeasonLabel()
-    {
-        GameObject seasonLabel = new GameObject("Season Label");
-        TextMeshPro seasonText = seasonLabel.AddComponent<TextMeshPro>();
-        seasonText.text = "SEASON";
-        seasonText.fontSize = 8;
-        SetTextLabelSettings(seasonText);
-
-        float x = ((MaxEpisode + 1) / 2) + .01f;
-
-        seasonText.transform.SetParent(transform, false);
-        seasonText.transform.rotation = Quaternion.Euler(0, 90, 0);
-        seasonText.transform.localPosition = new Vector3(0, -2f, x);
-        seasonText.transform.SetParent(labelsTransform);
-        return seasonText;
-    }
-
     private IEnumerable<TextMeshPro> CreateSeasonNumbers()
     {
-        List<TextMeshPro> ret = new List<TextMeshPro>();
         for (int i = 0; i < MaxSeason; i++)
         {
-            GameObject seasonNumberLabel = new GameObject("Season" + (i + 1).ToString());
-            TextMeshPro seasonNumberText = seasonNumberLabel.AddComponent<TextMeshPro>();
-            seasonNumberText.text = (i + 1).ToString();
-            seasonNumberText.fontSize = 6;
-            SetTextLabelSettings(seasonNumberText);
-            
             float x = ((MaxEpisode + 1) / 2) + .01f;
             float z = -(MaxSeason - i) + .5f + (MaxSeason / 2);
 
-            seasonNumberLabel.transform.SetParent(transform, false);
-            seasonNumberLabel.transform.localPosition = new Vector3(-z, -1f, x);
-            seasonNumberLabel.transform.rotation = Quaternion.Euler(0, 90, 0);
-            seasonNumberLabel.transform.SetParent(labelsTransform);
-            ret.Add(seasonNumberText);
+            TextMeshPro seasonNumberTextA = MakeNumberLabel("Season", i + 1);
+            seasonNumberTextA.transform.localPosition = new Vector3(-z, -1f, x);
+            seasonNumberTextA.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            yield return seasonNumberTextA;
+
+            TextMeshPro seasonNumberTextB = MakeNumberLabel("Season", i + 1);
+            seasonNumberTextB.transform.localPosition = new Vector3(-z, -1f, -x);
+            seasonNumberTextB.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            yield return seasonNumberTextB;
         }
-        return ret;
-    }
-
-    private TextMeshPro CreateEpisodeLabel()
-    {
-        GameObject episodeLabel = new GameObject("Episode Label");
-        TextMeshPro episodeText = episodeLabel.AddComponent<TextMeshPro>();
-        episodeText.text = "EPISODE";
-        episodeText.fontSize = 8;
-        SetTextLabelSettings(episodeText);
-
-        float z = ((MaxSeason + 1) / 2) + .01f;
-
-        episodeText.transform.SetParent(transform, false);
-        episodeText.transform.localPosition = new Vector3(-z, -2f, 0);
-        episodeText.transform.rotation = Quaternion.Euler(0, 0, 0);
-        episodeText.transform.SetParent(labelsTransform, true);
-        return episodeText;
     }
 
     private IEnumerable<TextMeshPro> CreateEpisodeNumbers()
@@ -168,22 +126,76 @@ public class SeriesBehavior : MonoBehaviour
         List<TextMeshPro> ret = new List<TextMeshPro>();
         for (int i = 0; i < MaxEpisode; i++)
         {
-            GameObject episodeNumberLabel = new GameObject("Episode " + (i + 1).ToString());
-            TextMeshPro episodeNumberText = episodeNumberLabel.AddComponent<TextMeshPro>();
-            episodeNumberText.text = (i + 1).ToString();
-            episodeNumberText.fontSize = 6;
-            SetTextLabelSettings(episodeNumberText);
-
             float z = ((MaxSeason + 1) / 2) + .01f;
             float x = -i - .5f + (MaxEpisode / 2);
 
-            episodeNumberLabel.transform.SetParent(transform, false);
-            episodeNumberLabel.transform.localPosition = new Vector3(-z, -1f, x);
-            episodeNumberLabel.transform.rotation = Quaternion.Euler(0, 0, 0);
-            episodeNumberLabel.transform.SetParent(labelsTransform, true);
-            ret.Add(episodeNumberText);
+            TextMeshPro episodeNumberTextA = MakeNumberLabel("Episode", i + 1);
+            episodeNumberTextA.transform.localPosition = new Vector3(-z, -1f, x);
+            episodeNumberTextA.transform.localRotation = Quaternion.Euler(0, 90, 0);
+            ret.Add(episodeNumberTextA);
+
+            TextMeshPro episodeNumberTextB = MakeNumberLabel("Episode", i + 1);
+            episodeNumberTextB.transform.localPosition = new Vector3(z, -1f, x);
+            episodeNumberTextB.transform.localRotation = Quaternion.Euler(0, -90, 0);
+            ret.Add(episodeNumberTextB);
         }
         return ret;
+    }
+
+    private TextMeshPro MakeNumberLabel(string labelText, int i)
+    {
+        GameObject numberLabel = new GameObject(labelText + " " + i + " Label");
+        TextMeshPro numberText = numberLabel.AddComponent<TextMeshPro>();
+        numberText.text = i.ToString();
+        numberText.fontSize = 6;
+        SetTextLabelSettings(numberText);
+        numberText.transform.SetParent(labelsTransform, false);
+        numberText.transform.localScale = Vector3.one;
+        return numberText;
+    }
+
+    private IEnumerable<TextMeshPro> CreateSeasonLabel()
+    {
+        float x = ((MaxEpisode + 1) / 2) + .01f;
+
+        TextMeshPro seasonLabelA = MakeLabel("SEASON");
+        seasonLabelA.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        seasonLabelA.transform.localPosition = new Vector3(0, -2f, x);
+        yield return seasonLabelA;
+
+        TextMeshPro seasonLabelB = MakeLabel("SEASON");
+        seasonLabelB.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        seasonLabelB.transform.localPosition = new Vector3(0, -2f, -x);
+        yield return seasonLabelB;
+    }
+
+    private IEnumerable<TextMeshPro> CreateEpisodeLabel()
+    {
+        float z = ((MaxSeason + 1) / 2) + .01f;
+
+        TextMeshPro episodeTextA = MakeLabel("EPISODE");
+
+        episodeTextA.transform.localPosition = new Vector3(-z, -2f, 0);
+        episodeTextA.transform.localRotation = Quaternion.Euler(0, 90, 0);
+        yield return episodeTextA;
+
+        TextMeshPro episodeTextB = MakeLabel("EPISODE");
+
+        episodeTextB.transform.localPosition = new Vector3(z, -2f, 0);
+        episodeTextB.transform.localRotation = Quaternion.Euler(0, -90, 0);
+        yield return episodeTextB;
+    }
+
+    private TextMeshPro MakeLabel(string labelText)
+    {
+        GameObject episodeLabel = new GameObject(labelText + " Label");
+        TextMeshPro episodeText = episodeLabel.AddComponent<TextMeshPro>();
+        episodeText.text = labelText;
+        episodeText.fontSize = 8;
+        SetTextLabelSettings(episodeText);
+        episodeText.transform.SetParent(labelsTransform, false);
+        episodeText.transform.localScale = Vector3.one;
+        return episodeText;
     }
 
     private EpisodeBehavior CreateNewEpisodeBox(EpisodeData data, Transform episodesTransform)
