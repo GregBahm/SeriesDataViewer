@@ -7,7 +7,7 @@ using UnityEngine;
 public class EpisodeBehavior : MonoBehaviour
 {
     public EpisodeData Data { get; set; }
-    public SeriesBehavior Series { get; set; }
+    public ShowBehavior Series { get; set; }
 
     private Material Mat;
 

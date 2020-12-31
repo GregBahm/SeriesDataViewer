@@ -4,20 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(MainScript))]
-public class SeriesSelector : MonoBehaviour
+public class ShowSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public static SeriesSelector Instance { get; private set; }
+    public static ShowSelector Instance { get; private set; }
 
     public GameObject ShowSelectorPrefab;
     public RectTransform ShowsCollection;
-    private SelectableShowBehavior[] showSelectors;
-
-    public Color ShownColor;
-    public Color BaseColor;
-    public Color HoverColor;
-    public Color ClickingColor;
+    private ShowSelectorItem[] showSelectors;
 
     private void Awake()
     {
@@ -28,7 +23,7 @@ public class SeriesSelector : MonoBehaviour
         showSelectors = CreateShowSelectables().ToArray();
     }
 
-    private IEnumerable<SelectableShowBehavior> CreateShowSelectables()
+    private IEnumerable<ShowSelectorItem> CreateShowSelectables()
     {
         int i = 0;
         foreach (TextAsset series in MainScript.Instance.SeriesAssets)
@@ -36,10 +31,22 @@ public class SeriesSelector : MonoBehaviour
             GameObject selectable = Instantiate(ShowSelectorPrefab);
             selectable.GetComponentInChildren<TextMeshProUGUI>().text = series.name;
             selectable.transform.SetParent(ShowsCollection, false);
-            SelectableShowBehavior behavior = selectable.GetComponent<SelectableShowBehavior>();
+            ShowSelectorItem behavior = selectable.GetComponent<ShowSelectorItem>();
             behavior.ShowIndex = i;
             yield return behavior;
             i++;
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        MouseInteractionManager.Instance.ShowSelectorHovered = true;
+        MouseInteractionManager.Instance.UiHovered = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        MouseInteractionManager.Instance.ShowSelectorHovered = false;
+        MouseInteractionManager.Instance.UiHovered = false;
     }
 }

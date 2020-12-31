@@ -5,7 +5,7 @@ using System.Linq;
 using System;
 using TMPro;
 
-public class SeriesBehavior : MonoBehaviour
+public class ShowBehavior : MonoBehaviour
 {
     public IEnumerable<EpisodeData> Episodes { get; set; }
     public IEnumerable<EpisodeBehavior> EpisodeBehaviors { get; private set; }

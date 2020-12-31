@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MouseInteractionManager : MonoBehaviour
 {
+    public static MouseInteractionManager Instance { get; private set; }
+
     private DragDetector leftDragDetector;
 
     [SerializeField]
@@ -32,8 +35,19 @@ public class MouseInteractionManager : MonoBehaviour
 
     public Slider NealsonOrImdbSlider;
 
-    public bool OrbitDisabled { get; set; }
-    
+    public RectTransform ShowSelectorRect;
+
+    public RectTransform BackgroundCanvas;
+
+    public bool UiHovered { get; set; }
+    public bool StageInteractionEnabled { get; private set; }
+    public bool ShowSelectorHovered { get; set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         leftDragDetector = new DragDetector(dragStartDistance);
@@ -41,21 +55,46 @@ public class MouseInteractionManager : MonoBehaviour
         RootTransform.SetParent(OrbitPoint, true);
         OrbitPoint.Rotate(Vector3.up, -40, Space.World);
         OrbitPoint.Rotate(Vector3.left, 10, Space.World);
+        currentRotation = new Vector2(40, -10);
         StartOrbit();
     }
 
     void Update()
     {
-        if(!Input.GetMouseButton(0))
-        {
-            OrbitDisabled = false;
-        }
-        if (!OrbitDisabled)
+        UpdateStageInteractionStatus();
+        if(StageInteractionEnabled)
         {
             HandleOrbit();
+            HandleMouseScrollwheel();
         }
-        HandleMouseScrollwheel();
         UpdateSlider();
+        UpdateShowSelector();
+        UpdateBackgroundCanvas();
+    }
+
+    private void UpdateBackgroundCanvas()
+    {
+        BackgroundCanvas.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 230 * Camera.main.aspect);
+    }
+
+    private void UpdateShowSelector()
+    {
+        float showXTarget = ShowSelectorHovered ? 0 : -400;
+        float newX = Mathf.Lerp(showXTarget, ShowSelectorRect.anchoredPosition.x, Time.deltaTime * 25);
+        ShowSelectorRect.anchoredPosition = new Vector2(newX, 0);
+    }
+
+    private void UpdateStageInteractionStatus()
+    {
+        // If the mouse goes down off stage, don't enable it until it is up on stage
+        if (UiHovered)
+        {
+            StageInteractionEnabled = false;
+        }
+        if(!Input.GetMouseButton(0) && !UiHovered)
+        {
+            StageInteractionEnabled = true;
+        }
     }
 
     private void UpdateSlider()

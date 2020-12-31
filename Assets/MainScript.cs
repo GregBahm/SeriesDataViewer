@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainScript : MonoBehaviour
 {
@@ -38,13 +39,15 @@ public class MainScript : MonoBehaviour
     public float HighestNelson { get; set; }
 
     public TextAsset[] SeriesAssets;
-    public List<SeriesBehavior> EachSeries { get; private set; }
+    public List<ShowBehavior> EachSeries { get; private set; }
 
     public GameObject EpisodePrefab;
     public Material StageBoxMat;
     public int ShowToShow;
 
-    public SeriesBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
+    public ShowBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
+
+    public TextMeshProUGUI TitleText; 
 
     private void Awake()
     {
@@ -53,7 +56,7 @@ public class MainScript : MonoBehaviour
 
     void Start ()
     {
-        EachSeries = new List<SeriesBehavior>();
+        EachSeries = new List<ShowBehavior>();
         foreach (TextAsset dataSource in SeriesAssets)
         {
             EachSeries.Add(LoadShow(dataSource));
@@ -61,10 +64,10 @@ public class MainScript : MonoBehaviour
         HighestNelson = EachSeries.Max(item => item.Episodes.Max(ep => ep.NealsonRating));
     }
 
-    private SeriesBehavior LoadShow(TextAsset dataSource)
+    private ShowBehavior LoadShow(TextAsset dataSource)
     {
         GameObject obj = new GameObject(dataSource.name);
-        SeriesBehavior ret = obj.AddComponent<SeriesBehavior>();
+        ShowBehavior ret = obj.AddComponent<ShowBehavior>();
         ret.Episodes = DataLoader.LoadData(dataSource);
         obj.transform.SetParent(RootTransform, false);
         return ret;
@@ -72,9 +75,9 @@ public class MainScript : MonoBehaviour
 
     private void Update()
     {
-        ShowToShow = ShowToShow % EachSeries.Count;
         UpdateSeriesVisibility();
         UpdateShaderParameters();
+        UpdateTitleText();
     }
 
     private void UpdateShaderParameters()
@@ -83,6 +86,11 @@ public class MainScript : MonoBehaviour
         Shader.SetGlobalFloat("_BarMetallic", BarMetallic);
         Shader.SetGlobalFloat("_BarEmissiveStrength", BarEmissive);
         Shader.SetGlobalColor("_BarTint", BarTint);
+    }
+
+    private void UpdateTitleText()
+    {
+        TitleText.text = SeriesAssets[ShowToShow].name;
     }
 
     private void UpdateSeriesVisibility()
