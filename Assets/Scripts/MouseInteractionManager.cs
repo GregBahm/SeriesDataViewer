@@ -72,6 +72,28 @@ public class MouseInteractionManager : MonoBehaviour
         UpdateBackgroundCanvas();
     }
 
+    private void UpdateSlider()
+    {
+        float toSlide = SliderShift * .1f;
+        SliderShift -= toSlide;
+        NealsonOrImdbSlider.value += toSlide;
+        MainScript.Instance.NealsonOrImdb = NealsonOrImdbSlider.value;
+    }
+
+    private float SliderShift;
+
+    public void SliderToggled()
+    {
+        if(MainScript.Instance.NealsonOrImdb < .5)
+        {
+            SliderShift = 1 - MainScript.Instance.NealsonOrImdb;
+        }
+        else
+        {
+            SliderShift = -MainScript.Instance.NealsonOrImdb;
+        }
+    }
+
     private void UpdateBackgroundCanvas()
     {
         BackgroundCanvas.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 230 * Camera.main.aspect);
@@ -95,11 +117,6 @@ public class MouseInteractionManager : MonoBehaviour
         {
             StageInteractionEnabled = true;
         }
-    }
-
-    private void UpdateSlider()
-    {
-        MainScript.Instance.NealsonOrImdb = NealsonOrImdbSlider.value;
     }
 
     private void HandleOrbit()
