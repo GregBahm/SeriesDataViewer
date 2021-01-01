@@ -21,9 +21,11 @@ public class MouseInteractionManager : MonoBehaviour
     [SerializeField]
     private float maxZoom = 100;
     [SerializeField]
-    private float orbitSpeed = 0.5f;
-    [SerializeField]
     private float panSpeed = 0.1f;
+
+    private bool panning;
+    private Vector3 panStartPos;
+    private Vector3 contentStartPos;
 
     private Vector3 orbitScreenStart;
     public Transform OrbitPoint { get; private set; }
@@ -66,10 +68,45 @@ public class MouseInteractionManager : MonoBehaviour
         {
             HandleOrbit();
             HandleMouseScrollwheel();
+            HandlePan();
         }
         UpdateSlider();
         UpdateShowSelector();
         UpdateBackgroundCanvas();
+    }
+
+    private void HandlePan()
+    {
+        if(Input.GetMouseButtonDown(1))
+        {
+            panStartPos = Input.mousePosition;
+            contentStartPos = OrbitPoint.position;
+            panning = true;
+        }
+        if(!Input.GetMouseButton(1))
+        {
+            panning = false;
+        }
+        if(panning)
+        {
+            Vector3 delta = Input.mousePosition - panStartPos;
+            delta *= panSpeed;
+            OrbitPoint.position = contentStartPos + delta;
+            ClampPanPosition();
+        }
+    }
+
+    private void ClampPanPosition()
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        foreach (Plane plane in planes)
+        {
+            float dist = plane.GetDistanceToPoint(OrbitPoint.position);
+            if(dist < 0)
+            {
+                OrbitPoint.position = plane.ClosestPointOnPlane(OrbitPoint.position);
+            }
+        }
     }
 
     private void UpdateSlider()
