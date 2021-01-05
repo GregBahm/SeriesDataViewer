@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 100
   m_Viewport: {fileID: 883192396}
   m_HorizontalScrollbar: {fileID: 37179178}
   m_VerticalScrollbar: {fileID: 1937930795}
@@ -2893,6 +2893,7 @@ MonoBehaviour:
   EpisodePrefab: {fileID: 8703655887672422558, guid: f4184c93d196b584b90a0fb7a7c763be,
     type: 3}
   StageBoxMat: {fileID: 2100000, guid: 645bfd75e414ce5408a552209f19d94d, type: 2}
+  InnerStageBoxMat: {fileID: 2100000, guid: df657dfdf81abfb408eac01ec9e27402, type: 2}
   ShowToShow: 0
   TitleText: {fileID: 186690016}
 --- !u!4 &2014809269

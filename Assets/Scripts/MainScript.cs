@@ -43,6 +43,7 @@ public class MainScript : MonoBehaviour
 
     public GameObject EpisodePrefab;
     public Material StageBoxMat;
+    public Material InnerStageBoxMat;
     public int ShowToShow;
 
     public ShowBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }

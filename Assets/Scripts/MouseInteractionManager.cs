@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class MouseInteractionManager : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class MouseInteractionManager : MonoBehaviour
     [SerializeField]
     private float scrollSpeed = 0.1f;
     [SerializeField]
-    private float minZoom = 10;
+    private float minZoom = 0.2f;
     [SerializeField]
-    private float maxZoom = 100;
+    private float maxZoom = 0.7f;
     [SerializeField]
     private float panSpeed = 0.1f;
 
@@ -69,6 +70,7 @@ public class MouseInteractionManager : MonoBehaviour
             HandleOrbit();
             HandleMouseScrollwheel();
             HandlePan();
+            ClampOrbitPosition();
         }
         UpdateSlider();
         UpdateShowSelector();
@@ -92,13 +94,14 @@ public class MouseInteractionManager : MonoBehaviour
             Vector3 delta = Input.mousePosition - panStartPos;
             delta *= panSpeed;
             OrbitPoint.position = contentStartPos + delta;
-            ClampPanPosition();
         }
     }
 
-    private void ClampPanPosition()
+    private void ClampOrbitPosition()
     {
-        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        List<Plane> planes = GeometryUtility.CalculateFrustumPlanes(Camera.main).Take(4).ToList();
+        planes.Add(new Plane(Camera.main.transform.forward, Camera.main.transform.position + Camera.main.transform.forward * minZoom));
+        planes.Add(new Plane(-Camera.main.transform.forward, Camera.main.transform.position + Camera.main.transform.forward * maxZoom));
         foreach (Plane plane in planes)
         {
             float dist = plane.GetDistanceToPoint(OrbitPoint.position);
@@ -203,14 +206,6 @@ public class MouseInteractionManager : MonoBehaviour
         Vector3 oldVect = OrbitPoint.position - Camera.main.transform.position;
         float changeFactor = Input.mouseScrollDelta.y * scrollSpeed;
         Vector3 newVect = oldVect * (1 - changeFactor);
-        if(newVect.magnitude > maxZoom)
-        {
-            newVect = Camera.main.transform.forward * maxZoom;
-        }
-        if(newVect.magnitude < minZoom)
-        {
-            newVect = Camera.main.transform.forward * minZoom;
-        }
         OrbitPoint.localPosition = Camera.main.transform.position + newVect;
     }
 

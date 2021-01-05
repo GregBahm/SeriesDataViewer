@@ -191,18 +191,12 @@ public class ShowBehavior : MonoBehaviour
     private class StageBoxManager
     {
         private readonly Transform stageTransform;
-        private readonly StageBoxComponent PosXBox;
-        private readonly StageBoxComponent PosYBox;
-        private readonly StageBoxComponent NegXBox;
-        private readonly StageBoxComponent NegYBox;
-        private readonly IEnumerable<StageBoxComponent> allComponenets;
+        private Vector3 innerboxBaseScale;
+        private readonly Transform InnerBox;
 
         public void UpdateStage(float nealsonOrImdb)
         {
-            foreach (StageBoxComponent item in allComponenets)
-            {
-                item.UpdateBoxTransform(nealsonOrImdb);
-            }
+            InnerBox.localScale = innerboxBaseScale * (1 - nealsonOrImdb);
         }
 
         public StageBoxManager(Transform baseTransform, float maxSeason, float maxEpisode)
@@ -210,8 +204,8 @@ public class ShowBehavior : MonoBehaviour
             this.stageTransform = new GameObject("Stage").transform;
             stageTransform.SetParent(baseTransform, false);
 
-            Vector3 nelsonScale = new Vector3(maxSeason + 2, 2.2f, maxEpisode + 2);
-            Vector3 nelsonPos = new Vector3(0, -1.095f, 0);
+            innerboxBaseScale = new Vector3(maxSeason + 1, 2f, maxEpisode + 1);
+            Vector3 innerboxPos = new Vector3(0, -0.99f, 0);
 
             Vector3 imdbXScale = new Vector3(maxSeason + 2, 2.2f, 1);
             Vector3 imdbYScale = new Vector3(1, 2.2f, maxEpisode + 2);
@@ -221,54 +215,24 @@ public class ShowBehavior : MonoBehaviour
             Vector3 imdbPosYPos = new Vector3((maxSeason + 1) / 2, -1.1f, 0);
             Vector3 imdbNegYPos = new Vector3(-(maxSeason + 1) / 2, -1.1f, 0);
 
-            PosXBox = CreateStageBox(nelsonScale, nelsonPos, imdbXScale, imdbPosXPos);
-            NegXBox = CreateStageBox(nelsonScale, nelsonPos, imdbXScale, imdbNegXPos);
-            PosYBox = CreateStageBox(nelsonScale, nelsonPos, imdbYScale, imdbPosYPos);
-            NegYBox = CreateStageBox(nelsonScale, nelsonPos, imdbYScale, imdbNegYPos);
-            allComponenets = new StageBoxComponent []{ PosXBox, NegXBox, PosYBox, NegYBox};
+            CreateStageBox(imdbXScale, imdbPosXPos);
+            CreateStageBox(imdbXScale, imdbNegXPos);
+            CreateStageBox(imdbYScale, imdbPosYPos);
+            CreateStageBox(imdbYScale, imdbNegYPos);
+            InnerBox = CreateStageBox(innerboxBaseScale, innerboxPos, true);
         }
 
-        private StageBoxComponent CreateStageBox(Vector3 nelsonScale, Vector3 nelsonPosition, Vector3 imdbScale, Vector3 imdbPosition)
+        private Transform CreateStageBox(Vector3 boxScale, Vector3 boxPosition, bool isInnerBox = false)
         {
             GameObject stageBox = GameObject.CreatePrimitive(PrimitiveType.Cube);
             stageBox.name = "Stage Box";
             Destroy(stageBox.GetComponent<BoxCollider>());
-            stageBox.GetComponent<MeshRenderer>().sharedMaterial = MainScript.Instance.StageBoxMat;
+            stageBox.GetComponent<MeshRenderer>().sharedMaterial = isInnerBox ? MainScript.Instance.InnerStageBoxMat : MainScript.Instance.StageBoxMat;
             stageBox.transform.SetParent(stageTransform, false);
 
-            return new StageBoxComponent(stageBox.transform,
-                nelsonScale,
-                nelsonPosition,
-                imdbScale,
-                imdbPosition);
-        }
-    }
-
-    private class StageBoxComponent
-    {
-        private readonly Transform BoxTransform;
-        private readonly Vector3 NelsonScale;
-        private readonly Vector3 NealsonPosition;
-        private readonly Vector3 ImdbScale;
-        private readonly Vector3 ImdbPosition;
-
-        public StageBoxComponent(Transform boxTransform, 
-            Vector3 nelsonScale, 
-            Vector3 nealsonPosition, 
-            Vector3 imdbScale, 
-            Vector3 imdbPosition)
-        {
-            BoxTransform = boxTransform;
-            NelsonScale = nelsonScale;
-            NealsonPosition = nealsonPosition;
-            ImdbScale = imdbScale;
-            ImdbPosition = imdbPosition;
-        }
-
-        public void UpdateBoxTransform(float nealsonOrImdb)
-        {
-            BoxTransform.localPosition = Vector3.Lerp(NealsonPosition, ImdbPosition, nealsonOrImdb);
-            BoxTransform.localScale = Vector3.Lerp(NelsonScale, ImdbScale, nealsonOrImdb);
+            stageBox.transform.localPosition = boxPosition;
+            stageBox.transform.localScale = boxScale;
+            return stageBox.transform;
         }
     }
 }
