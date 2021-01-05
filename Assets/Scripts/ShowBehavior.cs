@@ -17,7 +17,7 @@ public class ShowBehavior : MonoBehaviour
 
     private List<TextMeshPro> labels;
 
-    private Transform stageBox;
+    private StageBoxManager stageBox;
     
     public float ScoreMid { get; private set; }
 
@@ -36,7 +36,7 @@ public class ShowBehavior : MonoBehaviour
         labels.AddRange(CreateSeasonLabel());
         labels.AddRange(CreateSeasonNumbers());
         labels.AddRange(CreateEpisodeNumbers());
-        stageBox = CreateStageBox();
+        stageBox = new StageBoxManager(transform, MaxSeason, MaxEpisode);
 
         ScoreMid = GetScoreMid();
 	}
@@ -48,22 +48,6 @@ public class ShowBehavior : MonoBehaviour
         return (maxY + minY) / 2;
     }
 
-
-    Vector3 stageBoxScale;
-    private Transform CreateStageBox()
-    {
-        GameObject stageBox = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        stageBox.name = "Stage Box";
-        Destroy(stageBox.GetComponent<BoxCollider>());
-        stageBox.GetComponent<MeshRenderer>().sharedMaterial = MainScript.Instance.StageBoxMat;
-
-        stageBox.transform.SetParent(transform, false);
-        stageBox.transform.localScale = new Vector3(MaxSeason + 1, 2.75f, MaxEpisode + 1);
-        stageBox.transform.localPosition = new Vector3(0, -1.5f, 0);
-        stageBoxScale = stageBox.transform.localScale;
-        return stageBox.transform;
-    }
-
     private void Update()
     {
         UpdateVisuals();
@@ -71,12 +55,7 @@ public class ShowBehavior : MonoBehaviour
 
     public void UpdateVisuals()
     {
-        Color textColor = Color.Lerp(Color.white, Color.black, MainScript.Instance.NealsonOrImdb);
-        foreach (TextMeshPro item in labels)
-        {
-            item.color = textColor;
-        }
-        stageBox.localScale = stageBoxScale * (1 - MainScript.Instance.NealsonOrImdb);
+        stageBox.UpdateStage(MainScript.Instance.NealsonOrImdb);
     }
 
     private IEnumerable<EpisodeBehavior> CreateEpisodeBoxes()
@@ -106,16 +85,16 @@ public class ShowBehavior : MonoBehaviour
     {
         for (int i = 0; i < MaxSeason; i++)
         {
-            float x = ((MaxEpisode + 1) / 2) + .01f;
+            float x = ((MaxEpisode + 2) / 2) + .01f;
             float z = -(MaxSeason - i) + .5f + (MaxSeason / 2);
 
             TextMeshPro seasonNumberTextA = MakeNumberLabel("Season", i + 1);
-            seasonNumberTextA.transform.localPosition = new Vector3(-z, -1f, x);
+            seasonNumberTextA.transform.localPosition = new Vector3(-z, -0.6f, x);
             seasonNumberTextA.transform.localRotation = Quaternion.Euler(0, 180, 0);
             yield return seasonNumberTextA;
 
             TextMeshPro seasonNumberTextB = MakeNumberLabel("Season", i + 1);
-            seasonNumberTextB.transform.localPosition = new Vector3(-z, -1f, -x);
+            seasonNumberTextB.transform.localPosition = new Vector3(-z, -0.6f, -x);
             seasonNumberTextB.transform.localRotation = Quaternion.Euler(0, 0, 0);
             yield return seasonNumberTextB;
         }
@@ -126,16 +105,16 @@ public class ShowBehavior : MonoBehaviour
         List<TextMeshPro> ret = new List<TextMeshPro>();
         for (int i = 0; i < MaxEpisode; i++)
         {
-            float z = ((MaxSeason + 1) / 2) + .01f;
+            float z = ((MaxSeason + 2) / 2) + .01f;
             float x = -i - .5f + (MaxEpisode / 2);
 
             TextMeshPro episodeNumberTextA = MakeNumberLabel("Episode", i + 1);
-            episodeNumberTextA.transform.localPosition = new Vector3(-z, -1f, x);
+            episodeNumberTextA.transform.localPosition = new Vector3(-z, -0.6f, x);
             episodeNumberTextA.transform.localRotation = Quaternion.Euler(0, 90, 0);
             ret.Add(episodeNumberTextA);
 
             TextMeshPro episodeNumberTextB = MakeNumberLabel("Episode", i + 1);
-            episodeNumberTextB.transform.localPosition = new Vector3(z, -1f, x);
+            episodeNumberTextB.transform.localPosition = new Vector3(z, -0.6f, x);
             episodeNumberTextB.transform.localRotation = Quaternion.Euler(0, -90, 0);
             ret.Add(episodeNumberTextB);
         }
@@ -156,32 +135,32 @@ public class ShowBehavior : MonoBehaviour
 
     private IEnumerable<TextMeshPro> CreateSeasonLabel()
     {
-        float x = ((MaxEpisode + 1) / 2) + .01f;
+        float x = ((MaxEpisode + 2) / 2) + .01f;
 
         TextMeshPro seasonLabelA = MakeLabel("SEASON");
         seasonLabelA.transform.localRotation = Quaternion.Euler(0, 180, 0);
-        seasonLabelA.transform.localPosition = new Vector3(0, -2f, x);
+        seasonLabelA.transform.localPosition = new Vector3(0, -1.5f, x);
         yield return seasonLabelA;
 
         TextMeshPro seasonLabelB = MakeLabel("SEASON");
         seasonLabelB.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        seasonLabelB.transform.localPosition = new Vector3(0, -2f, -x);
+        seasonLabelB.transform.localPosition = new Vector3(0, -1.5f, -x);
         yield return seasonLabelB;
     }
 
     private IEnumerable<TextMeshPro> CreateEpisodeLabel()
     {
-        float z = ((MaxSeason + 1) / 2) + .01f;
+        float z = ((MaxSeason + 2) / 2) + .01f;
 
         TextMeshPro episodeTextA = MakeLabel("EPISODE");
 
-        episodeTextA.transform.localPosition = new Vector3(-z, -2f, 0);
+        episodeTextA.transform.localPosition = new Vector3(-z, -1.5f, 0);
         episodeTextA.transform.localRotation = Quaternion.Euler(0, 90, 0);
         yield return episodeTextA;
 
         TextMeshPro episodeTextB = MakeLabel("EPISODE");
 
-        episodeTextB.transform.localPosition = new Vector3(z, -2f, 0);
+        episodeTextB.transform.localPosition = new Vector3(z, -1.5f, 0);
         episodeTextB.transform.localRotation = Quaternion.Euler(0, -90, 0);
         yield return episodeTextB;
     }
@@ -207,5 +186,89 @@ public class ShowBehavior : MonoBehaviour
         behavior.Series = this;
         box.transform.SetParent(episodesTransform, false);
         return behavior;
+    }
+
+    private class StageBoxManager
+    {
+        private readonly Transform stageTransform;
+        private readonly StageBoxComponent PosXBox;
+        private readonly StageBoxComponent PosYBox;
+        private readonly StageBoxComponent NegXBox;
+        private readonly StageBoxComponent NegYBox;
+        private readonly IEnumerable<StageBoxComponent> allComponenets;
+
+        public void UpdateStage(float nealsonOrImdb)
+        {
+            foreach (StageBoxComponent item in allComponenets)
+            {
+                item.UpdateBoxTransform(nealsonOrImdb);
+            }
+        }
+
+        public StageBoxManager(Transform baseTransform, float maxSeason, float maxEpisode)
+        {
+            this.stageTransform = new GameObject("Stage").transform;
+            stageTransform.SetParent(baseTransform, false);
+
+            Vector3 nelsonScale = new Vector3(maxSeason + 2, 2.2f, maxEpisode + 2);
+            Vector3 nelsonPos = new Vector3(0, -1.095f, 0);
+
+            Vector3 imdbXScale = new Vector3(maxSeason + 2, 2.2f, 1);
+            Vector3 imdbYScale = new Vector3(1, 2.2f, maxEpisode + 2);
+
+            Vector3 imdbPosXPos = new Vector3(0, -1.1f, (maxEpisode + 1) / 2);
+            Vector3 imdbNegXPos = new Vector3(0, -1.1f, -(maxEpisode + 1) / 2);
+            Vector3 imdbPosYPos = new Vector3((maxSeason + 1) / 2, -1.1f, 0);
+            Vector3 imdbNegYPos = new Vector3(-(maxSeason + 1) / 2, -1.1f, 0);
+
+            PosXBox = CreateStageBox(nelsonScale, nelsonPos, imdbXScale, imdbPosXPos);
+            NegXBox = CreateStageBox(nelsonScale, nelsonPos, imdbXScale, imdbNegXPos);
+            PosYBox = CreateStageBox(nelsonScale, nelsonPos, imdbYScale, imdbPosYPos);
+            NegYBox = CreateStageBox(nelsonScale, nelsonPos, imdbYScale, imdbNegYPos);
+            allComponenets = new StageBoxComponent []{ PosXBox, NegXBox, PosYBox, NegYBox};
+        }
+
+        private StageBoxComponent CreateStageBox(Vector3 nelsonScale, Vector3 nelsonPosition, Vector3 imdbScale, Vector3 imdbPosition)
+        {
+            GameObject stageBox = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            stageBox.name = "Stage Box";
+            Destroy(stageBox.GetComponent<BoxCollider>());
+            stageBox.GetComponent<MeshRenderer>().sharedMaterial = MainScript.Instance.StageBoxMat;
+            stageBox.transform.SetParent(stageTransform, false);
+
+            return new StageBoxComponent(stageBox.transform,
+                nelsonScale,
+                nelsonPosition,
+                imdbScale,
+                imdbPosition);
+        }
+    }
+
+    private class StageBoxComponent
+    {
+        private readonly Transform BoxTransform;
+        private readonly Vector3 NelsonScale;
+        private readonly Vector3 NealsonPosition;
+        private readonly Vector3 ImdbScale;
+        private readonly Vector3 ImdbPosition;
+
+        public StageBoxComponent(Transform boxTransform, 
+            Vector3 nelsonScale, 
+            Vector3 nealsonPosition, 
+            Vector3 imdbScale, 
+            Vector3 imdbPosition)
+        {
+            BoxTransform = boxTransform;
+            NelsonScale = nelsonScale;
+            NealsonPosition = nealsonPosition;
+            ImdbScale = imdbScale;
+            ImdbPosition = imdbPosition;
+        }
+
+        public void UpdateBoxTransform(float nealsonOrImdb)
+        {
+            BoxTransform.localPosition = Vector3.Lerp(NealsonPosition, ImdbPosition, nealsonOrImdb);
+            BoxTransform.localScale = Vector3.Lerp(NelsonScale, ImdbScale, nealsonOrImdb);
+        }
     }
 }
