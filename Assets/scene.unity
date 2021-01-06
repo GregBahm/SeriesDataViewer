@@ -2835,6 +2835,7 @@ GameObject:
   - component: {fileID: 2014809268}
   - component: {fileID: 2014809271}
   - component: {fileID: 2014809270}
+  - component: {fileID: 2014809272}
   m_Layer: 0
   m_Name: MainScripts
   m_TagString: Untagged
@@ -2946,6 +2947,18 @@ MonoBehaviour:
   NealsonOrImdbSlider: {fileID: 1127771996}
   ShowSelectorRect: {fileID: 1459750078}
   BackgroundCanvas: {fileID: 248312261}
+--- !u!114 &2014809272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014809267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eee7242c2d467745ba3f821ed3496e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2045588656
 GameObject:
   m_ObjectHideFlags: 0

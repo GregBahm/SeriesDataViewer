@@ -28,6 +28,7 @@
 
             fixed4 _BarTint;
 
+            float _DrilledFactor;
             float _ImdbParam;
 
             UNITY_INSTANCING_BUFFER_START(Props)
@@ -39,8 +40,8 @@
                 float3 badColor = float3(2, 0, .5);
                 float3 color = lerp(badColor, goodColor, _ImdbParam);
                 color = pow(color, .5) * 3 - 2;
-                //float minColor = max(color.x, color.y);
-                //color = color / minColor;
+                color = lerp(color, float3(.5, 0, 0), -_DrilledFactor);
+                
                 return color;
             }
 

@@ -24,7 +24,9 @@ public class MouseInteractionManager : MonoBehaviour
     [SerializeField]
     private float panSpeed = 0.1f;
 
-    private bool panning;
+    public bool Panning { get; private set; }
+    public bool Orbiting { get; private set; }
+
     private Vector3 panStartPos;
     private Vector3 contentStartPos;
 
@@ -45,6 +47,10 @@ public class MouseInteractionManager : MonoBehaviour
     public bool UiHovered { get; set; }
     public bool StageInteractionEnabled { get; private set; }
     public bool ShowSelectorHovered { get; set; }
+    public bool DrilldownEnabled
+    {
+        get { return StageInteractionEnabled && !Panning && !Orbiting; }
+    }
 
     private void Awake()
     {
@@ -83,13 +89,13 @@ public class MouseInteractionManager : MonoBehaviour
         {
             panStartPos = Input.mousePosition;
             contentStartPos = OrbitPoint.position;
-            panning = true;
+            Panning = true;
         }
         if(!Input.GetMouseButton(1))
         {
-            panning = false;
+            Panning = false;
         }
-        if(panning)
+        if(Panning)
         {
             Vector3 delta = Input.mousePosition - panStartPos;
             delta *= panSpeed;
@@ -161,10 +167,12 @@ public class MouseInteractionManager : MonoBehaviour
 
     private void HandleOrbit()
     {
+        Orbiting = false;
         if (Input.GetMouseButton(0))
         {
             if (leftDragDetector.IsDragging)
             {
+                Orbiting = true;
                 ContinueOrbit();
             }
             else
