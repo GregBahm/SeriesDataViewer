@@ -14,9 +14,7 @@ public class ShowBehavior : MonoBehaviour
     public float MaxEpisode { get; private set; }
 
     private Transform labelsTransform;
-
     private List<TextMeshPro> labels;
-
     private StageBoxManager stageBox;
     
     public float ScoreMid { get; private set; }
@@ -204,7 +202,7 @@ public class ShowBehavior : MonoBehaviour
             this.stageTransform = new GameObject("Stage").transform;
             stageTransform.SetParent(baseTransform, false);
 
-            innerboxBaseScale = new Vector3(maxSeason + 1, 2f, maxEpisode + 1);
+            innerboxBaseScale = new Vector3(maxSeason, 2f, maxEpisode);
             Vector3 innerboxPos = new Vector3(0, -0.99f, 0);
 
             Vector3 imdbXScale = new Vector3(maxSeason + 2, 2.2f, 1);

@@ -35,7 +35,7 @@ public class EpisodeBehavior : MonoBehaviour
 
     private float GetDrillScaleTarget()
     {
-        return EpisodeDrillDownManager.Instance.DrilledEpisode == this ? 1 : 0;
+        return EpisodeDrillDownManager.Instance.DrilledEpisode == this ? .5f : 0;
     }
 
     private void UpdateDrillFactor()
