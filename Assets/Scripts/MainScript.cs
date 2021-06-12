@@ -21,10 +21,6 @@ public class MainScript : MonoBehaviour
     [Range(0, 1)]
     public float SpaceBetweenEpisodes;
 
-    [Range(0, 10)]
-    public float ImdbMin;
-    [Range(0, 10)]
-    public float ImdbMax;
     public float ImdbScale;
 
     [Range(0, 1)]

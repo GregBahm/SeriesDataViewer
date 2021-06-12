@@ -12,6 +12,7 @@ public class EpisodeDrillDownManager : MonoBehaviour
 
     public CanvasGroup AlphaElement;
     public TextMeshProUGUI Title;
+    public TextMeshProUGUI SeasonEpisode;
     public TextMeshProUGUI ImdbRating;
     public TextMeshProUGUI Nelson;
 
@@ -31,6 +32,7 @@ public class EpisodeDrillDownManager : MonoBehaviour
         if(DrilledEpisode != null)
         {
             Title.text = DrilledEpisode.Data.Title;
+            SeasonEpisode.text = "Season " + DrilledEpisode.Data.Season + " episode " + DrilledEpisode.Data.Episode;
             ImdbRating.text = DrilledEpisode.Data.ImdbRating.ToString();
             Nelson.text = DrilledEpisode.Data.NealsonRating.ToString();
         }

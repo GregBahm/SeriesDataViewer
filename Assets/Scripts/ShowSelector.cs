@@ -21,7 +21,6 @@ public class ShowSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     void Update()
     {
-        Debug.Log(isHovered);
         if(Input.GetMouseButtonDown(0))
         {
             if(!isHovered)

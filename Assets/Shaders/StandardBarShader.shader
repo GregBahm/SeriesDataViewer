@@ -38,7 +38,8 @@
             {
                 float3 goodColor = float3(0, 2, 1);
                 float3 badColor = float3(2, 0, .5);
-                float3 color = lerp(badColor, goodColor, _ImdbParam);
+                float remap = pow(_ImdbParam, 2.5);
+                float3 color = lerp(badColor, goodColor, remap);
                 color = pow(color, .5) * 3 - 2;
                 color = lerp(color, float3(.5, 0, 0), -_DrilledFactor);
                 

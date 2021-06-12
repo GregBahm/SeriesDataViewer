@@ -16,11 +16,6 @@ public class EpisodeBehavior : MonoBehaviour
         Mat = GetComponent<MeshRenderer>().material;
     }
 
-    private float GetImdbVal(float sourceImdbVal)
-    {
-        return (sourceImdbVal - MainScript.Instance.ImdbMin) / (MainScript.Instance.ImdbMax - MainScript.Instance.ImdbMin);
-    }
-
     float drilledLightingFactor;
     float drilledScaleFactor;
 
@@ -51,16 +46,15 @@ public class EpisodeBehavior : MonoBehaviour
     {
         UpdateDrillFactor();
 
-        float baseImdb = GetImdbVal(Data.ImdbRating);
-        float baseForHeight = GetImdbVal(Data.ImdbRating - 5);
+        float baseImdb = Data.ImdbRating / 10;
 
-        float nealsonScale = Data.NealsonRating / MainScript.Instance.HighestNelson * MainScript.Instance.HeightScale;
-        float nealsonHeightPos = nealsonScale / 2;
+        float nealsonScale = Data.NealsonRating / MainScript.Instance.HighestNelson * MainScript.Instance.HeightScale + .5f;
+        float nealsonHeightPos = nealsonScale / 2 - .5f;
 
         float imdbTop = MainScript.Instance.HeightScale - MainScript.Instance.ImdbScale / 2;
         float imdbBotom = MainScript.Instance.ImdbScale / 2;
 
-        float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseForHeight);
+        float imdbHeightPos = Mathf.LerpUnclamped(imdbBotom, imdbTop, baseImdb - .5f);
         float imdbScale = MainScript.Instance.ImdbScale;
 
         float heightPos = Mathf.Lerp(nealsonHeightPos, imdbHeightPos, MainScript.Instance.NealsonOrImdb);
