@@ -8,19 +8,28 @@ using UnityEngine.EventSystems;
 
 public class ShowSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public static ShowSelector Instance { get; private set; }
-
     public GameObject ShowSelectorPrefab;
     public RectTransform ShowsCollection;
     private ShowSelectorItem[] showSelectors;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private bool isHovered;
+
     private void Start()
     {
         showSelectors = CreateShowSelectables().ToArray();
+    }
+
+    void Update()
+    {
+        Debug.Log(isHovered);
+        if(Input.GetMouseButtonDown(0))
+        {
+            if(!isHovered)
+            {
+                MouseInteractionManager.Instance.ShowSelectorHovered = false;
+                MouseInteractionManager.Instance.UiHovered = false;
+            }
+        }
     }
 
     private IEnumerable<ShowSelectorItem> CreateShowSelectables()
@@ -40,13 +49,13 @@ public class ShowSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        isHovered = true;
         MouseInteractionManager.Instance.ShowSelectorHovered = true;
         MouseInteractionManager.Instance.UiHovered = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        MouseInteractionManager.Instance.ShowSelectorHovered = false;
-        MouseInteractionManager.Instance.UiHovered = false;
+        isHovered = false;
     }
 }

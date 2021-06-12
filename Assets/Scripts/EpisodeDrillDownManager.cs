@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class EpisodeDrillDownManager : MonoBehaviour
 {
@@ -32,6 +33,19 @@ public class EpisodeDrillDownManager : MonoBehaviour
             Title.text = DrilledEpisode.Data.Title;
             ImdbRating.text = DrilledEpisode.Data.ImdbRating.ToString();
             Nelson.text = DrilledEpisode.Data.NealsonRating.ToString();
+        }
+        UpdateDepthOfField();
+    }
+
+    private void UpdateDepthOfField()
+    {
+        PostProcessVolume volume = Camera.main.GetComponent<PostProcessVolume>();
+        DepthOfField depth = volume.profile.GetSetting<DepthOfField>();
+        depth.active = DrilledEpisode != null;
+        if(DrilledEpisode != null)
+        {
+            float distance = (Camera.main.transform.position - DrilledEpisode.transform.position).magnitude;
+            depth.focusDistance.value = distance;
         }
     }
 
