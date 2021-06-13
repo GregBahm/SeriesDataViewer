@@ -1,0 +1,93 @@
+1.1	Mole Hunt	0.91[5]	7.9
+1.2	Training Day	1.82[5]	7.7
+1.3	Diversity Hire	1.23[5]	8.2
+1.4	Killing Utne	0.87[5]	7.7
+1.5	Honeypot	0.62[5]	8.1
+1.6	Skorpio	0.76[5]	8.2
+1.7	Skytanic	0.87[5]	8.6
+1.8	The Rock	0.72[5]	7.7
+1.9	Job Offer	1.08[5]	8.1
+1.10	Dial M for Mother	0.76[5]	8
+2.1	Swiss Miss	1.53[6]	8.5
+2.2	A Going Concern	1.11[7]	7.8
+2.3	Blood Test	1.12[8]	7.9
+2.4	Pipeline Fever	0.99[9]	8.2
+2.5	The Double Deuce	1.00[10]	8.1
+2.6	Tragical History	1.02[11]	7.8
+2.7	Movie Star	1.02[12]	7.9
+2.8	Stage Two	0.93[13]	8.5
+2.9	Placebo Effect	1.09[14]	8.9
+2.10	El Secuestro	1.32[15]	8.6
+2.11	Jeu Monegasque	1.01[16]	8
+2.12	White Nights	1.21[17]	8.1
+2.13	Double Trouble	1.01[18]	8.3
+3.1	Heart of Archness: Part I	1.17[19]	8.5
+3.2	Heart of Archness: Part II	1.10[20]	8.2
+3.3	Heart of Archness: Part III	1.19[21]	8.2
+3.4	The Man from Jupiter	1.31[22]	8.4
+3.5	El Contador	1.12[23]	8
+3.6	The Limited	1.06[24]	8.4
+3.7	Drift Problem	1.22[25]	7.8
+3.8	Lo Scandalo	1.20[26]	8.5
+3.9	Bloody Ferlin	1.27[27]	8
+3.10	Crossing Over	1.07[28]	8
+3.11	Skin Game	1.04[29]	7.8
+3.12	Space Race: Part I	1.16[30]	8.4
+3.13	Space Race: Part II	1.33[31]	8.4
+4.1	Fugue and Riffs	1.61[32]	8.2
+4.2	The Wind Cries Mary	1.58[33]	8.1
+4.3	Legs	1.58[34]	8
+4.4	Midnight Ron	1.28[35]	7.7
+4.5	Viscous Coupling	1.15[36]	7.6
+4.6	Once Bitten	1.70[37]	7.6
+4.7	Live and Let Dine	1.52[38]	7.9
+4.8	Coyote Lovely	1.53[39]	7.6
+4.9	The Honeymooners	1.17[40]	7.9
+4.10	Un Chien Tangerine	1.37[41]	7.8
+4.11	The Papal Chase	1.38[42]	7.8
+4.12	Sea Tunt: Part 1	1.30[43]	7.7
+4.13	Sea Tunt: Part 2	1.61[44]	8
+5.1	White Elephant	1.65[45]	8.6
+5.2	Archer Vice: A Kiss While Dying	1.17[46]	7.9
+5.3	Archer Vice: A Debt of Honor	1.13[47]	7.8
+5.4	Archer Vice: House Call	1.13[48]	8.2
+5.5	Archer Vice: Southbound and Down	1.05[49]	7.7
+5.6	Archer Vice: Baby Shower	0.95[50]	7.8
+5.7	Archer Vice: Smugglers' Blues	0.87[51]	7.9
+5.8	Archer Vice: The Rules of Extraction	1.08[52]	8.3
+5.9	Archer Vice: On the Carpet	0.91[53]	8.1
+5.10	Archer Vice: Palace Intrigue - Part I	0.92[54]	8.1
+5.11	Archer Vice: Palace Intrigue: Part II	0.87[55]	8.1
+5.12	Archer Vice: Filibuster	1.07[56]	8
+5.13	Archer Vice: Arrival/Departure	0.68[57]	8.7
+6.1	The Holdout	1.51[58]	8.2
+6.2	Three to Tango	0.90[59]	8.1
+6.3	The Archer Sanction	0.88[60]	8.3
+6.4	Edie's Wedding	1.23[61]	8.1
+6.5	Vision Quest	0.98[62]	8.6
+6.6	Sitting	0.81[63]	8
+6.7	Nellis	1.08[64]	7.8
+6.8	The Kanes	1.08[65]	8.9
+6.9	Pocket Listing	0.92[66]	8.6
+6.10	Reignition Sequence	1.07[67]	8.3
+6.11	Achub y Morfilod	0.84[68]	8.1
+6.12	Drastic Voyage: Part 1	0.79[69]	8.1
+6.13	Drastic Voyage: Part 2	0.72[70]	8.6
+7.1	The Figgis Agency	1.07[71]	8
+7.2	The Handoff	0.75[72]	8.2
+7.3	Deadly Prep	0.79[73]	8.5
+7.4	Motherless Child	0.79[74]	8.2
+7.5	Bel Panto: Part I	0.68[75]	8.2
+7.6	Bel Panto: Part II	0.83[76]	8.3
+7.7	Double Indecency	0.76[77]	8.5
+7.8	Liquid Lunch	0.70[78]	7.8
+7.9	Deadly Velvet: Part 1	0.76[79]	8.2
+7.10	Deadly Velvet: Part 2	0.71[80]	9
+8.1	Archer Dreamland: No Good Deed	0.74[81]	7.8
+8.2	Archer Dreamland: Berenice	0.50[82]	7.8
+8.3	Archer Dreamland: Jane Doe	0.47[83]	7.7
+8.4	Archer Dreamland: Ladyfingers	0.48[84]	7.7
+8.5	Archer Dreamland: Sleepers Wake	0.44[85]	7.3
+8.6	Archer Dreamland: Waxing Gibbous	0.38[86]	8
+8.7	Archer Dreamland: Gramercy, Halberd!	0.31[87]	8.1
+8.8	Archer Dreamland: Auflösung	0.42[88]	7.5
