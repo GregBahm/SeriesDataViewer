@@ -4295,7 +4295,6 @@ MonoBehaviour:
   BarGloss: 0.384
   BarMetallic: 0.765
   BarEmissive: 10
-  BarTint: {r: 0, g: 0, b: 0, a: 1}
   HeightScale: 40
   SeriesAssets:
   - {fileID: 4900000, guid: ab723c97f54594c46aefaaef8e7c7a66, type: 3}
@@ -4326,7 +4325,20 @@ MonoBehaviour:
   StageBoxMat: {fileID: 2100000, guid: 645bfd75e414ce5408a552209f19d94d, type: 2}
   InnerStageBoxMat: {fileID: 2100000, guid: df657dfdf81abfb408eac01ec9e27402, type: 2}
   ShowToShow: 0
-  TitleText: {fileID: 186690016}
+  ColorKeys:
+  - {r: 0.09411765, g: 0, b: 0.36335707, a: 0.7882353}
+  - {r: 0.16470589, g: 0, b: 0.36335707, a: 0.65882355}
+  - {r: 0.27058825, g: 0, b: 0.36335707, a: 0.4117647}
+  - {r: 0.5686275, g: 0, b: 0.36335707, a: 0.23921569}
+  - {r: 1, g: 0, b: 0.36335707, a: 0.23921569}
+  - {r: 1, g: 0, b: 0, a: 0.24705882}
+  - {r: 1, g: 0, b: 0, a: 0.23921569}
+  - {r: 1, g: 0.14117648, b: 0, a: 0.21176471}
+  - {r: 1, g: 0.6079833, b: 0, a: 0.105882354}
+  - {r: 1, g: 1, b: 0, a: 0.11372549}
+  - {r: 0.24705882, g: 1, b: 0.38431373, a: 0.12941177}
+  - {r: 0, g: 1, b: 0.6156863, a: 0.1764706}
+  - {r: 1, g: 1, b: 1, a: 0.8235294}
 --- !u!4 &2014809269
 Transform:
   m_ObjectHideFlags: 0

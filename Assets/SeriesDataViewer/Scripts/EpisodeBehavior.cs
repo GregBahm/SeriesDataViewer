@@ -78,24 +78,18 @@ public class EpisodeBehavior : MonoBehaviour
         Mat.SetFloat("_Smoothness", MainScript.Instance.BarGloss);
         Mat.SetFloat("_Metallic", MainScript.Instance.BarMetallic);
     }
-
-    private static readonly Color goodColor = new Color(0, 2, 1);
-    private static readonly Color badColor = new Color(2, 0, .5f );
-    private static readonly Color dimmedColor = new Color(.5f, 0, 0);
-
     private Color GetColor(float baseImdb, float drilledLightingFactor)
     {
-        float remap = Mathf.Pow(baseImdb, 2.5f);
-        Color col = Color.Lerp(badColor, goodColor, remap);
-        col = new Color(ModifyAethetic(col.r), ModifyAethetic(col.g), ModifyAethetic(col.b));
-        col *= drilledLightingFactor;
-        //col = Color.Lerp(col, dimmedColor, drilledLightingFactor);
-        //col = Color.Lerp(MainScript.Instance.BarTint, col, MainScript.Instance.BarTint.a);
-        return col;
-    }
+        float scaled = (MainScript.Instance.ColorKeys.Length - 1) * baseImdb;
+        int lowKey = Mathf.FloorToInt(scaled);
+        int highKey = Mathf.CeilToInt(scaled);
+        float lerp = scaled % 1;
+        Color lowColor = MainScript.Instance.ColorKeys[lowKey];
+        Color highColor = MainScript.Instance.ColorKeys[highKey];
+        Color col = Color.Lerp(lowColor, highColor, lerp);
+        col *= col.a * 10;
 
-    private float ModifyAethetic(float val)
-    {
-        return Mathf.Pow(val, .5f) * 3 - 2;
+        col *= drilledLightingFactor;
+        return col;
     }
 }

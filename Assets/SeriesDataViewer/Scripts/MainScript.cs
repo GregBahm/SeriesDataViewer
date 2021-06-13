@@ -40,6 +40,8 @@ public class MainScript : MonoBehaviour
     public Material InnerStageBoxMat;
     public int ShowToShow;
 
+    public Color[] ColorKeys;
+
     public ShowBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
 
     private void Awake()
