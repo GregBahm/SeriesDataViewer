@@ -22,7 +22,7 @@ public class CameraRattlerScript : MonoBehaviour
         if(!suspend)
         {
             float rot = Rotation * (tick ? 1f : -1f);
-            transform.Rotate(0, rot, 0);
+            transform.Rotate(0, rot, 0, Space.World);
             if (Vibrate)
             {
                 tick = !tick;

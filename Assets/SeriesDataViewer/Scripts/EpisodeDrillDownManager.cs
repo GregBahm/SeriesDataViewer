@@ -27,7 +27,6 @@ public class EpisodeDrillDownManager : MonoBehaviour
     private void Update()
     {
         DrilledEpisode = GetDrilledEpisode();
-        UpdateTitleColor();
         UpdateAlphaElement();
         if(DrilledEpisode != null)
         {
@@ -49,11 +48,6 @@ public class EpisodeDrillDownManager : MonoBehaviour
             float distance = (Camera.main.transform.position - DrilledEpisode.transform.position).magnitude;
             depth.focusDistance.value = distance;
         }
-    }
-
-    private void UpdateTitleColor()
-    {
-        MainScript.Instance.TitleText.color = Color.Lerp(ActiveTitleColor, InactiveTitleColor, AlphaElement.alpha);
     }
 
     private void UpdateAlphaElement()

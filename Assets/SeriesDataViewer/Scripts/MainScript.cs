@@ -28,7 +28,6 @@ public class MainScript : MonoBehaviour
     [Range(0, 1)]
     public float BarMetallic;
     public float BarEmissive;
-    public Color BarTint;
 
     public float HeightScale;
     public float HighestNelson { get; set; }
@@ -42,8 +41,6 @@ public class MainScript : MonoBehaviour
     public int ShowToShow;
 
     public ShowBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
-
-    public TextMeshProUGUI TitleText; 
 
     private void Awake()
     {
@@ -72,12 +69,6 @@ public class MainScript : MonoBehaviour
     private void Update()
     {
         UpdateSeriesVisibility();
-        UpdateTitleText();
-    }
-
-    private void UpdateTitleText()
-    {
-        TitleText.text = SeriesAssets[ShowToShow].name;
     }
 
     private void UpdateSeriesVisibility()
