@@ -35,7 +35,10 @@ public class HololensInputManager : MonoBehaviour
     void Update()
     {
         UpdatePinchAndDrag();
-        UpdateDrillDown();
+        if(!PinchDetector.Pinching)
+        {
+            UpdateDrillDown();
+        }
     }
 
     private void UpdatePinchAndDrag()
@@ -55,10 +58,25 @@ public class HololensInputManager : MonoBehaviour
         }
     }
 
+    private float startDist;
+    private float startScale;
     private bool wasResizing;
     private void UpdateResizing()
     {
-        throw new NotImplementedException();
+        if (!wasResizing && PinchDetector.PinchBeginning)
+        {
+            translationHelper.position = PinchDetector.PinchPoint.position;
+            startDist = (MainStage.position - translationHelper.position).magnitude;
+            startScale = MainStage.localScale.x;
+        }
+        if(PinchDetector.Pinching)
+        {
+            translationHelper.position = GetDeadzoneMovement();
+            float newDist = (MainStage.position - translationHelper.position).magnitude;
+            float diff = newDist / startDist;
+            float newScale = startScale * diff;
+            MainStage.localScale = new Vector3(newScale, newScale, newScale);
+        }
     }
 
     private Vector3 rotationUp;

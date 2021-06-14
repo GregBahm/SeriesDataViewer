@@ -1562,12 +1562,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584010207}
   m_CullTransparentMesh: 0
---- !u!4 &590833706 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7984707489636389486, guid: 3907758b9f519374e9400448d619b310,
-    type: 3}
-  m_PrefabInstance: {fileID: 356371949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &730905243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5575934286287045533, guid: 3907758b9f519374e9400448d619b310,
@@ -3988,11 +3982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Deadzone: 0.05
-  DrillDownTip: {fileID: 590833706}
+  DrillDownTip: {fileID: 1835282885}
   DrilldownThreshold: 0.05
   PinchDetector: {fileID: 2014809273}
   MainStage: {fileID: 934540511}
-  toolMode: 1
+  toolMode: 2
 --- !u!114 &2014809272
 MonoBehaviour:
   m_ObjectHideFlags: 0
