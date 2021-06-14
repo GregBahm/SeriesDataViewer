@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class HololensInputManager : MonoBehaviour
 {
+
     public float Deadzone = .1f;
 
     private Transform translationHelper;
@@ -17,11 +18,17 @@ public class HololensInputManager : MonoBehaviour
 
     public Transform MainStage;
 
+    public ProxyButton MoveButton;
+    public ProxyButton RotateButton;
+    public ProxyButton ScaleButton;
+
+    public ProxyButton ImdbToNelsonToggle;
+
     public enum LeftHandToolMode
     {
-        Dragging,
-        Rotating,
-        Resizing
+        Move,
+        Rotate,
+        Scale
     }
 
     public LeftHandToolMode toolMode;
@@ -30,6 +37,24 @@ public class HololensInputManager : MonoBehaviour
     {
         translationHelper = new GameObject("Translation Helper").transform;
         rotationHelper = new GameObject("Rotation Helper").transform;
+        MoveButton.Clicked += OnMoveClicked;
+        RotateButton.Clicked += OnRotateClicked;
+        ScaleButton.Clicked += OnScaleClicked;
+    }
+
+    private void OnScaleClicked(object sender, EventArgs e)
+    {
+        toolMode = LeftHandToolMode.Scale;
+    }
+
+    private void OnRotateClicked(object sender, EventArgs e)
+    {
+        toolMode = LeftHandToolMode.Rotate;
+    }
+
+    private void OnMoveClicked(object sender, EventArgs e)
+    {
+        toolMode = LeftHandToolMode.Move;
     }
 
     void Update()
@@ -39,19 +64,26 @@ public class HololensInputManager : MonoBehaviour
         {
             UpdateDrillDown();
         }
+        UpdateImdbToNelson();
+    }
+
+    private void UpdateImdbToNelson()
+    {
+        float target = ImdbToNelsonToggle.Toggled ? 1 : 0;
+        MainScript.Instance.NealsonOrImdb = Mathf.Lerp(MainScript.Instance.NealsonOrImdb, target, Time.deltaTime * 10);
     }
 
     private void UpdatePinchAndDrag()
     {
         switch (toolMode)
         {
-            case LeftHandToolMode.Dragging:
+            case LeftHandToolMode.Move:
                 UpdateDragging();
                 break;
-            case LeftHandToolMode.Rotating:
+            case LeftHandToolMode.Rotate:
                 UpdateRotating();
                 break;
-            case LeftHandToolMode.Resizing:
+            case LeftHandToolMode.Scale:
             default:
                 UpdateResizing();
                 break;

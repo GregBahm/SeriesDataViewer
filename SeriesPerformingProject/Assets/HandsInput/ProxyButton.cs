@@ -1,8 +1,15 @@
 ﻿using System;
 using UnityEngine;
 
-public class StupidButton : MonoBehaviour
+public class ProxyButton : MonoBehaviour
 {
+    public enum ButtonState
+    {
+        Disabled,
+        Ready,
+        Pressed
+    }
+
     [SerializeField]
     private ButtonInteractionStyles interactionStyle;
     public ButtonInteractionStyles InteractionStyle => interactionStyle;
@@ -77,11 +84,4 @@ public class StupidButton : MonoBehaviour
         ToggleButton,
         ClickButton
     }
-}
-
-public enum ButtonState
-{
-    Disabled,
-    Ready,
-    Pressed
 }
