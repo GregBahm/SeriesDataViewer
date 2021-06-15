@@ -1,0 +1,705 @@
+1.1	Simpsons Roasting on an Open Fire	26.7[50]	8.2
+1.2	Bart the Genius	24.5[50]	7.8
+1.3	Homer's Odyssey	27.5[51]	7.5
+1.4	There's No Disgrace Like Home	20.2[52]	7.8
+1.5	Bart the General	27.1[53]	8.1
+1.6	Moaning Lisa	27.4[54]	7.6
+1.7	The Call of the Simpsons	27.6[55]	7.9
+1.8	The Telltale Head	28[56]	7.7
+1.9	Life on the Fast Lane	33.5[57]	7.5
+1.10	Homer's Night Out	30.3[58]	7.4
+1.11	The Crepes of Wrath	31.2[59]	7.8
+1.12	Krusty Gets Busted	30.4[60]	8.3
+1.13	Some Enchanted Evening	27.1[61]	7.9
+2.1	Bart Gets an F	33.6[62]	8.2
+2.2	Simpson and Delilah	29.9[63]	8.3
+2.3	Treehouse of Horror	27.4[64]	8.3
+2.4	Two Cars in Every Garage and Three Eyes on Every Fish	26.1[65]	8.1
+2.5	Dancin' Homer	26.1[66]	7.5
+2.6	Dead Putting Society	25.4[67]	8
+2.7	Bart vs. Thanksgiving	25.9[68]	7.7
+2.8	Bart the Daredevil	26.2[69]	8.4
+2.9	Itchy and Scratchy and Marge	22.2[70]	8.1
+2.10	Bart Gets Hit by a Car	24.8[71]	7.8
+2.11	One Fish, Two Fish, Blowfish, Blue Fish	24.2[72]	8.8
+2.12	The Way We Was	26.8[73]	8.2
+2.13	Homer vs. Lisa and the 8th Commandment	26.2[74]	8
+2.14	Principal Charming	23.9[75]	7.5
+2.15	Oh Brother, Where Art Thou?	26.8[76]	8.2
+2.16	Bart's Dog Gets an F	23.9[77]	7.5
+2.17	Old Money	21.2[78]	7.6
+2.18	Brush with Greatness	20.6[79]	8
+2.19	Lisa's Substitute	17.7[80]	8.5
+2.20	The War of the Simpsons	19.7[81]	7.9
+2.21	Three Men and a Comic Book	21[82]	8.4
+2.22	Blood Feud	17.3[83]	8
+3.1	Stark Raving Dad	22.9[84]	8.6
+3.2	Mr. Lisa Goes to Washington	20.2[85]	7.7
+3.3	When Flanders Failed	22.8[86]	8.2
+3.4	Bart the Murderer	20.8[87]	8.7
+3.5	Homer Defined	20.6[88]	8.5
+3.6	Like Father, Like Clown	20.2[89]	7.7
+3.7	Treehouse of Horror II	20[90]	8.3
+3.8	Lisa's Pony	23[91]	7.9
+3.9	Saturdays of Thunder	24.7[92]	7.9
+3.10	Flaming Moe's	23.9[93]	8.8
+3.11	Burns Verkaufen der Kraftwerk	21.1[94]	8.2
+3.12	I Married Marge	21.9[95]	8.2
+3.13	Radio Bart	24.2[96]	8.5
+3.14	Lisa the Greek	23.2[97]	8
+3.15	Homer Alone	23.7[98]	8
+3.16	Bart the Lover	20.5[99]	8.3
+3.17	Homer at the Bat	24.6[100]	8.7
+3.18	Separate Vocations	23.7[101]	8.2
+3.19	Dog of Death	23.4[102]	7.8
+3.20	Colonel Homer	25.5[103]	7.9
+3.21	Black Widower	17.3[104]	8.2
+3.22	The Otto Show	17.5[105]	7.8
+3.23	Bart's Friend Falls in Love	19.5[106]	7.8
+3.24	Brother, Can You Spare Two Dimes?	17.2[107]	8.2
+4.1	Kamp Krusty	21.8[108]	8.4
+4.2	A Streetcar Named Marge	18.3[109]	8.2
+4.3	Homer the Heretic	19.3[110]	9
+4.4	Lisa the Beauty Queen	19[111]	7.8
+4.5	Treehouse of Horror III	25.1[112]	8.4
+4.6	Itchy & Scratchy: The Movie	20.1[113]	8.2
+4.7	Marge Gets a Job	22.9[113]	7.8
+4.8	New Kid on the Block	23.1[114]	8.2
+4.9	Mr. Plow	24[115]	8.8
+4.10	Lisa's First Word	28.6[116]	8.5
+4.11	Homer's Triple Bypass	23.6[117]	8.7
+4.12	Marge vs. the Monorail	23[118]	9
+4.13	Selma's Choice	24.5[119]	8
+4.14	Brother from the Same Planet	23.8[120]	8.2
+4.15	I Love Lisa	25.2[121]	8.3
+4.16	Duffless	25.7[122]	8.3
+4.17	Last Exit to Springfield	22.4[123]	9
+4.18	So It's Come to This: A Simpsons Clip Show	25.5[124]	7.2
+4.19	The Front	20.1[125]	8.1
+4.20	Whacking Day	20[126]	8.1
+4.21	Marge in Chains	17.3[127]	7.7
+4.22	Krusty Gets Kancelled	19.4[128]	8.2
+5.1	Homer's Barbershop Quartet	19.9[129]	8.5
+5.2	Cape Feare	20.0[130]	9.1
+5.3	Homer Goes to College	18.1[131]	8.6
+5.4	Rosebud	19.5[132]	8.9
+5.5	Treehouse of Horror IV	24.0[133]	8.7
+5.6	Marge on the Lam	21.7[134]	8.1
+5.7	Bart's Inner Child	18.7[135]	7.7
+5.8	Boy Scoutz 'n the Hood	20.1[136]	8.7
+5.9	The Last Temptation of Homer	20.6[137]	8.4
+5.10	$pringfield (Or, How I Learned to Stop Worrying and Love Legalized Gambling)	17.9[138]	8.6
+5.11	Homer the Vigilante	20.1[139]	8.2
+5.12	Bart Gets Famous	20.0[140]	8.1
+5.13	Homer and Apu	21.8[141]	8.3
+5.14	Lisa vs. Malibu Stacy	20.5[142]	8.2
+5.15	Deep Space Homer	18.2[143]	8.8
+5.16	Homer Loves Flanders	18.0[144]	8.5
+5.17	Bart Gets an Elephant	17.0[145]	7.9
+5.18	Burns' Heir	14.7[146]	8.4
+5.19	Sweet Seymour Skinner's Baadasssss Song	19.7[147]	8.4
+5.20	The Boy Who Knew Too Much	15.5[147]	8.2
+5.21	Lady Bouvier's Lover	15.1[148]	7.6
+5.22	Secrets of a Successful Marriage	15.6[149]	8.1
+6.1	Bart of Darkness	15.1[150]	8.6
+6.2	Lisa's Rival	16.7[151]	8.1
+6.3	Another Simpsons Clip Show	13.5[153]	6
+6.4	Itchy & Scratchy Land	14.8[154]	8.5
+6.5	Sideshow Bob Roberts	14.4[155]	8.2
+6.6	Treehouse of Horror V	22.2[156]	9.1
+6.7	Bart's Girlfriend	15.3[157]	8
+6.8	Lisa on Ice	17.9[158]	8.5
+6.9	Homer Badman	17.0[159]	9
+6.10	Grampa vs. Sexual Inadequacy	14.1[160]	8
+6.11	Fear of Flying	15.6[161]	7.8
+6.12	Homer the Great	20.1[162]	9
+6.13	And Maggie Makes Three	17.3[163]	8.6
+6.14	Bart's Comet	18.7[164]	8.6
+6.15	Homie the Clown	17.6[165]	8.6
+6.16	Bart vs. Australia	15.1[164]	8.5
+6.17	Homer vs. Patty and Selma	18.9[164]	7.9
+6.18	A Star Is Burns	14.4[166]	8.5
+6.19	Lisa's Wedding	14.4[167]	8.3
+6.20	Two Dozen and One Greyhounds	11.6[168]	8.2
+6.21	The PTA Disbands	11.8[169]	8.1
+6.22	Round Springfield	12.6[170]	8.3
+6.23	The Springfield Connection	12.7[171]	8.2
+6.24	Lemon of Troy	13.1[172]	8.7
+6.25	Who Shot Mr. Burns? Part One	15.0[173]	9.1
+7.1	Who Shot Mr. Burns? Part Two	16.0[174]	8.9
+7.2	Radioactive Man	15.7[174]	8.3
+7.3	Home Sweet Home-Dum-Diddly Doodily	14.5[175]	8.3
+7.4	Bart Sells His Soul	14.8[176]	8.8
+7.5	Lisa the Vegetarian	14.6[177]	8.6
+7.6	Treehouse of Horror VI	19.7[178]	8.5
+7.7	King Size Homer	17.0[179]	9
+7.8	Mother Simpson	15.3[180]	8.5
+7.9	Sideshow Bob's Last Gleaming	14.2[181]	8
+7.10	The Simpsons 138th Episode Spectacular	16.4[182]	7.5
+7.11	Marge Be Not Proud	16.7[183]	8.4
+7.12	Team Homer	16.7[184]	8.3
+7.13	Two Bad Neighbors	16.5[185]	8.7
+7.14	Scenes from the Class Struggle in Springfield	14.4[186]	7.7
+7.15	Bart the Fink	15.0[187]	7.7
+7.16	Lisa the Iconoclast	13.4[188]	8.1
+7.17	Homer the Smithers	14.1[189]	8.9
+7.18	The Day the Violence Died	14.4[190]	8
+7.19	A Fish Called Selma	12.9[191]	8.3
+7.20	Bart on the Road	11.8[192]	8.6
+7.21	22 Short Films About Springfield	10.5[193]	8.8
+7.22	Raging Abe Simpson and His Grumbling Grandson in 'The Curse of the Flying Hellfish'	13.0[194]	8.4
+7.23	Much Apu About Nothing	11.3[195]	8.1
+7.24	Homerpalooza	12.9[196]	8
+7.25	Summer of 4'2"	14.7[196]	8.3
+8.1	Treehouse of Horror VII	18.3[197]	8.4
+8.2	You Only Move Twice	13.9[198]	9.2
+8.3	The Homer They Fall	17.0[199]	8
+8.4	Burns, Baby Burns	12.6[200]	7.7
+8.5	Bart After Dark	14.1[201]	8.2
+8.6	A Milhouse Divided	12.8[202]	8
+8.7	Lisa's Date with Density	N/A	7.8
+8.8	Hurricane Neddy	N/A	8.8
+8.9	The Mysterious Voyage of Homer	14.9[203]	8.5
+8.10	The Springfield Files	20.9[204]	9
+8.11	The Twisted World of Marge Simpson	14.0[205]	7.8
+8.12	Mountain of Madness	9.1[206]	8.6
+8.13	Simpsoncalifragilisticexpiala(Annoyed Grunt)cious	17.7[207]	7.7
+8.14	The Itchy & Scratchy & Poochie Show	15.5[208]	7.9
+8.15	Homer's Phobia	15.3[209]	8.9
+8.16	Brother from Another Series	15.1[210]	8.2
+8.17	My Sister, My Sitter	15.1[211]	8.1
+8.18	Homer vs. the 18th Amendment	14.6[212]	8.8
+8.19	Grade School Confidential	13.3[213]	8.2
+8.20	The Canine Mutiny	N/A	7.7
+8.21	The Old Man and the Lisa	14.0[214]	7.9
+8.22	In Marge We Trust	16.9[215]	8
+8.23	Homer's Enemy	11.8[216]	9.3
+8.24	The Simpsons Spin-Off Showcase	11.6[217]	7.2
+8.25	The Secret War of Lisa Simpson	12.7[218]	7.8
+9.1	The City of New York vs. Homer Simpson	10.5[219]	9.1
+9.2	The Principal and the Pauper	14.9[220]	7.2
+9.3	Lisa's Sax	12.9[221]	8.1
+9.4	Treehouse of Horror VIII	10.9[222]	8.2
+9.5	The Cartridge Family	10.3[223]	8.3
+9.6	Bart Star	10.6[224]	7.8
+9.7	The Two Mrs. Nahasapeemapetilons	11.4[225]	7.7
+9.8	Lisa the Skeptic	9.3[226]	8
+9.9	Realty Bites	10.6[227]	7.6
+9.10	Miracle on Evergreen Terrace	9.6[228]	7.6
+9.11	All Singing, All Dancing	8.9[229]	5.1
+9.12	Bart Carny	11.7[230]	7.7
+9.13	The Joy of Sect	9.4[231]	8.3
+9.14	Das Bus	9.6[232]	8.2
+9.15	The Last Temptation of Krust	9.5[233]	7.5
+9.16	Dumbbell Indemnity	10.3[234]	7.7
+9.17	Lisa the Simpson	10.4[235]	8
+9.18	This Little Wiggy	8.9[236]	7.9
+9.19	Simpson Tide	9.0[237]	8.3
+9.20	The Trouble with Trillions	7.4[238]	7.9
+9.21	Girly Edition	8.5[239]	7.8
+9.22	Trash of the Titans	10.2[240]	8.5
+9.23	King of the Hill	9.2[241]	8.3
+9.24	Lost Our Lisa	7.6[242]	7.7
+9.25	Natural Born Kissers	8.6[243]	8.1
+10.1	Lard of the Dance	7[244]	7.6
+10.2	The Wizard of Evergreen Terrace	7.95[245]	8.2
+10.3	Bart the Mother	7.35[246]	7.5
+10.4	Treehouse of Horror IX	8.5[247]	8
+10.5	When You Dish Upon a Star	9[248]	7.3
+10.6	D'oh-in' in the Wind	8.3[249]	7.6
+10.7	Lisa Gets an 'A'	8[250]	8
+10.8	Homer Simpson in: 'Kidney Trouble'	7.2[251]	7.3
+10.9	Mayored to the Mob	8.5[252]	8.2
+10.10	Viva Ned Flanders	11.5[253]	7.8
+10.11	Wild Barts Can't Be Broken	8.8[254]	7.7
+10.12	Sunday, Cruddy Sunday	11.5[255]	6.9
+10.13	Homer to the Max	8.3[256]	7.7
+10.14	I'm with Cupid	7.7[257]	7.3
+10.15	Marge Simpson in 'Screaming Yellow Honkers'	8.6[258]	7.3
+10.16	Make Room for Lisa	7.6[259]	7.5
+10.17	Maximum Homerdrive	15.5[260]	7.7
+10.18	Simpsons Bible Stories	12.2[261][262]	7.3
+10.19	Mom and Pop Art	8.5[263]	7.6
+10.20	The Old Man and the 'C' Student	6.9[264]	7.3
+10.21	Monty Can't Buy Me Love	7.26[265]	7.2
+10.22	They Saved Lisa's Brain	6.8[266]	7.3
+10.23	Thirty Minutes Over Tokyo	8[267]	8
+11.1	Beyond Blunderdome	8.1[268]	7.3
+11.2	Brother's Little Helper	7.1	7.5
+11.3	Guess Who's Coming to Criticize Dinner?	6.7	7.5
+11.4	Treehouse of Horror X	8.7[269]	7.8
+11.5	E-I-E-I-(Annoyed Grunt)	8.4	7.6
+11.6	Hello Gutter, Hello Fadder	9.2	7.3
+11.7	Eight Misbehavin'	9.2	7.1
+11.8	Take My Wife, Sleaze	8.9	7.2
+11.9	Grift of the Magi	7.76[270]	7.3
+11.10	Little Big Mom	10	7.3
+11.11	Faith Off	10.4	6.9
+11.12	The Mansion Family	11.3[271]	7.3
+11.13	Saddlesore Galactica	9.6[272]	6.6
+11.14	Alone Again, Natura-Diddly	10.8[273]	7.9
+11.15	Missionary: Impossible	9.8	7.3
+11.16	Pygmoelian	9.4	7.3
+11.17	Bart to the Future	8.77[274]	7.1
+11.18	Days of Wine and D'oh'ses	8.3	7.4
+11.19	Kill the Alligator and Run	7.46[275]	6.6
+11.20	Last Tap Dance in Springfield	7.3	7.2
+11.21	It's a Mad, Mad, Mad, Mad Marge	7.5	7.2
+11.22	Behind the Laughter	8.3	7.9
+12.1	Treehouse of Horror XI	13.2	7.6
+12.2	A Tale of Two Springfields	16.2	7.4
+12.3	Insane Clown Poppy	16.4	7.1
+12.4	Lisa the Treehugger	14.9	7.2
+12.5	Homer vs. Dignity	15	7.2
+12.6	The Computer Wore Menace Shoes	15.6	7.7
+12.7	The Great Money Caper	16.8	7.3
+12.8	Skinner's Sense of Snow	15.9	8
+12.9	HOMR	18.5	8.1
+12.10	Pokey Mom	15	7.3
+12.11	Worst Episode Ever	18.5	7.5
+12.12	Tennis the Menace	14	6.9
+12.13	Day of the Jackanapes	15.4	7.2
+12.14	New Kids on the Blecch	18.1	7.2
+12.15	Hungry Hungry Homer	17.6	7.5
+12.16	Bye Bye Nerdy	16.1	6.5
+12.17	Simpson Safari	13.3	6.9
+12.18	Trilogy of Error	14.4	8.6
+12.19	I'm Goin' to Praiseland	13.1	7.3
+12.20	Children of a Lesser Clod	13.8	7.2
+12.21	Simpsons Tall Tales	13.4	7
+13.1	Treehouse of Horror XII	13	7.5
+13.2	The Parent Rap	14.9	7.1
+13.3	Homer the Moe	14.4	7.2
+13.4	A Hunka Hunka Burns in Love	13.4	7.1
+13.5	The Blunder Years	12.9	7.7
+13.6	She of Little Faith	13.2	7.1
+13.7	Brawl in the Family	11.8	6.9
+13.8	Sweets and Sour Marge	12.3	7
+13.9	Jaws Wired Shut	14.2	7.3
+13.10	Half-Decent Proposal	13.2	7.4
+13.11	The Bart Wants What It Wants	11.2	7.1
+13.12	The Lastest Gun in the West	13.2	6.5
+13.13	The Old Man and the Key	14.5	6.5
+13.14	Tales from the Public Domain	11.7	7.3
+13.15	Blame It on Lisa	11.1	7
+13.16	Weekend at Burnsie's	12.5	7.7
+13.17	Gump Roast	12.3	5.6
+13.18	I Am Furious Yellow	12.4	7.7
+13.19	The Sweetest Apu	11.8	6.9
+13.20	Little Girl in the Big Ten	11.2	7.2
+13.21	The Frying Game	10.8	7.1
+13.22	Papa's Got a Brand New Badge	8.2	8
+14.1	Treehouse of Horror XIII	16.7[276]	7.6
+14.2	How I Spent My Strummer Vacation	12.5[277]	7.3
+14.3	Bart vs. Lisa vs. 3rd Grade	13.3[278]	7.1
+14.4	Large Marge	17.4[279]	7.1
+14.5	Helter Shelter	15.1[280]	6.8
+14.6	The Great Louse Detective	15.5[281]	7.2
+14.7	Special Edna	15.0[282]	7.1
+14.8	The Dad Who Knew Too Little	12.8[283]	7.3
+14.9	The Strong Arms of the Ma	15.4[284]	6.9
+14.10	Pray Anything	13.4[285]	6.9
+14.11	Barting Over	21.3[286]	6.6
+14.12	I'm Spelling as Fast as I Can	22.1[287]	7.3
+14.13	A Star Is Born Again	14.4[288]	7
+14.14	Mr. Spritz Goes to Washington	14.4[289]	6.8
+14.15	C.E.D'oh	13.0[290]	7.3
+14.16	Scuse Me While I Miss the Sky	12.6[291]	7.2
+14.17	Three Gays of the Condo	12.02[292]	7.2
+14.18	Dude, Where's My Ranch?	11.71[293]	7
+14.19	Old Yeller-Belly	11.59[294]	6.7
+14.20	Brake My Wife, Please	10.56[295]	6.8
+14.21	The Bart of War	12.10[296]	6.6
+14.22	Moe Baby Blues	13.44[296]	7.7
+15.1	Treehouse of Horror XIV	16.22[297]	7.4
+15.2	My Mother the Carjacker	12.4[298]	7.3
+15.3	The President Wore Pearls	12.7[299]	7
+15.4	The Regina Monologues	12.2[300]	7.1
+15.5	The Fat and the Furriest	11.7[301]	7.2
+15.6	Today, I Am a Clown	10.5[302]	6.5
+15.7	Tis the Fifteenth Season	11.3[303]	7.1
+15.8	Marge vs. Singles, Seniors, Childless Couples and Teens and Gays	12.0[304]	6.7
+15.9	I, (Annoyed Grunt)-Bot	16.3[305]	7.2
+15.10	Diatribe of a Mad Housewife	10.6[306]	7.2
+15.11	Margical History Tour	8.9[307]	7.1
+15.12	Milhouse Doesn't Live Here Anymore	9.4[308]	7.2
+15.13	Smart & Smarter	12.6[309]	7.1
+15.14	The Ziff Who Came to Dinner	10.7[310]	6.8
+15.15	Co-Dependent's Day	11.2[311]	6.8
+15.16	The Wandering Juvie	10.5[312]	6.9
+15.17	My Big Fat Geek Wedding	9.2[313]	6.7
+15.18	Catch 'Em If You Can	9.3[314]	7
+15.19	Simple Simpson	9.5[315]	7.3
+15.20	The Way We Weren't	6.6[316]	7.2
+15.21	Bart-Mangled Banner	8.7[317]	6.2
+15.22	Fraudcast News	9.2[318]	7.2
+16.1	Treehouse of Horror XV	11.29[319]	7.4
+16.2	All's Fair in Oven War	11.64[320]	7
+16.3	Sleeping with the Enemy	9.95[321]	7.1
+16.4	She Used to Be My Girl	10.81[322]	6.6
+16.5	Fat Man and Little Boy	10.31[323]	7.1
+16.6	Midnight Rx	8.11[324]	7.2
+16.7	Mommie Beerest	9.97[325]	7
+16.8	Homer and Ned's Hail Mary Pass	23.07[326]	6.4
+16.9	Pranksta Rap	8.01[327]	6.8
+16.10	There's Something About Marrying	10.39[328]	7
+16.11	On a Clear Day I Can't See My Sister	10.39[329]	6.9
+16.12	Goo Goo Gai Pan	10.28[330]	7
+16.13	Mobile Homer	8.49[331]	6.9
+16.14	The Seven-Beer Snitch	7.48[332]	6.9
+16.15	Future-Drama	8.31[333]	7.3
+16.16	Don't Fear the Roofer	11.92[334]	7.4
+16.17	The Heartbroke Kid	10.79[334]	7.2
+16.18	A Star Is Torn	8.72[335]	6.7
+16.19	Thank God It's Doomsday	10.05[335]	7.2
+16.20	Home Away from Homer	8.17[336]	7.1
+16.21	The Father, the Son, and the Holy Guest Star	9.69[336]	7.2
+17.1	Bonfire of the Manatees	11.10[337]	6.2
+17.2	The Girl Who Slept Too Little	9.79[338]	6.9
+17.3	Milhouse of Sand and Fog	10.19[339]	7
+17.4	Treehouse of Horror XVI	11.63[340]	7.3
+17.5	Marge's Son Poisoning	11.4[341]	6.9
+17.6	See Homer Run	10.3[342]	6.9
+17.7	The Last of the Red Hat Mamas	11.46[343]	6.7
+17.8	The Italian Bob	10.39[344]	7
+17.9	Simpsons Christmas Stories	9.8[345]	6.8
+17.10	Homer's Paternity Coot	10.1[346]	6.7
+17.11	We're on the Road to D'ohwhere	9.04[347]	6.9
+17.12	My Fair Laddy	9.51[348]	6.3
+17.13	The Seemingly Never-Ending Story	9.72[349]	7.5
+17.14	Bart Has Two Mommies	8.75[350]	7
+17.15	Homer Simpson, This Is Your Wife	10.09[351]	6.5
+17.16	Million Dollar Abie	7.83[352]	6.5
+17.17	Kiss Kiss, Bang Bangalore	8.20[353]	7.2
+17.18	The Wettest Stories Ever Told	7.04[354]	6.7
+17.19	Girls Just Want to Have Sums	8.7[355]	7.2
+17.20	Regarding Margie	8.50[356]	6.7
+17.21	The Monkey Suit	8.3[357]	7.1
+17.22	Homer and Marge Turn a Couple Play	8.23[358]	6.5
+18.1	The Mook, the Chef, the Wife and Her Homer	11.50[359]	7.5
+18.2	Jazzy & The Pussycats	8.94[360]	6.6
+18.3	Please Homer, Don't Hammer 'Em	9.72[361]	6.7
+18.4	Treehouse of Horror XVII	10.43[362]	7
+18.5	G.I. (Annoyed Grunt)	11.43[363]	6.8
+18.6	Moe'N'a Lisa	9.31[364]	6.8
+18.7	Ice Cream of Margie: With the Light Blue Hair	10.90[365]	7
+18.8	The Haw-Hawed Couple	8.29[366]	7.2
+18.9	Kill Gil, Vol. 1 & 2	8.96[367]	6.4
+18.10	The Wife Aquatic	13.90[368]	6.6
+18.11	Revenge Is a Dish Best Served Three Times	8.09[369]	7
+18.12	Little Big Girl	8.27[370]	6.9
+18.13	Springfield Up	8.80[371]	7.2
+18.14	Yokel Chords	9.09[372]	7
+18.15	Rome-old and Juli-eh	8.98[373]	6.3
+18.16	Homerazzi	6.91[374]	7.1
+18.17	Marge Gamer	6.40[375]	7.3
+18.18	The Boys of Bummer	7.57[376]	6.2
+18.19	Crook and Ladder	7.72[377]	7
+18.20	Stop or My Dog Will Shoot	6.48[378]	6.9
+18.21	24 Minutes	9.80[379]	8.1
+18.22	You Kent Always Say What You Want	9.80[379]	7.2
+19.1	He Loves to Fly and He D'ohs	9.7[380]	6.7
+19.2	Homer of Seville	8.4[381]	6.6
+19.3	Midnight Towboy	7.7[382]	7.2
+19.4	I Don't Wanna Know Why the Caged Bird Sings	8.8[383]	6.9
+19.5	Treehouse of Horror XVIII	11.7[384]	7
+19.6	Little Orphan Millie	10.57[385]	6.7
+19.7	Husbands and Knives	10.5[386]	7.1
+19.8	Funeral for a Fiend	9.0[387]	7.1
+19.9	Eternal Moonshine of the Simpson Mind	10.15[388]	8.1
+19.10	E Pluribus Wiggum	8.2[389]	6.9
+19.11	That '90s Show	7.6[390]	6.3
+19.12	Love, Springfieldian Style	7.81[391]	6.6
+19.13	The DeBarted	8.18[392]	7.6
+19.14	Dial 'N' for Nerder	7.3[393]	7.2
+19.15	Smoke on the Daughter	7.10[381]	6.7
+19.16	Papa Don't Leech	6.9[394]	6.1
+19.17	Apocalypse Cow	7.69[395]	6.8
+19.18	Any Given Sundance	6.18[396]	7
+19.19	Mona Leaves-a	6.02[397]	7.1
+19.20	All About Lisa	6.11[398]	6.4
+20.1	Sex, Pies and Idiot Scrapes	9.3[399]	7.2
+20.2	Lost Verizon	7.43[400]	6.9
+20.3	Double, Double, Boy in Trouble	8.09[401]	6.9
+20.4	Treehouse of Horror XIX	12.48[402]	7.1
+20.5	Dangerous Curves	8.16[403]	6.5
+20.6	Homer and Lisa Exchange Cross Words	8.52[404]	7
+20.7	MyPods and Boomsticks	7.80[405]	7.1
+20.8	The Burns and the Bees	6.19[406]	6.5
+20.9	Lisa the Drama Queen	5.75[407]	5.9
+20.10	Take My Life, Please	6.82[408]	7
+20.11	How the Test Was Won	6.52[409]	7
+20.12	No Loan Again, Naturally	5.99[410]	6.9
+20.13	Gone Maggie Gone	5.99[411]	7.2
+20.14	In the Name of the Grandfather	6.15[412]	6.3
+20.15	Wedding for Disaster	6.58[413]	6.8
+20.16	Eeny Teeny Maya Moe	6.50[414]	7.2
+20.17	The Good, the Sad and the Drugly	6.50[415]	7.2
+20.18	Father Knows Worst	5.94[416]	6.9
+20.19	Waverly Hills, 9021-D'Oh	6.75[417]	7.1
+20.20	Four Great Women and a Manicure	5.16[418]	6.3
+20.21	Coming to Homerica	5.86[419]	7.2
+21.1	Homer the Whopper	8.31[50]	7.1
+21.2	Bart Gets a 'Z'	9.32[51]	6.6
+21.3	The Great Wife Hope	7.5[52]	6.3
+21.4	Treehouse of Horror XX	8.59[53]	7.3
+21.5	The Devil Wears Nada	9.04[54]	6.7
+21.6	Pranks and Greens	7.03[55]	6.7
+21.7	Rednecks and Broomsticks	9.02[56]	6.8
+21.8	Oh Brother, Where Bart Thou?	7.11[57]	7.1
+21.9	Thursdays with Abie	8.65[58]	6.8
+21.10	Once Upon a Time in Springfield	14.62[59]	6.7
+21.11	Million Dollar Maybe	5.11[60]	7.1
+21.12	Boy Meets Curl	5.87[61]	6.8
+21.13	The Color Yellow	6.08[62]	6.6
+21.14	Postcards from the Wedge	5.23[63]	7
+21.15	Stealing First Base	5.69[64]	7
+21.16	The Greatest Story Ever D'ohed	5.69[65]	5.7
+21.17	American History X-cellent	5.65[66]	6.6
+21.18	Chief of Hearts	5.93[67]	6.9
+21.19	The Squirt and the Whale	5.94[68]	6.9
+21.20	To Surveil, with Love	6.06[69]	7.2
+21.21	Moe Letter Blues	5.66[70]	6.9
+21.22	The Bob Next Door	6.26[71]	7.2
+21.23	Judge Me Tender	5.74[72]	6.6
+22.1	Elementary School Musical	7.75[73]	6.2
+22.2	Loan-a Lisa	8.59[74]	6.8
+22.3	MoneyBart	6.72[75]	6.7
+22.4	Treehouse of Horror XXI	8.19[76]	7.1
+22.5	Lisa Simpson, This Isn't Your Life	8.97[77]	7.1
+22.6	The Fool Monty	6.58[78]	6.5
+22.7	How Munched Is That Birdie in the Window?	9.38[79]	6.4
+22.8	The Fight Before Christmas	9.54[80]	6.8
+22.9	Donnie Fatso	7.18[81]	7
+22.10	Moms I'd Like to Forget	12.6[82]	6.3
+22.11	Flaming Moe	6.47[83]	6.8
+22.12	Homer the Father	6.50[84]	7
+22.13	The Blue and the Gray	5.61[85]	6.9
+22.14	Angry Dad: The Movie	6.35[86]	7.2
+22.15	The Scorpion's Tale	6.20[87]	6.6
+22.16	A Midsummer's Nice Dreams	5.44[88]	6.1
+22.17	Love Is a Many Strangled Thing	6.14[89]	6.4
+22.18	The Great Simpsina	4.99[90]	6.9
+22.19	The Real Housewives of Fat Tony	6.10[91]	6.6
+22.20	Homer Scissorhands	5.48[92]	7.1
+22.21	500 Keys	6.00[93]	7.2
+22.22	The Ned-Liest Catch	5.25[94]	7
+23.1	The Falcon and the D'Ohman	8.08[95]	7.1
+23.2	Bart Stops to Smell the Roosevelts	6.19[96]	7
+23.3	Treehouse of Horror XXII	8.10[97]	6.6
+23.4	Replaceable You	7.97[98]	6.7
+23.5	The Food Wife	7.50[99]	7.2
+23.6	The Book Job	5.77[100]	7.8
+23.7	The Man in the Blue Flannel Pants	5.61[101]	6.7
+23.8	The Ten-Per-Cent Solution	9.01[102]	6.2
+23.9	Holidays of Future Passed	6.43[103]	8.2
+23.10	Politically Inept, with Homer Simpson	5.07[104]	6.1
+23.11	The D'oh-cial Network	11.48[105]	7
+23.12	Moe Goes from Rags to Riches	5.12[106]	5.8
+23.13	The Daughter Also Rises	4.26[107]	6.4
+23.14	At Long Last Leave	5.77[108]	7
+23.15	Exit Through the Kwik-E-Mart	5.09[109]	6.9
+23.16	How I Wet Your Mother	4.97[110]	7.2
+23.17	Them, Robot	5.25[111]	7
+23.18	Beware My Cheating Bart	4.86[112]	7.1
+23.19	A Totally Fun Thing Bart Will Never Do Again	5.00[113]	7.4
+23.20	The Spy Who Learned Me	4.84[114]	6.9
+23.21	Ned 'N' Edna's Blend	4.07[115]	6.7
+23.22	Lisa Goes Gaga	4.82[116]	4.3
+24.1	Moonshine River	8.08[117]	6.4
+24.2	Treehouse of Horror XXIII	6.57[118]	7.3
+24.3	Adventures in Baby-Getting	5.65[119]	6.9
+24.4	Gone Abie Gone	6.86[120]	6.7
+24.5	Penny-Wiseguys	5.06[121]	6.3
+24.6	A Tree Grows in Springfield	7.46[122]	6.4
+24.7	The Day the Earth Stood Cool	7.44[123]	7.1
+24.8	To Cur with Love	3.77[124]	7.2
+24.9	Homer Goes to Prep School	8.97[125]	6.8
+24.10	A Test Before Trying	5.04[126]	7
+24.11	Changing of the Guardian	5.23[127]	6.6
+24.12	Love Is a Many Splintered Thing	4.19[128]	6.4
+24.13	Hardly Kirk-ing	4.57[129]	7
+24.14	Gorgeous Grampa	4.66[130]	6.2
+24.15	Black-Eyed, Please	4.85[131]	7
+24.16	Dark Knight Court	4.89[132]	7
+24.17	What Animated Women Want	4.11[133]	6.5
+24.18	Pulpit Friction	4.54[134]	6.5
+24.19	Whiskey Business	4.43[135]	6.8
+24.20	The Fabulous Faker Boy	4.16[136]	6.3
+24.21	The Saga of Carl	4.01[137]	7.1
+24.22	Dangers on a Train	4.52[137]	7
+25.1	Homerland	6.37[138]	6.9
+25.2	Treehouse of Horror XXIV	6.42[139]	7
+25.3	Four Regrettings and a Funeral	5.43[140]	6.4
+25.4	YOLO	4.20[141]	6.6
+25.5	Labor Pains	4.08[142]	7
+25.6	The Kid Is All Right	6.78[143]	6.4
+25.7	Yellow Subterfuge	6.85[144]	7
+25.8	White Christmas Blues	8.48[145]	6.5
+25.9	Steal This Episode	12.04[146]	7.6
+25.10	Married to the Blob	4.83[147]	7.1
+25.11	Specs and the City	3.87[148]	7.2
+25.12	Diggs	2.69[149]	6.4
+25.13	The Man Who Grew Too Much	3.75[149]	6.7
+25.14	The Winter of His Content	4.02[150]	6.6
+25.15	The War of Art	3.98[151]	7
+25.16	You Don't Have to Live Like a Referee	3.91[152]	6.9
+25.17	Luca$	4.30[153]	6.5
+25.18	Days of Future Future	3.64[154]	7.1
+25.19	What to Expect When Bart's Expecting	3.45[155]	5.8
+25.20	Brick Like Me	4.39[156]	7.7
+25.21	Pay Pal	3.66[157]	6.7
+25.22	The Yellow Badge of Cowardge	3.28[158]	6.7
+26.1	Clown in the Dumps	8.53[159]	5.8
+26.2	The Wreck of the Relationship	4.27[160]	6.9
+26.3	Super Franchise Me	7.33[161]	6.5
+26.4	Treehouse of Horror XXV	7.76[162]	7.3
+26.5	Opposites A-Frack	4.22[163]	6.3
+26.6	Simpsorama	6.70[164]	7.9
+26.7	Blazed and Confused	6.70[165]	6.9
+26.8	Covercraft	3.45[166]	6.5
+26.9	I Won't Be Home for Christmas	6.52[167]	6.8
+26.10	The Man Who Came to Be Dinner	10.62[168]	6.8
+26.11	Bart's New Friend	4.28[169]	7.3
+26.12	The Musk Who Fell to Earth	3.29[170]	5.9
+26.13	Walking Big & Tall	2.78[171]	6.3
+26.14	My Fare Lady	2.67[172]	6.7
+26.15	The Princess Guide	3.93[173]	6.6
+26.16	Sky Police	3.79[174]	6.8
+26.17	Waiting for Duffman	3.59[175]	6.7
+26.18	Peeping Mom	3.23[176]	6.7
+26.19	The Kids Are All Fight	3.33[177]	6.9
+26.20	Let's Go Fly a Coot	3.12[178]	6.3
+26.21	Bull-E	2.77[179]	6.8
+26.22	Mathlete's Feat	2.82[180]	6.9
+27.1	Every Man's Dream	3.28[181]	5.9
+27.2	Cue Detective	6.02[182]	6.7
+27.3	Puffless	3.31[183]	7.2
+27.4	Halloween of Horror	3.69[184]	7.5
+27.5	Treehouse of Horror XXVI	6.75[185]	6.8
+27.6	Friend with Benefit	3.48[186]	6.9
+27.7	Lisa with an "S"	5.64[187]	6.2
+27.8	Paths of Glory	5.53[188]	7.1
+27.9	Barthood	5.97[189]	8.4
+27.10	The Girl Code	4.41[190]	6.7
+27.11	Teenage Mutant Milk-Caused Hurdles	8.33[191]	6.8
+27.12	Much Apu About Something	3.95[192]	6.7
+27.13	Love Is in the N2-O2-Ar-CO2-Ne-He-CH4	2.89[193]	6.4
+27.14	Gal of Constant Sorrow	3.10[194]	6.6
+27.15	Lisa the Veterinarian	3.09[195]	6.4
+27.16	The Marge-ian Chronicles	3.07[196]	7.2
+27.17	The Burns Cage	2.32[197]	6.5
+27.18	How Lisa Got Her Marge Back	2.55[198]	6.3
+27.19	Fland Canyon	2.77[199]	7.1
+27.20	To Courier with Love	2.52[200]	6.8
+27.21	Simprovised	2.80[201]	6.4
+27.22	Orange Is the New Yellow	2.54[202]	6.9
+28.1	Monty Burns' Fleeing Circus	3.36[203]	6.3
+28.2	Friends and Family	6.00[204]	6.8
+28.3	The Town	3.22[205]	7.2
+28.4	Treehouse of Horror XXVII	7.44[206]	7.1
+28.5	Trust But Clarify	3.36[207]	6.5
+28.6	There Will Be Buds	3.14[208]	6.9
+28.7	Havana Wild Weekend	7.13[209]	6.2
+28.8	Dad Behavior	2.88[210]	6.8
+28.9	The Last Traction Hero	5.77[211]	6.5
+28.10	The Nightmare After Krustmas	5.60[212]	6.1
+28.11	Pork and Burns	8.19[213]	7.1
+28.12	The Great Phatsby: Part 1	6.90[214]	6.5
+28.13	Fatzcarraldo	2.40[215]	6.3
+28.14	The Cad and the Hat	2.44[216]	6.6
+28.15	Kamp Krustier	2.56[217]	6.8
+28.16	22 for 30	0.81[218]	6.6
+28.17	A Father's Watch	2.40[219]	7
+28.18	The Caper Chase	2.13[220]	6.2
+28.19	Looking for Mr. Goodbart	2.30[221]	7.1
+28.20	Moho House	2.34[222]	6.2
+28.22	Dogtown	2.15[223]	6.6
+29.1	"The Serfsons"	3.26[231]	6.8
+29.2	"Springfield Splendor"	5.25[232]	6.5
+29.3	"Whistler's Father"	2.91[233]	6.1
+29.4	"Treehouse of Horror XXVIII"	3.66[234]	7.1
+29.5	"Grampy Can Ya Hear Me"	2.86[235]	6.3
+29.6	"The Old Blue Mayor She Ain't What She Used to Be"	4.75[236]	6.2
+29.7	"Singin' in the Lane"	2.67[237]	6.3
+29.8	"Mr. Lisa's Opus"	4.28[238]	6.8
+29.9	"Gone Boy"	6.06[239]	7.2
+29.10	"Haw-Haw Land"	6.95[240]	6.5
+29.11	"Frink Gets Testy"	8.04[241]	6.1
+29.12	"Homer Is Where the Art Isn't"	2.10[242]	6.6
+29.13	"3 Scenes Plus a Tag from a Marriage"	2.15[243]	6.5
+29.14	"Fears of a Clown"	2.06[244]	6
+29.15	"No Good Read Goes Unpunished"	2.15[245]	6.3
+29.16	"King Leer"	2.26[246]	6.2
+29.17	"Lisa Gets the Blues"	2.19[247]	6.8
+29.18	"Forgive and Regret"	2.47[248]	7
+29.19	"Left Behind"	2.15[249]	6.6
+29.20	"Throw Grampa from the Dane"	2.14[250]	6.6
+29.21	"Flanders' Ladder"	2.10[251]	7.6
+30.1	"Bart's Not Dead"	3.24[252]	6.2
+30.2	"Heartbreak Hotel"	4.60[253]	6
+30.3	"My Way or the Highway to Heaven"	2.52[254]	6.1
+30.4	"Treehouse of Horror XXIX"	2.95[255]	5.9
+30.5	"Baby You Can't Drive My Car"	5.08[256]	7
+30.6	"From Russia Without Love"	2.35[257]	6.4
+30.7	"Werking Mom"	4.34[258]	5.5
+30.8	"Krusty the Clown"	2.11[259]	6.4
+30.9	"Daddicus Finch"	4.33[260]	6.7
+30.10	"'Tis the 30th Season"	7.53[261]	6.7
+30.11	"Mad About the Toy"	2.33[262]	5.5
+30.12	"The Girl on the Bus"	8.20[263]	6.3
+30.13	"I'm Dancing as Fat as I Can"	1.75[264]	6.8
+30.14	"The Clown Stays in the Picture"	2.75[265]	6.1
+30.15	"101 Mitigations"	2.25[266]	6.4
+30.16	"I Want You (She's So Heavy)"	2.21[267]	5.7
+30.17	"E My Sports"	2.08[268]	6.2
+30.18	"Bart vs. Itchy & Scratchy"	1.99[269]	4.4
+30.19	"Girl's in the Band"	2.07[270]	6.3
+30.20	"I'm Just a Girl Who Can't Say D'oh"	1.61[271]	5.3
+30.21	"D'oh Canada"	1.93[272]	5.3
+30.22	"Woo-Hoo Dunnit?"	1.79[273]	6
+30.23	"Crystal Blue-Haired Persuasion"	1.50[274]	5.9
+31.1	"The Winter of Our Monetized Content"	2.33[275]	5.7
+31.2	"Go Big or Go Homer"	5.63[276]	5.8
+31.3	"The Fat Blue Line"	2.13[277]	6.5
+31.4	"Treehouse of Horror XXX"	5.42[278]	6.9
+31.5	"Gorillas on the Mast"	2.02[279]	6.2
+31.6	"Marge the Lumberjill"	5.00[280]	5.4
+31.7	"Livin La Pura Vida"	2.08[281]	6.3
+31.8	"Thanksgiving of Horror"	5.42[282]	7.3
+31.9	"Todd, Todd, Why Hast Thou Forsaken Me?"	1.99[283]	6.5
+31.10	"Bobby, It's Cold Outside"	4.97[284]	6.5
+31.11	"Hail to the Teeth"	1.81[285]	6
+31.12	"The Miseducation of Lisa Simpson"	1.95[286]	6.5
+31.13	"Frinkcoin"	1.84[287]	5.9
+31.14	"Bart the Bad Guy"	1.66[288]	7.3
+31.15	"Screenless"	1.63[289]	6.5
+31.16	"Better Off Ned"	1.70[290]	6.4
+31.17	"Highway to Well"	1.66[291]	7
+31.18	"The Incredible Lightness of Being a Baby"	1.58[292]	6.3
+31.19	"Warrin' Priests" (Part One)	1.35[293]	6
+31.20	"Warrin' Priests" (Part Two)	1.36[294]	5.7
+31.21	"The Hateful Eight-Year-Olds"	1.40[295]	6.7
+31.22	"The Way of the Dog"	1.89[296]	7.4
+32.1	"Undercover Burns"	4.44[298]	6.5
+32.2	"I, Carumbus"	1.51[299]	6.7
+32.3	"Now Museum, Now You Don't"	1.36[300]	5.5
+32.4	"Treehouse of Horror XXXI"	4.93[304]	5.9
+32.5	"The 7 Beer Itch"	1.74[305]	5.6
+32.6	"Podcast News"	3.50[306]	6.8
+32.7	"Three Dreams Denied"	4.41[307]	6.2
+32.8	"The Road to Cincinnati"	1.63[308]	6.6
+32.9	"Sorry Not Sorry"	1.66[309]	6.1
+32.10	"A Springfield Summer Christmas for Christmas"	3.92[310]	6.1
+32.11	"The Dad-Feelings Limited"	1.89[311]	6.9
+32.12	"Diary Queen"	1.43[312]	6.8
+32.13	"Wad Goals"	1.24[313]	6.2
+32.14	"Yokel Hero"	1.38[314]	5.5
+32.15	"Do Pizza Bots Dream of Electric Guitars"	1.43[315]	5.8
+32.16	"Manger Things"	1.28[316]	6.4
+32.17	"Uncut Femmes"	1.22[317]	6.4
+32.18	"Burger Kings"	1.24[318]	6.7
+32.19	"Panic on the Streets of Springfield"	1.31[319]	6.1
+32.20	"Mother and Child Reunion"	1.11[320]	7
+32.21	"The Man from G.R.A.M.P.A."	1.06[321]	6.4
+32.22	"The Last Barfighter"	1.02[322]	7.6

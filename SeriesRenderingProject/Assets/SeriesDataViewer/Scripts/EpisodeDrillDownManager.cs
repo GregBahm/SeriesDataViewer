@@ -8,7 +8,6 @@ using UnityEngine.Rendering.PostProcessing;
 public class EpisodeDrillDownManager : MonoBehaviour
 {
     public static EpisodeDrillDownManager Instance { get; private set; }
-    public EpisodeBehavior DrilledEpisode { get; private set; }
 
     public CanvasGroup AlphaElement;
     public TextMeshProUGUI Title;
@@ -26,47 +25,20 @@ public class EpisodeDrillDownManager : MonoBehaviour
 
     private void Update()
     {
-        DrilledEpisode = GetDrilledEpisode();
         UpdateAlphaElement();
-        if(DrilledEpisode != null)
+        if(MainScript.Instance.DrilledEpisode != null)
         {
-            Title.text = DrilledEpisode.Data.Title;
-            SeasonEpisode.text = "Season " + DrilledEpisode.Data.Season + " episode " + DrilledEpisode.Data.Episode;
-            ImdbRating.text = DrilledEpisode.Data.ImdbRating.ToString();
-            Nelson.text = DrilledEpisode.Data.NealsonRating.ToString();
-        }
-        //UpdateDepthOfField();
-    }
-
-    private void UpdateDepthOfField()
-    {
-        PostProcessVolume volume = Camera.main.GetComponent<PostProcessVolume>();
-        DepthOfField depth = volume.profile.GetSetting<DepthOfField>();
-        depth.active = DrilledEpisode != null;
-        if(DrilledEpisode != null)
-        {
-            float distance = (Camera.main.transform.position - DrilledEpisode.transform.position).magnitude;
-            depth.focusDistance.value = distance;
+            EpisodeBehavior episode = MainScript.Instance.DrilledEpisode;
+            Title.text = episode.Data.Title;
+            SeasonEpisode.text = "Season " + episode.Data.Season + " episode " + episode.Data.Episode;
+            ImdbRating.text = episode.Data.ImdbRating.ToString();
+            Nelson.text = episode.Data.NealsonRating.ToString();
         }
     }
 
     private void UpdateAlphaElement()
     {
-        float alphaTarget = DrilledEpisode != null ? 1f : 0;
+        float alphaTarget = MainScript.Instance.DrilledEpisode != null ? 1f : 0;
         AlphaElement.alpha = Mathf.Lerp(alphaTarget, AlphaElement.alpha, Time.deltaTime * 30);
-    }
-
-    private EpisodeBehavior GetDrilledEpisode()
-    {
-        if (MouseInteractionManager.Instance.DrilldownEnabled)
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
-            {
-                return hit.collider.gameObject.GetComponent<EpisodeBehavior>();
-            }
-        }
-        return null;
     }
 }
