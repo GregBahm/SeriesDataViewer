@@ -42,28 +42,35 @@ public class HololensInputManager : MonoBehaviour
         ScaleButton.Clicked += OnScaleClicked;
     }
 
-    private void OnScaleClicked(object sender, EventArgs e)
+    private void OnMoveClicked(object sender, EventArgs e)
     {
-        toolMode = LeftHandToolMode.Scale;
+        toolMode = LeftHandToolMode.Move;
+        UpdateToolButtonToggles();
     }
 
     private void OnRotateClicked(object sender, EventArgs e)
     {
         toolMode = LeftHandToolMode.Rotate;
+        UpdateToolButtonToggles();
     }
 
-    private void OnMoveClicked(object sender, EventArgs e)
+    private void OnScaleClicked(object sender, EventArgs e)
     {
-        toolMode = LeftHandToolMode.Move;
+        toolMode = LeftHandToolMode.Scale;
+        UpdateToolButtonToggles();
+    }
+
+    private void UpdateToolButtonToggles()
+    {
+        MoveButton.Toggled = toolMode == LeftHandToolMode.Move;
+        RotateButton.Toggled = toolMode == LeftHandToolMode.Rotate;
+        ScaleButton.Toggled = toolMode == LeftHandToolMode.Scale;
     }
 
     void Update()
     {
         UpdatePinchAndDrag();
-        if(!PinchDetector.Pinching)
-        {
-            UpdateDrillDown();
-        }
+        UpdateDrillDown();
         UpdateImdbToNelson();
     }
 
@@ -157,8 +164,8 @@ public class HololensInputManager : MonoBehaviour
 
     private void UpdateDrillDown()
     {
-        EpisodeBehavior closestEpisode = GetClosestEpisode();
-        EpisodeDrillDownManager.Instance.DrilledEpisode = closestEpisode;
+        EpisodeBehavior drilledEpisode = GetClosestEpisode();
+        MainScript.Instance.DrilledEpisode = drilledEpisode;
     }
     
     private Vector3 GetDeadzoneMovement()

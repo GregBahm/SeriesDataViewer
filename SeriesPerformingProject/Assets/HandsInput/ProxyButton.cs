@@ -58,25 +58,19 @@ public class ProxyButton : MonoBehaviour
         }
         EventHandler handler = Clicked;
         handler?.Invoke(this, EventArgs.Empty);
-        Debug.Log("click");
     }
 
     private ButtonState UpdateState()
     {
-        Vector3 localPos = GetLocalFingerPosition();
-        bool pressed = localPos.magnitude < 1f;
+        Vector3 fingerPos = Hands.Instance.RightHandProxy.IndexTip.position;
+        float dist = (transform.position - fingerPos).magnitude * 2;
+        bool pressed = dist < transform.lossyScale.x;
         if (pressed)
         {
             return ButtonState.Pressed;
         }
 
         return ButtonState.Ready;
-    }
-
-    private Vector3 GetLocalFingerPosition()
-    {
-        Vector3 fingerPos = Hands.Instance.RightHandProxy.IndexTip.position;
-        return transform.InverseTransformPoint(fingerPos);
     }
 
     public enum ButtonInteractionStyles

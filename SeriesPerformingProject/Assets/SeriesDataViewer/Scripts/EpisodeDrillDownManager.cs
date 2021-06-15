@@ -8,7 +8,6 @@ using UnityEngine.Rendering.PostProcessing;
 public class EpisodeDrillDownManager : MonoBehaviour
 {
     public static EpisodeDrillDownManager Instance { get; private set; }
-    public EpisodeBehavior DrilledEpisode { get; set; }
 
     public CanvasGroup AlphaElement;
     public TextMeshProUGUI Title;
@@ -27,19 +26,19 @@ public class EpisodeDrillDownManager : MonoBehaviour
     private void Update()
     {
         UpdateAlphaElement();
-        if(DrilledEpisode != null)
+        if(MainScript.Instance.DrilledEpisode != null)
         {
-            Title.text = DrilledEpisode.Data.Title;
-            SeasonEpisode.text = "Season " + DrilledEpisode.Data.Season + " episode " + DrilledEpisode.Data.Episode;
-            ImdbRating.text = DrilledEpisode.Data.ImdbRating.ToString();
-            Nelson.text = DrilledEpisode.Data.NealsonRating.ToString();
+            EpisodeBehavior episode = MainScript.Instance.DrilledEpisode;
+            Title.text = episode.Data.Title;
+            SeasonEpisode.text = "Season " + episode.Data.Season + " episode " + episode.Data.Episode;
+            ImdbRating.text = episode.Data.ImdbRating.ToString();
+            Nelson.text = episode.Data.NealsonRating.ToString();
         }
-        //UpdateDepthOfField();
     }
 
     private void UpdateAlphaElement()
     {
-        float alphaTarget = DrilledEpisode != null ? 1f : 0;
+        float alphaTarget = MainScript.Instance.DrilledEpisode != null ? 1f : 0;
         AlphaElement.alpha = Mathf.Lerp(alphaTarget, AlphaElement.alpha, Time.deltaTime * 30);
     }
 }

@@ -44,6 +44,8 @@ public class MainScript : MonoBehaviour
 
     public ShowBehavior ShownSeries { get { return EachSeries[ShowToShow]; } }
 
+    public EpisodeBehavior DrilledEpisode { get; set; }
+
     private void Awake()
     {
         Instance = this;
@@ -63,7 +65,7 @@ public class MainScript : MonoBehaviour
     {
         GameObject obj = new GameObject(dataSource.name);
         ShowBehavior ret = obj.AddComponent<ShowBehavior>();
-        ret.Episodes = DataLoader.LoadData(dataSource);
+        ret.Episodes = DataLoader.LoadData(dataSource).ToList().AsReadOnly();
         obj.transform.SetParent(RootTransform, false);
         return ret;
     }

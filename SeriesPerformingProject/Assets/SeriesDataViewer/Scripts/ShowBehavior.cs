@@ -4,11 +4,12 @@ using UnityEngine;
 using System.Linq;
 using System;
 using TMPro;
+using System.Collections.ObjectModel;
 
 public class ShowBehavior : MonoBehaviour
 {
-    public IEnumerable<EpisodeData> Episodes { get; set; }
-    public IEnumerable<EpisodeBehavior> EpisodeBehaviors { get; private set; }
+    public ReadOnlyCollection<EpisodeData> Episodes { get; set; }
+    public ReadOnlyCollection<EpisodeBehavior> EpisodeBehaviors { get; private set; }
     public float MaxNealson { get; private set; }
     public float MaxSeason { get; private set; }
     public float MaxEpisode { get; private set; }
@@ -25,7 +26,7 @@ public class ShowBehavior : MonoBehaviour
         MaxSeason = Episodes.Max(item => item.Season);
         MaxEpisode = Episodes.Max(item => item.Episode);
         
-        EpisodeBehaviors = CreateEpisodeBoxes();
+        EpisodeBehaviors = CreateEpisodeBoxes().ToList().AsReadOnly();
         labelsTransform = new GameObject("Labels").transform;
         labelsTransform.SetParent(transform, false);
 

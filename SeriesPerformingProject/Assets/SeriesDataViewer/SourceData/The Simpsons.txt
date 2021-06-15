@@ -615,3 +615,91 @@
 28.19	Looking for Mr. Goodbart	2.30[221]	7.1
 28.20	Moho House	2.34[222]	6.2
 28.22	Dogtown	2.15[223]	6.6
+29.1	"The Serfsons"	3.26[231]	6.8
+29.2	"Springfield Splendor"	5.25[232]	6.5
+29.3	"Whistler's Father"	2.91[233]	6.1
+29.4	"Treehouse of Horror XXVIII"	3.66[234]	7.1
+29.5	"Grampy Can Ya Hear Me"	2.86[235]	6.3
+29.6	"The Old Blue Mayor She Ain't What She Used to Be"	4.75[236]	6.2
+29.7	"Singin' in the Lane"	2.67[237]	6.3
+29.8	"Mr. Lisa's Opus"	4.28[238]	6.8
+29.9	"Gone Boy"	6.06[239]	7.2
+29.10	"Haw-Haw Land"	6.95[240]	6.5
+29.11	"Frink Gets Testy"	8.04[241]	6.1
+29.12	"Homer Is Where the Art Isn't"	2.10[242]	6.6
+29.13	"3 Scenes Plus a Tag from a Marriage"	2.15[243]	6.5
+29.14	"Fears of a Clown"	2.06[244]	6
+29.15	"No Good Read Goes Unpunished"	2.15[245]	6.3
+29.16	"King Leer"	2.26[246]	6.2
+29.17	"Lisa Gets the Blues"	2.19[247]	6.8
+29.18	"Forgive and Regret"	2.47[248]	7
+29.19	"Left Behind"	2.15[249]	6.6
+29.20	"Throw Grampa from the Dane"	2.14[250]	6.6
+29.21	"Flanders' Ladder"	2.10[251]	7.6
+30.1	"Bart's Not Dead"	3.24[252]	6.2
+30.2	"Heartbreak Hotel"	4.60[253]	6
+30.3	"My Way or the Highway to Heaven"	2.52[254]	6.1
+30.4	"Treehouse of Horror XXIX"	2.95[255]	5.9
+30.5	"Baby You Can't Drive My Car"	5.08[256]	7
+30.6	"From Russia Without Love"	2.35[257]	6.4
+30.7	"Werking Mom"	4.34[258]	5.5
+30.8	"Krusty the Clown"	2.11[259]	6.4
+30.9	"Daddicus Finch"	4.33[260]	6.7
+30.10	"'Tis the 30th Season"	7.53[261]	6.7
+30.11	"Mad About the Toy"	2.33[262]	5.5
+30.12	"The Girl on the Bus"	8.20[263]	6.3
+30.13	"I'm Dancing as Fat as I Can"	1.75[264]	6.8
+30.14	"The Clown Stays in the Picture"	2.75[265]	6.1
+30.15	"101 Mitigations"	2.25[266]	6.4
+30.16	"I Want You (She's So Heavy)"	2.21[267]	5.7
+30.17	"E My Sports"	2.08[268]	6.2
+30.18	"Bart vs. Itchy & Scratchy"	1.99[269]	4.4
+30.19	"Girl's in the Band"	2.07[270]	6.3
+30.20	"I'm Just a Girl Who Can't Say D'oh"	1.61[271]	5.3
+30.21	"D'oh Canada"	1.93[272]	5.3
+30.22	"Woo-Hoo Dunnit?"	1.79[273]	6
+30.23	"Crystal Blue-Haired Persuasion"	1.50[274]	5.9
+31.1	"The Winter of Our Monetized Content"	2.33[275]	5.7
+31.2	"Go Big or Go Homer"	5.63[276]	5.8
+31.3	"The Fat Blue Line"	2.13[277]	6.5
+31.4	"Treehouse of Horror XXX"	5.42[278]	6.9
+31.5	"Gorillas on the Mast"	2.02[279]	6.2
+31.6	"Marge the Lumberjill"	5.00[280]	5.4
+31.7	"Livin La Pura Vida"	2.08[281]	6.3
+31.8	"Thanksgiving of Horror"	5.42[282]	7.3
+31.9	"Todd, Todd, Why Hast Thou Forsaken Me?"	1.99[283]	6.5
+31.10	"Bobby, It's Cold Outside"	4.97[284]	6.5
+31.11	"Hail to the Teeth"	1.81[285]	6
+31.12	"The Miseducation of Lisa Simpson"	1.95[286]	6.5
+31.13	"Frinkcoin"	1.84[287]	5.9
+31.14	"Bart the Bad Guy"	1.66[288]	7.3
+31.15	"Screenless"	1.63[289]	6.5
+31.16	"Better Off Ned"	1.70[290]	6.4
+31.17	"Highway to Well"	1.66[291]	7
+31.18	"The Incredible Lightness of Being a Baby"	1.58[292]	6.3
+31.19	"Warrin' Priests" (Part One)	1.35[293]	6
+31.20	"Warrin' Priests" (Part Two)	1.36[294]	5.7
+31.21	"The Hateful Eight-Year-Olds"	1.40[295]	6.7
+31.22	"The Way of the Dog"	1.89[296]	7.4
+32.1	"Undercover Burns"	4.44[298]	6.5
+32.2	"I, Carumbus"	1.51[299]	6.7
+32.3	"Now Museum, Now You Don't"	1.36[300]	5.5
+32.4	"Treehouse of Horror XXXI"	4.93[304]	5.9
+32.5	"The 7 Beer Itch"	1.74[305]	5.6
+32.6	"Podcast News"	3.50[306]	6.8
+32.7	"Three Dreams Denied"	4.41[307]	6.2
+32.8	"The Road to Cincinnati"	1.63[308]	6.6
+32.9	"Sorry Not Sorry"	1.66[309]	6.1
+32.10	"A Springfield Summer Christmas for Christmas"	3.92[310]	6.1
+32.11	"The Dad-Feelings Limited"	1.89[311]	6.9
+32.12	"Diary Queen"	1.43[312]	6.8
+32.13	"Wad Goals"	1.24[313]	6.2
+32.14	"Yokel Hero"	1.38[314]	5.5
+32.15	"Do Pizza Bots Dream of Electric Guitars"	1.43[315]	5.8
+32.16	"Manger Things"	1.28[316]	6.4
+32.17	"Uncut Femmes"	1.22[317]	6.4
+32.18	"Burger Kings"	1.24[318]	6.7
+32.19	"Panic on the Streets of Springfield"	1.31[319]	6.1
+32.20	"Mother and Child Reunion"	1.11[320]	7
+32.21	"The Man from G.R.A.M.P.A."	1.06[321]	6.4
+32.22	"The Last Barfighter"	1.02[322]	7.6

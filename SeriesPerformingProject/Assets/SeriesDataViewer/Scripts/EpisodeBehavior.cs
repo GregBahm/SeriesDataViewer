@@ -8,8 +8,10 @@ public class EpisodeBehavior : MonoBehaviour
 {
     public EpisodeData Data { get; set; }
     public ShowBehavior Series { get; set; }
+    public Color Color { get; set; }
+    public Color EmissiveColor { get; set; }
 
-    private Material Mat;
+    public Material Mat { get; private set; }
 
     private void Start()
     {
@@ -22,20 +24,20 @@ public class EpisodeBehavior : MonoBehaviour
 
     private float GetDrillLightTarget()
     {
-        if (EpisodeDrillDownManager.Instance.DrilledEpisode == null)
+        if (MainScript.Instance.DrilledEpisode == null)
         {
             return 1f;
         }
-        return EpisodeDrillDownManager.Instance.DrilledEpisode == this ? 2 : .5f;
+        return MainScript.Instance.DrilledEpisode == this ? 2 : .5f;
     }
     private float GetDrillLightEmissiveTarget()
     {
-        return EpisodeDrillDownManager.Instance.DrilledEpisode == this ? 1 : 0f;
+        return MainScript.Instance.DrilledEpisode == this ? 1 : 0f;
     }
 
     private float GetDrillScaleTarget()
     {
-        return EpisodeDrillDownManager.Instance.DrilledEpisode == this ? .5f : 0;
+        return MainScript.Instance.DrilledEpisode == this ? .5f : 0;
     }
 
     private void UpdateDrillFactor()
@@ -72,9 +74,10 @@ public class EpisodeBehavior : MonoBehaviour
         transform.localScale += new Vector3(drilledScaleFactor, drilledScaleFactor, drilledScaleFactor);
         transform.localPosition = new Vector3(-(Data.Season - 1), heightPos, - (Data.Episode - 1));
 
-        Color col = GetColor(baseImdb, drilledLightingFactor);
-        Mat.SetColor("_Color", col);
-        Mat.SetColor("_EmissionColor", col * MainScript.Instance.BarEmissive * drilledLightingGlow);
+        Color = GetColor(baseImdb, drilledLightingFactor);
+        EmissiveColor = Color * MainScript.Instance.BarEmissive * drilledLightingGlow;
+        Mat.SetColor("_Color", Color);
+        Mat.SetColor("_EmissionColor", EmissiveColor);
         Mat.SetFloat("_Smoothness", MainScript.Instance.BarGloss);
         Mat.SetFloat("_Metallic", MainScript.Instance.BarMetallic);
     }
