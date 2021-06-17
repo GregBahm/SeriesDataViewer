@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Screenshotter : MonoBehaviour
 {
+    public SceneRecorder Recorder;
+
     public float ShotTime;
     private float TimeToNextShot;
-    public float RotationPerShot = 1;
-    private float RotationRemaining = 360f;
     private int shotIndex = 0;
     private const string OutputFolder = "F:\\SeriesDataViewerOutput\\";
     private bool advance; // If you take the shot and move the camera in the same update, it will clear the ray accumulation
@@ -22,10 +22,10 @@ public class Screenshotter : MonoBehaviour
     {
         if(advance)
         {
-            transform.Rotate(0, RotationPerShot, 0, Space.World);
+            Recorder.currentFrame++;
             advance = false;
         }
-        if(TimeToNextShot <= 0 && RotationRemaining > 0)
+        if(TimeToNextShot <= 0 && Recorder.currentFrame < Recorder.readableFrameCount)
         {
             TakeShot();
             advance = true;
@@ -39,6 +39,5 @@ public class Screenshotter : MonoBehaviour
         ScreenCapture.CaptureScreenshot(shotPath);
         shotIndex++;
         TimeToNextShot = ShotTime;
-        RotationRemaining -= RotationPerShot;
     }
 }

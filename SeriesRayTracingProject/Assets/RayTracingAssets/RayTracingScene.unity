@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16381184}
   - component: {fileID: 16381183}
+  - component: {fileID: 16381185}
   m_Layer: 0
   m_Name: Recorder
   m_TagString: Untagged
@@ -153,7 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mode: 2
-  Time: 0
+  currentFrame: 0
+  readableFrameCount: 0
 --- !u!4 &16381184
 Transform:
   m_ObjectHideFlags: 0
@@ -168,6 +170,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16381185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16381182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7250dedb110bb764bb26576a49a08023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Recorder: {fileID: 16381183}
+  ShotTime: 2
 --- !u!1 &115474891
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,8 +384,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115474891}
-  m_LocalRotation: {x: 0.00045910483, y: 0.30199787, z: -0.1741623, w: -0.93726444}
-  m_LocalPosition: {x: 0.14319615, y: 0.118024826, z: 0.32289162}
+  m_LocalRotation: {x: -0.0046902304, y: 0.7595799, z: -0.4487531, w: -0.47078353}
+  m_LocalPosition: {x: 0.18301892, y: 0.26348075, z: 0.5889597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 248312261}
@@ -1468,8 +1484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7250dedb110bb764bb26576a49a08023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Recorder: {fileID: 0}
   ShotTime: 5
-  RotationPerShot: 1
 --- !u!1 &2014809267
 GameObject:
   m_ObjectHideFlags: 0

@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       m_Bits: 1
   maximumSamples:
     m_OverrideState: 1
-    m_Value: 1024
+    m_Value: 235
     min: 1
     max: 4096
   minimumDepth:
@@ -369,7 +369,7 @@ MonoBehaviour:
     max: 10
   maximumDepth:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 3
     min: 1
     max: 10
   maximumIntensity:

@@ -25,10 +25,10 @@ public class SceneRecorder : MonoBehaviour
     }
 
     private int lastFrame;
-    private int currentFrame;
-    [Range(0, 1)]
-    public float Time;
-    private int readableFrameCount;
+    public int currentFrame;
+    //[Range(0, 1)]
+    //public float Time;
+    public int readableFrameCount;
 
     private void Start()
     {
@@ -53,7 +53,7 @@ public class SceneRecorder : MonoBehaviour
         }
         if(Mode == RecorderMode.Read)
         {
-            currentFrame = (int)((readableFrameCount - 1) * Time);
+            //currentFrame = (int)((readableFrameCount - 1) * Time);
             if(lastFrame != currentFrame)
             {
                 LoadData(LoadRecord(currentFrame));

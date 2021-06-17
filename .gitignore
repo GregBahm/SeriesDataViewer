@@ -10,3 +10,4 @@
 *.sln
 *.vsconfig
 /.vs
+/InputTest
