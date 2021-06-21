@@ -1,0 +1,31 @@
+1.1	Pilot	1.10[5]	8.1	December 2, 2013
+1.2	Lawnmower Dog	1.51[6]	8.7	December 9, 2013
+1.3	Anatomy Park	1.30[7]	8.4	December 16, 2013
+1.4	M. Night Shaym-Aliens!	1.32[8]	8.6	January 13, 2014
+1.5	Meeseeks and Destroy	1.61[9]	8.9	January 20, 2014
+1.6	Rick Potion #9	1.75[10]	9	January 27, 2014
+1.7	Raising Gazorpazorp	1.76[11]	8.1	March 10, 2014
+1.8	Rixty Minutes	1.48[12]	8.7	March 17, 2014
+1.9	Something Ricked This Way Comes	1.54[13]	8.5	March 24, 2014
+1.10	Close Rick-counters of the Rick Kind	1.75[14]	9.2	April 7, 2014
+1.11	Ricksy Business	2.13[15]	8.5	April 14, 2014
+2.1	A Rickle in Time	2.12[16]	8.7	July 26, 2015
+2.2	Mortynight Run	2.19[17]	8.8	August 2, 2015
+2.3	Auto Erotic Assimilation	1.94[18]	8.5	August 9, 2015
+2.4	Total Rickall	1.96[19]	9.5	August 16, 2015
+2.5	Get Schwifty	2.12[20]	8.3	August 23, 2015
+2.6	The Ricks Must Be Crazy	1.91[21]	9.2	August 30, 2015
+2.7	Big Trouble in Little Sanchez	1.97[22]	8.5	September 13, 2015
+2.8	Interdimensional Cable 2: Tempting Fate	1.79[23]	7.6	September 20, 2015
+2.9	Look Who's Purging Now	1.89[24]	8.5	September 27, 2015
+2.10	The Wedding Squanchers	1.84[25]	9.2	October 4, 2015
+3.1	The Rickshank Rickdemption	0.68[26][a]	9.6	April 1, 2017
+3.2	Rickmancing the Stone	2.86[27]	8.3	July 30, 2017
+3.3	Pickle Rick	2.31[28]	9.3	August 6, 2017
+3.4	Vindicators 3: The Return of Worldender	2.66[29]	8.3	August 13, 2017
+3.5	The Whirly Dirly Conspiracy	2.29[30]	8.7	August 20, 2017
+3.6	Rest and Ricklaxation	2.47[31]	9.1	August 27, 2017
+3.7	The Ricklantis Mixup	2.38[32]	9.9	September 10, 2017
+3.8	Morty's Mind Blowers	2.51[33]	8.9	September 17, 2017
+3.9	The ABC's of Beth	2.49[34]	8.2	September 24, 2017
+3.10	The Rickchurian Mortydate	2.60[35]	8.3	October 1, 2017

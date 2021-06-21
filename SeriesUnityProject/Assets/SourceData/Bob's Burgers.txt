@@ -1,0 +1,131 @@
+1.1	Human Flesh	9.38[4]	7.8
+1.2	Crawl Space	5.07[5]	8.1
+1.3	Sacred Cow	4.81[6]	7.7
+1.4	Sexy Dance Fighting	4.19[7]	7.6
+1.5	Hamburger Dinner Theater	4.87[8]	7.6
+1.6	Sheesh! Cab, Bob?	4.91[9]	8.4
+1.7	Bed & Breakfast	4.10[10]	7.8
+1.8	Art Crawl	4.43[11]	8.1
+1.9	Spaghetti Western and Meatballs	4.65[12]	7.9
+1.10	Burger Wars	4.00[13]	7.9
+1.11	Weekend at Mort's	4.26[14]	8.2
+1.12	Lobsterfest	4.66[15]	7.8
+1.13	Torpedo	4.31[16]	7.8
+2.1	The Belchies	4.04[17]	8.3
+2.2	Bob Day Afternoon	4.40[18]	8.6
+2.3	Synchronized Swimming	3.97[19]	7.6
+2.4	Burgerboss	3.66[20]	8.3
+2.5	Food Truckin'	3.90[21]	7.9
+2.6	Dr. Yap	3.92[22]	7.7
+2.7	Moody Foodie	3.72[23]	7.9
+2.8	Bad Tina	3.69[24]	8.2
+2.9	Beefsquatch	3.57[25]	7.8
+3.1	Ear-Sy Rider	5.46[26]	8.2
+3.2	Full Bars	4.89[27]	8.3
+3.3	Bob Fires the Kids	3.92[28]	8
+3.4	Mutiny on the Windbreaker	4.89[29]	7.6
+3.5	An Indecent Thanksgiving Proposal	3.94[30]	8.3
+3.6	The Deepening	4.66[31]	7.9
+3.7	Tina-rannosaurus Wrecks	3.97[32]	8.5
+3.8	The Unbearable Like-Likeness of Gene	4.55[33]	7.9
+3.9	Bob Rest Ye Merry Gentle-Mannequins	3.09[34]	7.9
+3.10	Mother Daughter Laser Razor	6.40[35]	8.1
+3.11	Nude Beach	4.44[36]	7.6
+3.12	Broadcast Wagstaff School News	4.12[37]	8.5
+3.13	My Fuzzy Valentine	3.45[38]	7.7
+3.14	Lindapendent Woman	3.93[39]	7.9
+3.15	O.T.: The Outside Toilet	3.67[40]	8.4
+3.16	Topsy	3.85[41]	8.5
+3.17	Two for Tina	3.62[42]	8.2
+3.18	It Snakes a Village	3.76[43]	7.8
+3.19	Family Fracas	3.45[44]	7.4
+3.20	The Kids Run the Restaurant	3.74[45]	8.2
+3.21	Boyz 4 Now	3.50[46]	8.6
+3.22	Carpe Museum	3.96[47]	8.3
+3.23	The Unnatural	3.38[48]	7.8
+4.1	A River Runs Through Bob	4.48[49]	7.8
+4.2	Fort Night	4.21[50]	8.3
+4.3	Seaplane!	3.75[51]	7.8
+4.4	My Big Fat Greek Bob	3.17[52]	7.7
+4.5	Turkey in a Can	4.08[53]	8.3
+4.6	Purple Rain-Union	3.39[54]	7.6
+4.7	Bob and Deliver	4.60[55]	8.2
+4.8	Christmas in the Car	5.57[56]	8.2
+4.9	Slumber Party	6.35[57]	8.4
+4.10	Presto-Tina-O	4.20[58]	7.6
+4.11	Easy Commercial, Easy Gommercial	3.24[59]	7.7
+4.12	The Frond Files	2.21[60]	8.2
+4.13	Mazel-Tina	2.44[61]	8.4
+4.14	Uncle Teddy	2.45[62]	8.1
+4.15	The Kids Rob a Train	2.26[63]	8
+4.16	I Get Psychic Out of You	2.27[64]	7.5
+4.17	The Equestranauts	1.83[65]	8.3
+4.18	Ambergris	1.52[66]	7.5
+4.19	The Kids Run Away	2.26[67]	8.3
+4.20	Gene It On	2.23[68]	7.5
+4.21	Wharf Horse (or How Bob Saves/Destroys the Town - Part I)	1.97[69]	8.2
+4.22	World Wharf II: The Wharfening (or How Bob Saves/Destroys the Town - Part II)	1.95[70]	8.5
+5.1	Work Hard or Die Trying, Girl	3.14[71]	8.2
+5.2	Tina and the Real Ghost	2.89[72]	8.1
+5.3	Friends with Burger-fits	3.35[73]	7.7
+5.4	Dawn of the Peck	1.90[74]	8.4
+5.5	Best Burger	2.23[75]	8.1
+5.6	Father of the Bob	3.18[76]	8
+5.7	Tina Tailor Soldier Spy	2.54[77]	8.1
+5.8	Midday Run	3.95[78]	7.8
+5.9	Speakeasy Rider	3.34[79]	7.9
+5.10	Late Afternoon in the Garden of Bob and Louise	2.49[80]	8
+5.11	Can't Buy Me Math	1.94[81]	8.2
+5.12	The Millie-churian Candiate	2.01[82]	8.5
+5.13	The Gayle Tales	3.03[83]	8
+5.14	L'il Hard Dad	2.56[84]	7.8
+5.15	Adventures in Chinchilla-sitting	2.24[85]	7.7
+5.16	The Runway Club	2.21[86]	8.1
+5.17	Itty Bitty Ditty Committee	2.04[87]	7.7
+5.18	Eat, Spray, Linda	2.24[88]	8.3
+5.19	Housetrap	2.47[89]	8.7
+5.20	Hawk & Chick	1.95[90]	8.6
+5.21	The Oeder Games	2.44[90]	8.8
+6.1	Sliding Bobs	2.51[91]	8.1
+6.2	The Land Ship	2.19[92]	7.9
+6.3	Hauntening	2.09[93]	8.9
+6.4	Gayle Makin' Bob Sled	3.13[94]	7.5
+6.5	Nice-Capades	2.27[95]	7.5
+6.6	The Cook, the Steve, the Gayle, & Her Lover	2.26[96]	8
+6.7	The Gene and Courtney Show	2.05[97]	7.8
+6.8	Sexy Dance Healing	2.29[98]	7.8
+6.9	Sacred Couch	2.64[99]	7.3
+6.10	Lice Things Are Lice	2.28[100]	7.8
+6.11	House of 1000 Bounces	2.05[101]	7.7
+6.12	Stand by Gene	1.99[101]	8.4
+6.13	Wag the Hog	2.35[102]	7.8
+6.14	The Hormone-iums	2.18[103]	7.7
+6.15	Pro Tiki/Con Tiki	2.35[104]	7.6
+6.16	Bye Bye Boo Boo	2.31[105]	7.7
+6.17	The Horse Rider-er	2.27[106]	8.1
+6.18	Secret Admiral-irer	2.23[107]	8
+6.19	Glued, Where's My Bob?	2.04[107]	8.9
+7.1	Flu-ouise	2.60[108]	7.9
+7.2	Sea Me Now	2.79[109]	7.9
+7.3	Teen-a-Witch	3.01[110]	7.8
+7.4	They Serve Horses, Don't They?	2.42[111]	7.6
+7.5	Larger Brother, Where Fart Thou?	2.35[112]	8.2
+7.6	The Quirkducers	2.46[112]	8.2
+7.7	The Last Gingerbread House on the Left	2.44[113]	8.3
+7.8	Ex Mach Tina	3.58[114]	7.9
+7.9	Bob Actually	1.67[115]	8.7
+7.10	There's No Business Like Mr. Business Business	1.97[116]	7.9
+7.11	A Few 'Gurt Men	1.77[117]	8.2
+7.12	Like Gene for Chocolate	1.82[118]	7.8
+7.13	The Grand Mama-Pest Hotel	1.93[119]	7.6
+7.14	Aquaticism	1.86[120]	7.7
+7.15	Ain't Miss Debatin'	1.86[120]	8.2
+7.16	Eggs for Days	1.52[121]	8.3
+7.17	Zero Larp Thirty	1.58[122]	7.7
+7.18	The Laser-inth	1.88[122]	8.2
+7.19	Thelma & Louise Except Thelma Is Linda	1.59[123]	8.2
+7.20	Mom, Lies and Videotapes	2.02[124]	7.9
+7.21	Paraders of the Lost Float	1.61[125]	7.6
+7.22	Into the Mild	1.52[126]	7.8
+8.1	Brunchsquatch	2.93[127]	7.5
+8.2	The Silence of the Louise	2.43[128]	7.8

@@ -4,10 +4,10 @@
 */.vs/
 */LocalPackages/
 */Builds/
+*/UserSettings/
 */obj/
 */Logs/
 *.csproj
 *.sln
 *.vsconfig
 /.vs
-/InputTest
