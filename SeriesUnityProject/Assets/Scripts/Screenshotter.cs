@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Screenshotter : MonoBehaviour
 {
-    public SceneRecorder Recorder;
+    public SceneReplayer Recorder;
 
     public float ShotTime;
     private float TimeToNextShot;
     private int shotIndex = 0;
     private const string OutputFolder = "F:\\SeriesDataViewerOutput\\";
-    private bool advance; // If you take the shot and move the camera in the same update, it will clear the ray accumulation
+    private bool advance; 
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class Screenshotter : MonoBehaviour
 
     void Update()
     {
+        Recorder.Mode = SceneReplayer.ReplayerMode.ExactTime;
         if(advance)
         {
             Recorder.currentFrame++;

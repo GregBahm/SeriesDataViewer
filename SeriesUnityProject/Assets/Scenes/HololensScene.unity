@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16381184}
   - component: {fileID: 16381183}
+  - component: {fileID: 16381185}
   m_Layer: 0
   m_Name: Recorder
   m_TagString: Untagged
@@ -152,9 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12fdfad2bf03924a8326fd9166b57d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mode: 2
+  DoRecord: 0
   currentFrame: 0
-  readableFrameCount: 0
 --- !u!4 &16381184
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +169,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16381185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16381182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a9efcadfcba2b43ae6477bd19af27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentFrame: 0
+  Time: 0
+  Mode: 0
+  readableFrameCount: 0
 --- !u!4 &29623521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1829901806878336517, guid: 3907758b9f519374e9400448d619b310, type: 3}
