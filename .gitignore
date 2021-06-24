@@ -1,13 +1,13 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+SeriesUnityProject/[Ll]ibrary/
+SeriesUnityProject/[Tt]emp/
+SeriesUnityProject/[Oo]bj/
+SeriesUnityProject/[Bb]uild/
+SeriesUnityProject/[Bb]uilds/
+SeriesUnityProject/[Ll]ogs/
+SeriesUnityProject/[Mm]emoryCaptures/
 
-/Packages/
-/LocalPackages/
+*/Packages/
+*/LocalPackages/
 
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
