@@ -17,6 +17,7 @@ public class ShowBehavior : MonoBehaviour
     private Transform labelsTransform;
     private List<TextMeshPro> labels;
     private StageBoxManager stageBox;
+    public Transform InnerStageBox { get { return stageBox.InnerBox; } }
     
     public float ScoreMid { get; private set; }
 
@@ -191,7 +192,7 @@ public class ShowBehavior : MonoBehaviour
     {
         private readonly Transform stageTransform;
         private Vector3 innerboxBaseScale;
-        private readonly Transform InnerBox;
+        public Transform InnerBox { get; }
 
         public void UpdateStage(float nealsonOrImdb)
         {

@@ -8,16 +8,18 @@ using System.IO;
 
 public class SceneRecorder : SceneScrubbingBase
 {
+    public int FramesPerSecond = 30;
     public bool DoRecord;
-
     private long index;
 
-    private int lastFrame;
-    public int currentFrame;
+    private float timeBetweenFrames;
+    private float timeTillNextFrame;
 
     private void Start()
     {
         handTransforms = GetAllHandJoints();
+        timeBetweenFrames = 1f / FramesPerSecond;
+        timeTillNextFrame = timeBetweenFrames;
     }
 
     private FrameRecord GetRecord()
@@ -30,6 +32,7 @@ public class SceneRecorder : SceneScrubbingBase
         ret.Episodes = episodes;
         ret.HandData = handData;
         ret.RootTransform = GetTransformRecord(MainScript.Instance.RootTransform);
+        ret.InnerStageBox = GetTransformRecord(MainScript.Instance.ShownSeries.InnerStageBox);
         return ret;
     }
 
@@ -46,8 +49,17 @@ public class SceneRecorder : SceneScrubbingBase
     {
         if(DoRecord)
         {
-            WriteFrame();
-            index++;
+            timeTillNextFrame -= Time.deltaTime;
+            if(timeTillNextFrame <= 0)
+            {
+                timeTillNextFrame += timeBetweenFrames;
+                if(timeTillNextFrame <= 0)
+                {
+                    timeTillNextFrame = timeBetweenFrames;
+                }
+                WriteFrame();
+                index++;
+            }
         }
     }
     private void WriteFrame()
@@ -75,6 +87,7 @@ public class FrameRecord
     public int ShowToShow;
     public List<EpisodeRecord> Episodes;
     public TransformRecord RootTransform;
+    public TransformRecord InnerStageBox;
 }
 
 [Serializable]
