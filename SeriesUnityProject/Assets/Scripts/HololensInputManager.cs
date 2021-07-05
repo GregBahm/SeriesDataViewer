@@ -24,6 +24,8 @@ public class HololensInputManager : MonoBehaviour
 
     public ProxyButton ImdbToNelsonToggle;
 
+    public SkinnedMeshRenderer ManipulationCursor;
+
     public enum LeftHandToolMode
     {
         Move,
@@ -72,6 +74,22 @@ public class HololensInputManager : MonoBehaviour
         UpdatePinchAndDrag();
         UpdateDrillDown();
         UpdateImdbToNelson();
+        UpdateManipulationCursor();
+    }
+
+    private void UpdateManipulationCursor()
+    {
+        float prog = PinchDetector.FingerDistance / .1f;
+        ManipulationCursor.SetBlendShapeWeight(0, prog * 100);
+        if(PinchDetector.Pinching)
+        {
+            ManipulationCursor.transform.position = translationHelper.position;
+        }
+        else
+        {
+            ManipulationCursor.transform.position = PinchDetector.PinchPoint.position;
+        }
+        ManipulationCursor.transform.rotation = PinchDetector.PinchPoint.rotation;
     }
 
     private void UpdateImdbToNelson()
