@@ -24,6 +24,9 @@ public class MainScript : MonoBehaviour
     public float ImdbScale;
 
     [Range(0, 1)]
+    public float ShowColor;
+
+    [Range(0, 1)]
     public float BarGloss;
     [Range(0, 1)]
     public float BarMetallic;

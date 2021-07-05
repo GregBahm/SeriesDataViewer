@@ -23,6 +23,11 @@ public class HololensInputManager : MonoBehaviour
     public ProxyButton ScaleButton;
 
     public ProxyButton ImdbToNelsonToggle;
+    public ProxyButton ToggleColor;
+
+    public Vector3 RotationHelperPos { get { return rotationHelper.position; } }
+
+    public RotationHandleManager RotationHandle;
 
     public SkinnedMeshRenderer ManipulationCursor;
 
@@ -90,6 +95,13 @@ public class HololensInputManager : MonoBehaviour
             ManipulationCursor.transform.position = PinchDetector.PinchPoint.position;
         }
         ManipulationCursor.transform.rotation = PinchDetector.PinchPoint.rotation;
+        UpdateColor();
+    }
+
+    private void UpdateColor()
+    {
+        float target = ToggleColor.Toggled ? 1 : 0;
+        MainScript.Instance.ShowColor = Mathf.Lerp(MainScript.Instance.ShowColor, target, Time.deltaTime * 10);
     }
 
     private void UpdateImdbToNelson()
@@ -143,20 +155,23 @@ public class HololensInputManager : MonoBehaviour
         if(!wasRotating && PinchDetector.PinchBeginning)
         {
             translationHelper.position = PinchDetector.PinchPoint.position;
-            rotationHelper.position = MainStage.position;
-            rotationUp = MainStage.up;
-            rotationHelper.LookAt(translationHelper, rotationUp);
-            MainStage.SetParent(rotationHelper, true);
-        }
-        if(PinchDetector.Pinching)
-        {
-            translationHelper.position = GetDeadzoneMovement();
 
-            rotationHelper.LookAt(translationHelper, MainStage.up);
+            RotationHandle.RotationHandleRoot.SetParent(null, true);
+            MainStage.SetParent(RotationHandle.RotationHandleRoot, true);
         }
         if(wasRotating && !PinchDetector.Pinching)
         {
             MainStage.SetParent(null, true);
+            RotationHandle.RotationHandleRoot.SetParent(MainStage, true);
+        }
+        if(PinchDetector.Pinching)
+        {
+            translationHelper.position = GetDeadzoneMovement();
+            //RotationHandle.UpdateActiveRotation(translationHelper.position);
+        }
+        else
+        {
+            RotationHandle.UpdatePassiveRotation();
         }
         wasRotating = PinchDetector.Pinching;
     }

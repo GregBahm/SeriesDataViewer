@@ -86,6 +86,10 @@ public class EpisodeBehavior : MonoBehaviour
 
         Color = GetColor(baseImdb, drilledLightingFactor);
         EmissiveColor = Color * MainScript.Instance.BarEmissive * drilledLightingGlow;
+
+        Color = Color.Lerp(Color, Color.white, MainScript.Instance.ShowColor);
+        EmissiveColor = Color.Lerp(Color, Color.black, MainScript.Instance.ShowColor * MainScript.Instance.NealsonOrImdb);
+
         episodeBlock.SetColor("_BaseColor", Color);
         episodeBlock.SetColor("_EmissiveColor", EmissiveColor);
         Renderer.SetPropertyBlock(episodeBlock);
